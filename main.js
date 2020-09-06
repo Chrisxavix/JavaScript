@@ -140,17 +140,190 @@ document.write("Resultado: ", result); */
 /* Imprime: Resultado 10 */
 /* --------------------------- Números -------------------------- */
 
+/* --------------------------- Arrays - Arreglos -------------------------- */
 
+/* Declaración de un arreglo vacío 1 */
+/* const e = new Array();
+console.log(e); */
+/* Imprime: [] */
 
+/* Declaración de un arreglo vacío 2 */
+/* const e = [];
+console.log(e); */
+/* Imprime: [] */
 
+/* Declaración de un arreglo vacío con límite de 3*/
+/* const d = Array(3)
+console.log(d); */
+/* Imprime: [empty × 3] */
 
+/* Declaración e impresión de un array */
+/* a = [1, true, [1, 2, 'tres'], 'Maggot', 10]
+console.log(a);*/
+/* Imprime: [1, true, Array(3), "Maggot", 10]  */
 
+/* Declaración e impresión de una posición en el array */
+/* a = [1, true, [1, 2, 'tres'], 'Maggot', 10]
+console.log(a[2]); */
+/* Imprime: [1, 2, "tres"] */
 
+/* Declaración e impresión de una posición dentro de un array del array */
+/* a = [1, true, [1, 2, 'tres'], 'Maggot', 10]
+console.log(a[2][1]); */
+/* Imprime: 2 */
 
+/* Otra forma de declarar un Array */
+/* const c = Array.of('D', 3, true);
+console.log(c)
+console.log(c.length) */
+/* Imprime1: ["D", 3, true]
+Imprime1: 3 */
 
+/* Declara un array con límite y lo llena de false */
+/* const d = Array(3).fill(false);
+console.log(d); */
+/* Imprime: [false, false, false] */
 
+/* Agrega valores a un array con "push" */
+/* const colores = ['rojo', 'verde', 'amarillo']
+console.log(colores);
+colores.push('verde')
+console.log(colores); */
+/* Imprime1: ["rojo", "verde", "amarillo"]
+Imprime1: ["rojo", "verde", "amarillo", "verde"] */
 
+/* Elimina el último valor en el array con "pop" */
+/* const colores = ['rojo', 'verde', 'amarillo']
+console.log(colores);
+colores.pop('verde');
+console.log(colores); */
+/* Imprime1: ["rojo", "verde", "amarillo"]
+Imprime2: ["rojo", "verde"] */
 
+/* Recorrer el array y listar con html(li), uso de forEach */
+/* const colores = ['rojo', 'verde', 'amarillo']
+colores.forEach(function(el){
+console.log(`<li>${el}</li>`)
+}) */
+/* Imprime:<li>rojo</li>
+        <li>verde</li>
+        <li>amarillo</li> */
 
+/* Recorrer el array y listar con html(li), uso de forEach 
+donde (el) es el elemento en el array e (index) es la 
+posición */
+/* const colores = ['rojo', 'verde', 'amarillo']
+colores.forEach(function(el, index){
+console.log(`<li id=${index}>${el}</li>`)
+}) */
+/* Imprime:<li id=0>rojo</li>
+        <li id=1>verde</li>
+        <li id=2>amarillo</li> */
+/* --------------------------- Arrays - Arreglos -------------------------- */
 
+/* --------------------------- Objetos -------------------------- */
 
+/* utilizar const para los objetos */
+
+/* Declaración de objetos v1 */
+/* const b = {};
+console.log(b); */
+/* Imprime: {} */
+
+/* Declaración de objetos v2 */
+/* const b = new Object();
+console.log(b); */
+/* Imprime: {} */
+
+/* Declaración de objetos v3 */
+/* const chris = {
+    nombre: 'Chris',
+    edad: 24,
+    correo: 'chris@gmail.com',
+    pasatiempos: ['jugar', 'caminar', 'leer'],
+    soltero: true,
+    contacto: {tel: 1234, correo: 'lorem'}
+}
+console.log(chris); */
+/* Imprime: nombre: "Chris"
+        edad: 24
+        correo: "chris@gmail.com"
+        pasatiempos: Array(3)
+                0: "jugar"
+                1: "caminar"
+                2: "leer"
+        soltero: true
+        contacto:
+                correo: "lorem"
+                tel: 1234 */
+
+/* Acceder a los datos en un objeto con paréntesis */
+/* const chris = {
+    nombre: 'Chris',
+    edad: 24,
+    correo: 'chris@gmail.com',
+    pasatiempos: ['jugar', 'caminar', 'leer'],
+    soltero: true,
+    contacto: {tel: 1234, correo: 'lorem'}
+}
+console.log(chris['nombre']);
+console.log(chris['contacto']);
+console.log(chris['contacto']['correo']); */
+/* Imprime1: Chris
+Imprime2: {tel: 1234, correo: "lorem"}
+Imprime3: lorem */
+
+/* Acceder a los datos en un objeto con paréntesis */
+/* const chris = {
+    nombre: 'Chris',
+    edad: 24,
+    correo: 'chris@gmail.com',
+    pasatiempos: ['jugar', 'caminar', 'leer'],
+    soltero: true,
+    contacto: {tel: 1234, correo: 'lorem'},
+    saludar: function() {
+        console.log('Hola');
+    }
+}
+console.log(chris.nombre);
+console.log(chris.contacto);
+console.log(chris.contacto.correo);
+chris.saludar(); */
+/* Imprime1: Chris
+Imprime2: {tel: 1234, correo: "lorem"}
+Imprime3: lorem
+Imprime4: Hola */
+
+/* EL (.keys) me da los ids del objeto
+El (.values) me da los valores de las ids
+El (.hasOwnProperty) pregunta si exite el id 'nombre' */
+/* const chris = {
+    nombre: 'Chris',
+    edad: 24,
+    correo: 'chris@gmail.com',
+    pasatiempos: ['jugar', 'caminar', 'leer'],
+    soltero: true,
+    contacto: {tel: 1234, correo: 'lorem'},
+    saludar: function() {
+        console.log('Hola');
+    }
+}
+console.log(Object.keys(chris));
+console.log(Object.values(chris));
+console.log(chris.hasOwnProperty('nombre')); */
+/* Imprime1: 0: "nombre"
+1: "edad"
+2: "correo"
+3: "pasatiempos"
+4: "soltero"
+5: "contacto"
+6: "saludar"
+
+Impime2: 0: "Chris"
+1: 24
+2: "chris@gmail.com"
+3: (3) ["jugar", "caminar", "leer"]
+4: true
+5: {tel: 1234, correo: "lorem"}
+6: ƒ ()
+Imprime3: true */
