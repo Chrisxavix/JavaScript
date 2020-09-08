@@ -422,3 +422,114 @@ default:
 } */
 /* Imprime: Martes */
 /* ------------------ Estructuras de Control -------------- */
+
+/* ------------------ Estructura while, for ------------------ */
+/* Estructura while, se repite mientras se cumpla la
+condición */
+/* let cont =0; 
+while (cont < 10) {
+    cont=cont + 1;
+    console.log(cont);
+}
+ */
+
+/* Estructura del bucle for
+for(inicializar variable; condición, incremento) {
+    sentencias de código;
+} */
+
+/* Imprimir números con el bucle for */
+/* for (let i = 0; i<10; i++){
+    console.log('for', i)
+} */
+/* Imprime:
+for 0
+for 1
+for 2
+for 3
+for 4
+for 5
+for 6
+for 7
+for 8
+for 9 */
+
+/* Imprime el array */
+/* let numeros = [10, 20, 30, 40, 50, 60, 70];
+for (let i = 0; i<numeros.length; i++){
+    console.log('for', numeros[i])
+} */
+/* Imprime:
+for 10
+for 20
+for 30
+for 40
+for 50
+for 60
+for 70 */
+
+/* En un objeto con el (for in) entramos al objeto */ 
+/* const chris = {nombre: 'chris', apellido: 'Chillo',
+edad: 24}
+for(const propiedad in chris) {
+    console.log(propiedad);
+} */
+/* Imprime:
+nombre
+apellido
+edad */
+ 
+/* En un objeto con el (for in) recorremos propiedades de un
+objeto, buscamos el valor a imprimir */ 
+/* const chris = {nombre: 'chris', apellido: 'Chillo',
+edad: 24}
+for(const propiedad in chris) {
+    console.log(`Id: ${propiedad} Validado: ${chris[propiedad]}`);
+} */
+/* Imprime:
+Id: nombre Validado: chris
+Id: apellido Validado: Chillo
+Id: edad Validado: 24 */
+ 
+/* Permite recorrer todos los elementos de cualquier objeto
+que se iterable con el (of) */
+/* let numeros = [10, 20, 30, 40, 50, 60, 70];
+for (const elemento of numeros) {
+    console.log(elemento);
+} */
+/* Imprime:
+10
+20
+30
+40
+50
+60
+70 */
+
+/* Ejemplo 2 con el for of */
+/* let caracter = 'Dani Filth';
+for (const cart of caracter) {
+    console.log(cart);
+} */
+/* Imprime:
+D
+a
+n
+i
+  
+F
+i
+l
+t
+h */
+
+/* NOTA: 
+For In: recorrer propiedades de un objeto
+For Of: recorrer elementos de un objeto iterable, que pueda 
+darle posició, como un arreglo  */
+
+/* ------------------ Estructura while, for ------------------ */
+
+
+
+
