@@ -219,6 +219,13 @@ console.log(`<li id=${index}>${el}</li>`)
 /* Imprime:<li id=0>rojo</li>
         <li id=1>verde</li>
         <li id=2>amarillo</li> */
+
+/* Crea un nuevo arrary con (.map), en este caso lo multiplica x2 */
+/* let numbers = [1, 5, 10, 15];
+let doubles = numbers.map(function(x) {
+   return x * 2;
+});
+console.log(doubles); */
 /* --------------------------- Arrays - Arreglos -------------------------- */
 
 /* --------------------------- Objetos -------------------------- */
@@ -327,3 +334,91 @@ Impime2: 0: "Chris"
 5: {tel: 1234, correo: "lorem"}
 6: ƒ ()
 Imprime3: true */
+/* --------------------------- Objetos -------------------------- */
+
+/* --------------------------- Operadores -------------------------- */
+
+/* Dos igulaes (==) se comparan los valores
+Tres iguales (===) se comparan los tipos de datos y valor */
+/* console.log('7'==7);
+console.log('7'===7);
+console.log(7===7); */
+/* Imprime1: true
+Imprime2: false 
+Imprime3: true */
+
+/* Operador (+=), incrementa  */
+/* Es como tener (i = i + 2;) igual a (i += 2;) */
+/* let i = 1;
+i += 2;
+console.log(i); */
+/* Imprime: 3 */
+
+/* O realizar cualquier operación (*=) */
+/* let i = 1;
+i *= 2;
+console.log(i); */
+/* Imprime: 2 */
+
+/* Incremento binario */
+/* let i = 1;
+i ++;
+console.log(i); */
+/* Imprime: 2 */
+
+/* Incremento binario */
+/* let i = 1;
+++i;
+console.log(i); */
+/* Imprime: 2 */
+
+/* Operador (!), que denota negación */
+/* let c= true;
+console.log(!c); */
+/* Imprime: false */
+
+/* ------------------ Estructuras de Control -------------- */
+/* Bucle if */
+/* let edad = 19;
+if (edad>19) {
+    console.log('Mayor de edad');
+} else {
+    console.log('Menor de edad');
+} */
+/* Imprime: Mayor de edad */
+
+/* Bucle if con varias condiciones*/
+/* let edad = 28;
+if (edad<=10) {
+    console.log('Niño');
+} else if (edad===18) {
+    console.log('Adulto');
+} else {
+    console.log('Tercera edad');
+} */
+/* Imprime: Tercera edad */
+
+/* Operador ternario
+Solo una línea de código: verdadero o falso */
+/* edad=24;
+let mayor = (edad>=18) 
+? 'Eres mayor de edad':
+'Eres menor de edad';
+console.log(mayor); */
+/* Imprime: Eres mayor de edad */
+
+/* Switch de opciones */
+/* let dia=2;
+switch (dia) {
+case 1:
+    console.log('Lunes');
+    break;
+case 2:
+    console.log('Martes');
+    break;
+default: 
+    console.log('No hay día');   
+    break;
+} */
+/* Imprime: Martes */
+/* ------------------ Estructuras de Control -------------- */
