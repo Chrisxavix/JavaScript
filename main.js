@@ -200,7 +200,8 @@ console.log(colores); */
 /* Imprime1: ["rojo", "verde", "amarillo"]
 Imprime2: ["rojo", "verde"] */
 
-/* Recorrer el array y listar con html(li), uso de forEach */
+/* Recorrer el array y listar con html(li), uso de forEach 
+Itera como un ciclo For */
 /* const colores = ['rojo', 'verde', 'amarillo']
 colores.forEach(function(el){
 console.log(`<li>${el}</li>`)
@@ -226,6 +227,27 @@ let doubles = numbers.map(function(x) {
    return x * 2;
 });
 console.log(doubles); */
+
+/* La función se va a ejecutar por cada elemento del arreglo,
+lo cual se declara con una variable (element) */
+/* const colores = ['rojo', 'verde', 'amarillo'];
+colores.forEach(function (element) {
+    console.log(element);
+}); */
+/* Imprime: 
+rojo
+verde
+amarillo */
+
+/* A cada valor con el recorrido forEach se le multiplica *3 */
+/* const colores = [2, 4, 9];
+colores.forEach(function (element, ) {
+    console.log(element *3);
+}); */
+/* Imprime:
+6
+12
+27 */
 /* --------------------------- Arrays - Arreglos -------------------------- */
 
 /* --------------------------- Objetos -------------------------- */
@@ -318,15 +340,16 @@ El (.hasOwnProperty) pregunta si exite el id 'nombre' */
 console.log(Object.keys(chris));
 console.log(Object.values(chris));
 console.log(chris.hasOwnProperty('nombre')); */
-/* Imprime1: 0: "nombre"
+/* Imprime1: 
+0: "nombre"
 1: "edad"
 2: "correo"
 3: "pasatiempos"
 4: "soltero"
 5: "contacto"
 6: "saludar"
-
-Impime2: 0: "Chris"
+Impime2: 
+0: "Chris"
 1: 24
 2: "chris@gmail.com"
 3: (3) ["jugar", "caminar", "leer"]
@@ -338,7 +361,7 @@ Imprime3: true */
 
 /* --------------------------- Operadores -------------------------- */
 
-/* Dos igulaes (==) se comparan los valores
+/* Dos iguales (==) se comparan los valores
 Tres iguales (===) se comparan los tipos de datos y valor */
 /* console.log('7'==7);
 console.log('7'===7);
@@ -376,8 +399,10 @@ console.log(i); */
 /* let c= true;
 console.log(!c); */
 /* Imprime: false */
+/* --------------------------- Operadores -------------------------- */
 
 /* ------------------ Estructuras de Control -------------- */
+
 /* Bucle if */
 /* let edad = 19;
 if (edad>19) {
@@ -526,10 +551,462 @@ h */
 /* NOTA: 
 For In: recorrer propiedades de un objeto
 For Of: recorrer elementos de un objeto iterable, que pueda 
-darle posició, como un arreglo  */
-
+darle posición, como un arreglo  */
 /* ------------------ Estructura while, for ------------------ */
 
+/* ------- CONTROL DE ERRORES -------------------- */
+
+/* El try contiene el código que será evaluado
+El catch contiene los errores que daría la consola, 
+al imprimir el error muestra como lo haría la consola
+del navegador.
+El finally siempre se ejecuta, haya o no errores. */
+/* try {
+    console.log('Se agrega el código a evaluar');
+} catch (error) {
+    console.log('Captura cualquier error lanzado en el try');
+    console.log(error);
+} finally {
+    console.log('Se ejecuta siempre al final de un bloque try-catch');
+} */
+/* Imprime:  
+Se agrega el código a evaluar
+Se ejecuta siempre al final de un bloque try-catch */
+
+/* Agregar un error con (NaNN) ya que no está definida, por lo
+que encuentra el error y no continuá, por eso no imprime
+el "console.log('Segundo mensaje');" */
+/* try {
+    console.log('Se agrega el código a evaluar');
+    NaNN;
+    console.log('Segundo mensaje');
+} catch (error) {
+    console.log('Captura cualquier error lanzado en el try');
+    console.log(error);
+} finally {
+    console.log('Se ejecuta siempre al final de un bloque try-catch');
+} */
+/* Imprime:  
+Se agrega el código a evaluar
+Captura cualquier error lanzado en el try
+ReferenceError: NaNN is not defined at main.js:439
+Se ejecuta siempre al final de un bloque try-catch */
+
+/* Declarar un error con el tipo de dato, usando (isNaN)
+para conocer si es un número.
+console.trace(), indica la línea de error.*/
+/* try {
+    let numero = 'lo';
+    if (isNaN(numero)) {
+        throw new Error('El caracter no es un número.')
+    }
+    console.log(numero * numero);
+} catch (error) {
+   console.trace(`Se produjo el error ${error}`);
+}  */
+/* Imprime: 
+Se produjo el error Error: El caracter no es un número.
+(anonymous)	@	main.js:463 
+O sea, la línea 463 tiene el error. */
+/* ------- CONTROL DE ERRORES -------------------- */
+
+/* --------------------Palabras Reservadas ----------------- */
+
+/* El break detiene el bucle cuando la condición se cumple */
+/* const numeros = [1, 2, 3, 4, 5, 6, 7];
+for (i=0; i<numeros.length; i++) {
+    if(i===3) {
+        break;
+    }
+    console.log(numeros[i]);
+} */
+/* Imprime: 
+1
+2
+3 */
+
+/* El continue elimina la posición y continua con el bucle
+normalmente */
+/* const numeros = [1, 2, 3, 4, 5, 6, 7];
+for (i=0; i<numeros.length; i++) {
+    if(i===3) {
+        continue;
+    }
+    console.log(numeros[i]);
+} */
+/* Imprime:
+1
+2
+3
+5
+6
+7 */
+
+/* Ejercicio de valores que sean divisibles para 2 con el
+módulo, ejemplo: 34%2=0, por lo que se imprime, cosa
+distinta sucede con: 63%2=1, por lo que elimina y continua */
+/* let nums = [1, 2, 63, 34, 56, 345, 76, 2, 67, 22];
+for (let i = 0; i < nums.length; i++) {
+    if (nums[i] % 2 === 1) {
+        continue;
+    }
+    console.log(nums[i]);
+} */
+/* Imprime: 
+2
+34
+56
+76
+2
+22 */
+/* --------------------Palabras Reservadas ----------------- */
+
+/* -------------------- Destructuración --------------------- */
+
+/* Tomar el valor de cada posición del array
+sin destructuración */
+/* const numeros = [78, 27, 3];
+const a = numeros[0];
+const b = numeros[1];
+const c = numeros[2];
+console.log(a);
+console.log(b);
+console.log(c); */
+/* Imprime:
+78
+27
+3 */
+
+/* Con destructuración es ahorrar líneas de código
+y darles valor a la posición del arreglo */
+/* const numeros = [78, 27, 3];
+const[a, b, c] = numeros;
+console.log(a);
+console.log(b);
+console.log(c); */
+/* Imprime:
+78
+27
+3 */
+
+/* Tomar el valor de cada posición del objeto
+sin destructuración */
+/* const chris = {id: 1, name: 'Chris', apellido: 'Chillogalli'};
+const a1 = chris.id;
+const a2 = chris.name;
+const a3 = chris.apellido;
+console.log(a1);
+console.log(a2);
+console.log(a3); */
+/* Imprime:
+1
+Chris
+Chillogalli */
+
+/* Con destructuración es ahorrar líneas de código
+y darles valor a la posición del objeto, no importa el orden
+en el que se declare */
+/* const chris = {id: 1, name: 'Chris', apellido: 'Chillogalli'};
+let {name, apellido, id} = chris;
+console.log(id);
+console.log(name);
+console.log(apellido); */
+/* Imprime:
+1
+Chris
+Chillogalli */
+
+/* Cambiar el valor de un objeto */
+/* const chris = {id: 1, name: 'Chris', apellido: 'Chillogalli'};
+chris.id = '2'
+chris.name = 'Dani'
+chris.apellido = 'Filth'
+console.log(chris.id);
+console.log(chris.name);
+console.log(chris.apellido); */
+/* Imprime:
+2
+Dani
+Filth */
+/* -------------------- Destructuración --------------------- */
+
+/* ------------ Parámetros Rest & Operador Spread (propagar) ----------- */
+
+/* Parámetro Rest, los puntos (...), permite agregar
+valores no definidos, son parámetros que recibe una
+función */
+/* function sum(a,b, ...valorNuevo) {
+    let result = a+b;
+
+    valorNuevo.forEach(function (n) {
+        result += n;
+    })
+    return result;
+}
+let b = sum(8,4,9,10);
+console.log('La respuesta es:', b) */
+/* Imprime: 
+La respuesta es: 31 */
+
+/* Operador Spread, al agregar los puntos (...), une los dos arreglos y
+les da posición a cada valor */
+/* const Arreglo1 = [1,2,3,4,5];
+const Arreglo2 = [11,12,13,14,15];
+const Arreglo3 = [...Arreglo1, ...Arreglo2]
+console.log(Arreglo1);
+console.log(Arreglo2);
+console.log(Arreglo3); */
+/* Imprime: 
+(5) [1, 2, 3, 4, 5]
+(5) [11, 12, 13, 14, 15]
+(10) [1, 2, 3, 4, 5, 11, 12, 13, 14, 15] */
+
+/* El mismo ejemplo, pero con objetos */
+/* const Objeto1 = {id: 1, name: 'Chris'};
+const Objeto2 = {lastname: 'Chillogalli'};
+const Objeto3 = {...Objeto1, ...Objeto2};
+console.log(Objeto1);
+console.log(Objeto2);
+console.log(Objeto3); */
+/* Imprime:
+{id: 1, name: "Chris"}
+{lastname: "Chillogalli"}
+{id: 1, name: "Chris", lastname: "Chillogalli"} */
+
+/* ------------ Parámetros Rest & Operador Spread ----------- */
+
+/* -------------------- Arrow Functions ----------------------- */
+
+/* Definir funciones anónimas expresadas, */
+
+/* 1) Cuando es una sola sentencia es opcional las llaves 
+2) Es obligado el paréntesis */
+/* saludar = () => console.log('Hola');
+saludar(); */
+/* Imprime: 
+Hola  */
+
+/* (nombre) sería el parámetro, es opcional enviarlo
+entre paréntesis solo cuando es un parámetro */
+/* saludar = nombre => console.log('Hola', nombre);
+saludar('Chris'); */
+/* Imprime: 
+Hola Chris */
+
+/* Ejemplo de uso normal con funciones */
+/* sumar = function(a,b) {
+    return a+b;
+}
+result = sumar(4,5);
+console.log(result); */
+/* Imprime: 
+9 */
+
+/* Ejemplo de uso normal con funciones usando 
+las arrow.
+Es obligado usar paréntesis para los parámetros.
+La flecha indica el return. */
+/* sumar = (a,b) => a+b;
+result = sumar(9,5);
+console.log(result); */
+/* Imprime: 
+14 */
+
+/* Usando (.forEach) para iterar el array, se puede evadir 
+"function" por "=>" */
+/* Ejemplo con "function" */
+/* const numeros = [1,5,8,7];
+numeros.forEach(function (element) {
+    console.log(element)
+}) */
+/* Imprime: 
+1
+5
+8
+7 */
+
+/* Evadiendo "function" por "=>" */
+/* const numeros = [1,5,8,7];
+numeros.forEach((element) => {
+    console.log(element)
+}) */
+/* Imprime: 
+1
+5
+8
+7 */
+
+/* Contexto de objeto con una función normal */
+/* const perro = {
+    id: 9,
+    name: 'Dans',
+    ladrar() {
+        console.log(this);
+    }
+}
+perro.ladrar(); */
+/* Imprime: 
+{id: 9, name: "Dans", ladrar: ƒ} */
+
+/* Contexto de Window con una función con arrow */
+/* const perro = {
+    id: 9,
+    name: 'Dans',
+    ladrar:() => {
+        console.log(this);
+    }
+}
+perro.ladrar(); */
+/* Imprime: 
+Window {parent: Window, opener: null, 
+top: Window, length: 0, frames: Window, …} */
+
+/* -------------------- Arrow Functions ----------------------- */
+
+/* ----------------------- Prototipos ----------------------- */
+/* P.O.O: Programación orientada a objetos
+1) Clases: Modelo a seguir
+2) Objetos: Una instancia de una clase
+    Atributos: Característica del objeto, variables
+    Metodos: Acciones que un objeto realiza, funciones */
+
+/* Funcion constructora=Javascript lo toma como clase, 
+poder ocupar variables y métodos sin tener que copiar y 
+pegar código para cada objeto */
+/* function Animal (nombre, genero) {
+    // Atributos
+    this.nombre = nombre;
+    this.genero = genero;
+    // Método
+    this.sonar = function () {
+        console.log('Hacer sonido del animal');
+    }
+}
+// "new" crea una Instancia del tipo que se le asigne
+const snoop = new Animal('Mal', 'Macho');
+const snoopy = new Animal('Dana', 'Hembra');
+console.log(snoop);
+console.log(snoopy); */
+/* Imprime:
+Animal {nombre: "Mal", genero: "Macho", sonar: ƒ}
+Animal {nombre: "Dana", genero: "Hembra", sonar: ƒ} */
+
+/* Funcion constructora, cada que genero una instancia
+lleva el método "this.sonar" y "this.saludar", lo cual 
+ocuparía memoria, por lo que se puede dejarlo fuera */
+/* function Animal (nombre, genero) {
+    // Atributos
+    this.nombre = nombre;
+    this.genero = genero;
+}
+// Métodos
+Animal.prototype.sonar = function () {
+    console.log('Hacer sonido del animal');
+}
+Animal.prototype.saludar = function () {
+    console.log('Hola, me llamo', this.nombre);
+}
+// "new" crea una Instancia del tipo que se le asigne
+const snoop = new Animal('Mal', 'Macho');
+const snoopy = new Animal('Dana', 'Hembra');
+console.log(snoop);
+console.log(snoopy);
+snoopy.sonar();
+snoopy.saludar(); */
+/* Imprime:
+Animal {nombre: "Mal", genero: "Macho"}
+Animal {nombre: "Dana", genero: "Hembra"}
+Hacer sonido del animal
+Hola, me llamo Dana */
+
+/* ----------------------- Prototipos ----------------------- */
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------- Ejercicios ------------------- */
+
+
+
+/* https://informaticapc.com/tutorial-javascript/math.php#:~:text=sqrt()%3A%20devuelve%20la%20ra%C3%ADz%20cuadrada%20del%20n%C3%BAmero%20pasado%20como%20par%C3%A1metro. */
+/* console.log( Math.max(43,5,7)); */
+
+
+
+/* Pares e impares */
+
+/* const valor = prompt('Ingrese:')
+const numeros = [valor];
+
+for(let i = 0; i < numeros.length; i++) {
+    if (numeros[i]%2 === 1) {
+        console.log(numeros[i], 'Impares')
+    } else {
+        console.log(numeros[i], 'Pares')
+    }
+} */
+
+
+
+
+/* Pares e impares */
+/* const numeros = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+for(let i = 0; i < numeros.length; i++) {
+    if (numeros[i]%2 === 1) {
+        console.log(numeros[i], 'Impares')
+    } else {
+        console.log(numeros[i], 'Pares')
+    }
+}
+ */
+
+
+
+/* console.log("Números pares entre el 0 y 20");
+    let numPares;
+    for (let numPares = 0; numPares <= 20; numPares++) {
+        if (numPares % 2 == 0) {
+            console.log(numPares);
+        }
+    } */
+
+/* console.log("Números de 5 en 5 hasta 20");
+    let num;
+    for (let num = 0; num <= 20; num+=5) {
+        console.log(num);
+    } */
+
+/* console.log("Escribir Par o Impar");
+    let contador;
+    for (let contador = 1; contador <= 10; contador++) {
+        if (contador % 2 == 0) {
+            console.log(contador + " es PAR");
+        }else{
+            console.log(contador + " es IMPAR");
+        }
+    } */
