@@ -1275,3 +1275,4 @@ Console was cleared */
 
 /* ------------------ Objeto console ------------------------- */
 
+// hola
