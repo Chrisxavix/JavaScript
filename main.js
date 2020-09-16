@@ -1221,7 +1221,6 @@ class Perro extends Animal {
         return this.raza;
         
     }
-
     set setraza(raza){
         this.raza = raza;
     }
@@ -1271,8 +1270,39 @@ Esto es un registro de lo que pasa */
 /* console.clear(); */
 /* Imprime:
 Console was cleared */
-
-
 /* ------------------ Objeto console ------------------------- */
 
-// hola
+/* --------------------- Objeto Date --------------------- */
+
+/* console.log(Date()); */
+/* Imprime:
+Tue Sep 15 2020 21:38:57 
+GMT-0500 (hora de Ecuador) */
+
+let fecha = new Date();
+console.log(fecha);
+console.log(fecha.getDate());
+console.log(fecha.getDay());
+console.log(fecha.getMonth());
+console.log(fecha.getFullYear());
+/* Imprime1:
+Tue Sep 15 2020 21:42:21 
+GMT-0500 (hora de Ecuador)
+Imprime2: Es el día del mes
+15 
+Imprime3: Dias de la semana
+de Domingo a Sábado:
+D L M MI J V S: 0, 1, 2, 3, 4, 5, 6
+2 
+Imprime4: mismo que los días de la semana
+8 
+Imprime: 5
+2020 */
+
+
+
+
+
+
+
+/* --------------------- Objeto Date --------------------- */
