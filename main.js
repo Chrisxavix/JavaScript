@@ -1279,12 +1279,12 @@ Console was cleared */
 Tue Sep 15 2020 21:38:57 
 GMT-0500 (hora de Ecuador) */
 
-let fecha = new Date();
+/* let fecha = new Date();
 console.log(fecha);
 console.log(fecha.getDate());
 console.log(fecha.getDay());
 console.log(fecha.getMonth());
-console.log(fecha.getFullYear());
+console.log(fecha.getFullYear()); */
 /* Imprime1:
 Tue Sep 15 2020 21:42:21 
 GMT-0500 (hora de Ecuador)
@@ -1298,11 +1298,127 @@ Imprime4: mismo que los días de la semana
 8 
 Imprime: 5
 2020 */
-
-
-
-
-
-
-
 /* --------------------- Objeto Date --------------------- */
+
+/* --------------------- Objeto Math --------------------- */
+
+/* El menor valor */
+/* console.log(Math.min(1,5,7)); */
+/* Imprime:
+1 */
+
+/* El máximo valor */
+/* console.log(Math.max(1,5,7)); */
+/* Imprime:
+7 */
+
+/* El valor redondeado */
+/* console.log(Math.round(7.5)); */
+/* Imprime:
+8 */
+
+/* Raíz cuadrada */
+/* console.log(Math.sqrt(81)); */
+/* Imprime: 
+81 */
+
+/* Potencia */
+/* console.log(Math.pow(2,3)); */
+/* Imprime: 
+8 */
+
+/* El ramdom, entre 0 a 1 */
+/* console.log(Math.random()); */
+/* Imprime: 
+0.4593201250271899 */
+
+/* El ramdom, del 0 al 10 */
+/* console.log(Math.random() * 10); */
+/* Imprime: 
+2.5817324454330404 */
+
+/* El ramdom, dentro de un round se quita la parte decimal,
+además, es del 0 al 10 */
+/* console.log(Math.round(Math.random() * 10)); */
+/* Imprime: 
+87 */
+/* --------------------- Objeto Math --------------------- */
+
+/* ----------------- Operador Cortocircuito -------------- */
+
+/* Cortocircuito con OR(||) y AND(&&) */
+
+/* En caso de que el llamado de la función no esté
+con parámetros (un nombre), mandar (desco).
+Cortocircuito en (name = name || "desco";) */
+/* function saludar(name) {
+    name = name || "desco";
+    console.log('Hola ', name);
+}
+saludar('Dani');
+saludar(); */
+/* Imprime1:
+Dani
+Imprime2:
+desco */
+
+/* En caso de que el llamado de la función no esté
+con parámetros (un nombre), mandar (desco) */
+/* function saludar(name = 'descoss') {
+    console.log('Hola ', name);
+}
+saludar('Dani');
+saludar(); */
+/* Imprime1:
+Dani
+Imprime2:
+descoss */
+
+/* console.log(true || 'Derecha');
+console.log({} || 'Derecha');
+console.log(false || 'Derecha'); */
+/* Imprime1:
+true
+Imprime2:
+{}
+Imprime:
+Derecha */
+
+/* console.log(false && 'Izquierda');
+console.log(true && 'Izquierda'); */
+/* Imprime1:
+false
+Imprime2:
+Izquierda */
+/* ----------------- Operador Cortocircuito -------------- */
+
+/* ----------------- Alert, confirm, prompt  -------------- */
+
+/* alert('hola'); */
+/* Imprime: con botón de aceptar
+Hola */
+
+/* confirm('hola'); */
+/* Imprime: con dos botnes, aceptar y cancelar */
+
+/* prompt('Ingrese un dato'); */
+/* Imprime: ventana de ingreso
+Ingrese un dato */
+
+/* El confirm recoge el valor de (aceptar o cancelar) */
+let confir =confirm('hola');
+console.log(confir);
+/* Imprime: con dos botnes, aceptar y cancelar */
+
+let aviso = prompt('Ingrese un dato');
+console.log(aviso);
+/* Imprime: ventana de ingreso
+Ingrese un dato */
+
+
+/* ----------------- Alert, confirm, prompt  -------------- */
+
+
+
+
+
