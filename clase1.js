@@ -148,7 +148,7 @@ document.write("Hola " + nombre); */
 Hola maggot */
 /* --------------------- Strings ------------------------- */
 
-/* --------------------- Números ------------------------- */
+/* 3) ------------------ Números ------------------------- */
 /* Suma de dos valores con interpolación */
 /* const a=5;
 const b=10;
@@ -189,7 +189,7 @@ document.write("Resultado: ", result); */
 Resultado 10 */
 /* --------------------- Números ------------------------- */
 
-/* ------------------- Arrays - Arreglos ----------------- */
+/* 192 --------------- Arrays - Arreglos ----------------- */
 
 /* Declaración de un arreglo vacío 1 */
 /* const e = new Array();
@@ -317,7 +317,7 @@ colores.forEach(function (element, ) {
 27 */
 /* ------------------- Arrays - Arreglos ----------------- */
 
-/* ---------------------- Objetos ------------------------ */
+/* 5) ------------------- Objetos ------------------------ */
 
 /* utilizar const para los objetos */
 
@@ -436,7 +436,7 @@ Impime2:
 Imprime3: true */
 /* ---------------------- Objetos ------------------------ */
 
-/* --------------------- Operadores ---------------------- */
+/* 6) ------------------ Operadores ---------------------- */
 
 /* Dos iguales (==) se comparan los valores
 Tres iguales (===) se comparan los tipos de datos y el valor */
