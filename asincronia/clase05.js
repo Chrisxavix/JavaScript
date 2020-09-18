@@ -4,7 +4,7 @@
 2) Asincronía y Event Loop: Linea 
 3) Callbacks: Línea 
 4) Promesas: Línea 
-5) Expresiones regulares: Línea 
+5) Async Await: Línea 
 */
 
 /* 1) ---------------- Temporizadores ------------------ */
@@ -127,14 +127,82 @@ Callback 1, 1 */
 
 /* 4) ------------------ Promesas ---------------------- */
 
-
-
-
-
-
-
-
-
-
+/* function cuadradoPomise(value) {
+    if (typeof value !== 'number' ) {
+        return Promise.reject(`Error, ${value} no es un número`);
+    }
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve({
+                value,
+                result: value*value
+            });
+        }, Math.random()*1000)
+    })  
+}
+cuadradoPomise(0)
+.then(obj => {
+    console.log('Inicia Promise');
+    console.log(`Promise: ${obj.value}, ${obj.result}`);
+    return cuadradoPomise(1);
+})
+.then(obj => {
+    console.log(`Promise: ${obj.value}, ${obj.result}`);
+    return cuadradoPomise(2);
+})
+.then(obj => {
+    console.log(`Promise: ${obj.value}, ${obj.result}`);
+    return cuadradoPomise('3');
+})
+.then(obj => {
+    console.log(`Promise: ${obj.value}, ${obj.result}`);
+    return cuadradoPomise(4);
+})
+.then(obj => {
+    console.log(`Promise: ${obj.value}, ${obj.result}`);
+    return cuadradoPomise(5);
+})
+.then(obj => {
+    console.log(`Promise: ${obj.value}, ${obj.result}`);
+    console.log('Fin de la promesa');
+})
+.catch(error => console.log(error)); */
+/* Imprime: 
+Inicia Promise
+Promise: 0, 0
+Promise: 1, 1
+Promise: 2, 4
+Error, 3 no es un número */
 /* 4) ------------------ Promesas ---------------------- */
+
+/* 5) ----------------- Async Await -------------------- */
+
+/* Esperan a que algo se cumpla para poder ejecutar 
+el proceso */
+
+function cuadradoPomise(value) {
+    if (typeof value !== 'number' ) {
+        return Promise.reject(`Error, ${value} no es un número`);
+    }
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve({
+                value,
+                result: value*value
+            });
+        }, Math.random()*1000)
+    })  
+}
+
+async function funcAsicrona() {
+    try{
+        console.log('Inicio Async function');
+    } catch{
+
+    }
+}
+
+/* 5) ----------------- Async Await -------------------- */
+
+
 
