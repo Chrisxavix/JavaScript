@@ -1,4 +1,4 @@
-/* https://github.com/nicksiuxs/CursoJavaScript/tree/master/Ejercicios */
+/* -------- Ejercicios JavaScript ---------- */
 
 /* 9) Programa una función que obtenga un numero aleatorio 
 entre 501 y 600.
