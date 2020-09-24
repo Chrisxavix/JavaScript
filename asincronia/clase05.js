@@ -1,10 +1,10 @@
 /* --------------------- CURSO JAVASCRIPT ------------------- */
 /* 
-1) Temporizadores: Línea 
-2) Asincronía y Event Loop: Linea 
-3) Callbacks: Línea 
-4) Promesas: Línea 
-5) Async Await: Línea 
+1) Temporizadores: Línea 10
+2) Asincronía y Event Loop: Linea 51
+3) Callbacks: Línea 104
+4) Promesas: Línea 128
+5) Async Await: Línea 181
 */
 
 /* 1) ---------------- Temporizadores ------------------ */
@@ -127,7 +127,10 @@ Callback 1, 1 */
 
 /* 4) ------------------ Promesas ---------------------- */
 
-/* function cuadradoPomise(value) {
+/* Promise.reject, parte que resuelve y rechaza la promesa 
+El resolve(line138) es como la parte positiva en return 
+El reject es el retorno negativo */
+/*function cuadradoPomise(value) {
     if (typeof value !== 'number' ) {
         return Promise.reject(`Error, ${value} no es un número`);
     }
@@ -178,9 +181,15 @@ Error, 3 no es un número */
 /* 5) ----------------- Async Await -------------------- */
 
 /* Esperan a que algo se cumpla para poder ejecutar 
-el proceso */
+el proceso.
+Las funciones asíncronas trabajan en conjunto con las
+promesas. 
+Función asíncrona delarada, no arrow function. 
+La Función asíncrona funciona con la palabra reservada
+await porque espera el resultado antes de pasar a las
+demás líneas de ejecución (209)*/
 
-function cuadradoPomise(value) {
+/* function cuadradoPomise(value) {
     if (typeof value !== 'number' ) {
         return Promise.reject(`Error, ${value} no es un número`);
     }
@@ -193,16 +202,54 @@ function cuadradoPomise(value) {
         }, Math.random()*1000)
     })  
 }
-
 async function funcAsicrona() {
     try{
         console.log('Inicio Async function');
-    } catch{
+        let obj = await cuadradoPomise(0);
+        console.log(`async function: ${obj.value}, ${obj.result}`)
 
+        obj = await cuadradoPomise(2);
+        console.log(`async function: ${obj.value}, ${obj.result}`)
+    } catch(err) {
+        
     }
 }
+funcAsicrona(); */
+/* Imprime: 
+Inicio Async function
+async function: 0, 0
+async function: 2, 4 */
 
+/* Control de errores con el catch cuando no se pasa un
+número */
+/* function cuadradoPomise(value) {
+    if (typeof value !== 'number' ) {
+        return Promise.reject(`Error, ${value} no es un número`);
+    }
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve({
+                value,
+                result: value*value
+            });
+        }, Math.random()*1000)
+    })  
+}
+async function funcAsicrona() {
+    try{
+        console.log('Inicio Async function');
+        let obj = await cuadradoPomise(0);
+        console.log(`async function: ${obj.value}, ${obj.result}`)
+
+        obj = await cuadradoPomise('2');
+        console.log(`async function: ${obj.value}, ${obj.result}`)
+    } catch(err) {
+        console.error(err)
+    }
+}
+funcAsicrona(); */
+/* Imprime:
+Inicio Async function
+async function: 0, 0
+Error, 2 no es un número */
 /* 5) ----------------- Async Await -------------------- */
-
-
-
