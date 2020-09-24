@@ -47,7 +47,7 @@ entrada(); */
 /* 13) ------------------------------------------------- */
 
 /* 14) ------------------------------------------------- */
-const entrada = () => {
+/* const entrada = () => {
     let grados = parseInt(prompt('Ingrese los grados'));
     let unidad = prompt('Ingrese la unidad');
     if (grados<0) return alert('Solo números mayores a 0.');
@@ -55,19 +55,14 @@ const entrada = () => {
     if (!unidad) return alert('No ingresó la unidad.');
     if (unidad.length!==1) return alert('Solo ingrese una valor en la unidad.');
     if (unidad !== 'C' && unidad !== 'F') return alert('Se espera una (F) o (C).');
-   /*  if (unidad!=='F') return alert('No se espera ese valor.'); */
+    if (unidad ==='C') {
+        return alert(`${grados}° = ${Math.round(grados*(9/5)) + 32}F`)
+    } else {
+        return alert(`${grados}F = ${Math.round((grados-32)*(5/9))}°`)
+    }
 
-   
 }
-entrada();
-
-
-
-
-
-
-
-
+entrada(); */
 /* 14) ------------------------------------------------- */
 
 /* 14.1 ------------------------------------------------ */
