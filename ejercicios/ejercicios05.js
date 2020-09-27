@@ -6,22 +6,15 @@ devolverá 4 base 10.
 
 16) Programa una función que devuelva el monto final
 después de aplicar un descuento a una cantidad dada, 
-pe. miFuncion(1000, 20) devolverá 800.
-
-17) Programa una función que dada una fecha válida 
-determine cuantos años han pasado hasta el día de hoy,
-pe. miFuncion(new Date(1984,4,23)) devolverá 35 años
-(en 2020). */
+pe. miFuncion(1000, 20) devolverá 800. */
 
 /* ----------------- DESARROLLO -------------------- */
 
 /* 15) ------------------------------------------------- */
 /* const entrada = () => {
     let numero = parseInt( prompt('Ingrese el valor'));
-    let base = parseInt(prompt('Ingrese la base'));
+    let base = 2;
     if (numero<=0) return alert('Solo números mayores a 1.');
-    if (base<1) return alert('Solo números mayores a 1.');
-    if (!base) return alert('No ingresó la base.');
     if (base===2){
         return alert(`${parseInt( numero)} base ${parseInt( base)} = ${parseInt(numero,base)} base`);
     }
@@ -30,7 +23,25 @@ entrada(); */
 /* 15) ------------------------------------------------- */
 
 /* 16) ------------------------------------------------- */
+/* const entrada = () => {
+    let valor = parseInt( prompt('Ingrese el valor'));
+    if (valor<=0) return alert('No es un valor a descontar.');
+    if (!valor) return alert('No ingresó los valores o no es un valor.');
+    let descuento = valor * 0.20;
+    return alert(`El descuento del 20% de $${valor}, es de $${descuento}, por lo que debe pagar $${valor-descuento}.`)
+}
+entrada();  */
+
+/* const entrada = () => {
+    let valor = parseInt(prompt('Ingrese el valor'));
+    let descuento = parseInt(prompt('Ingrese el descuento'));
+    if (valor<=0) return alert('No es un valor a descontar.');
+    if (descuento<=0) return alert('No es un valor de descuento.');
+    if (!valor) return alert('No ingresó los valores o no es un valor.');
+    if (!descuento) return alert('No ingresó los valores o no es un valor.');
+    return alert(`El descuento del 20% de $${valor}, es de $${(valor*descuento)/100}, por lo que debe pagar $${valor-(valor*descuento)/100}.`)
+}
+entrada();  */
+
 /* 16) ------------------------------------------------- */
 
-/* 17) ------------------------------------------------- */
-/* 17) ------------------------------------------------- */
