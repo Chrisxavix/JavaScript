@@ -1,11 +1,12 @@
 /* --------------------- CURSO JAVASCRIPT ------------------- */
 /* 
-1) Symbol: Línea 11
-2) Set: Linea 34
-3) Maps: Línea 50
-4) Iterables & Iterators: Línea 62
-5) Objetos dinámicos: Línea 75
-6) This: Línea 88
+1) Symbol: Línea 12
+2) Set: Linea 35
+3) Maps: Línea 51
+4) Iterables & Iterators: Línea 63
+5) Objetos dinámicos: Línea 76
+6) This: Línea 89
+7) JSON: Línea 144
 */
 
 /* 1) ------------------ Symbol -------------------- */
@@ -139,3 +140,23 @@ obj3.imprimir(); */
 /* Imprimir:
 Global */
 /* 6) ------------------- This ----------------------- */
+
+/* 7) -------------------- Json ---------------------- */
+/* JavaScript Object Notation o Notación de Objetos de 
+JavaScript.
+Formato para intercambio de datos. */
+
+/* (Parse) analiza una cadena de texto con formato válido 
+de JSON y lo convierte a un objeto JavaScript */
+/* console.log(JSON.parse("{}"));
+console.log(JSON.parse("[1,2,3]"));
+console.log(JSON.parse("true")); */
+
+/* (Stringify)un objeto lo convierte a cadena de texto */
+/* console.log(JSON.stringify({}));
+console.log(JSON.stringify([1,2,3]));
+console.log(JSON.stringify(true)); */
+
+/* convierte a notación JSON */
+/* console.log(JSON.stringify({x:2, y:3})); */
+/* 7) -------------------- Json ---------------------- */
