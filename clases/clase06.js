@@ -1,11 +1,11 @@
 /* --------------------- CURSO JAVASCRIPT ------------------- */
 /* 
-1) Symbol: Línea 
-2) Set: Linea 
-3) Maps: Línea 
-4) Iterables & Iterators: Línea 
-5) Objetos dinámicos: Línea
-6) This
+1) Symbol: Línea 11
+2) Set: Linea 34
+3) Maps: Línea 50
+4) Iterables & Iterators: Línea 62
+5) Objetos dinámicos: Línea 75
+6) This: Línea 88
 */
 
 /* 1) ------------------ Symbol -------------------- */
@@ -139,21 +139,3 @@ obj3.imprimir(); */
 /* Imprimir:
 Global */
 /* 6) ------------------- This ----------------------- */
-
-/* 7) -------------- Call, apply, bin----------------- */
-
-
-/* 7) -------------- Call, apply, bin----------------- */
-
-function Persona(primerNombre) {
-    this.primerNombre = primerNombre;
-    alert('Una instancia de Persona');
-  }
-  
-  var persona1 = new Persona("Alicia");
-  var persona2 = new Persona("Sebastian");
-  
-  // Muestra el primer nombre de persona1
-  alert ('persona1 es ' + persona1.primerNombre); // muestra "persona1 es Alicia"
-  alert ('persona2 es ' + persona2.primerNombre); // muestra "persona2 es Sebastian"
-  
