@@ -105,8 +105,25 @@ const resultFilter = arrayFilter.filter(city => {
 console.log('/******** Método Filter *********/');
 console.log(resultFilter);
 
+/* Método Find */
+/* Devuelve el elemento que cumpla una condición dada, cuando lo encuentra deja de recorrer el array, mientras que con filter recorre todo */
+const arrayFind = ['Madrid', 'Cuenca', 'Loja', 'Quito']
+/* El indice se lo puede obtener, solo hasta donde cumpla la condición */
+console.log('/******** Método Find *********/');
+const resultFind = arrayFind.find((ele, index) => {
+    console.log(index, 'index');
+    return ele === 'Loja'
+})
+console.log(resultFind);
 
-/* const arraySliceString = 'www.texto.com?id=3';
-const resultSliceString = arraySliceString.split('?')
-console.log(resultSliceString); */
+/* Método Map */
+/* Crea un  nuevo array */
+/* El array original no se altera */
+const arrayMap = [3, 4, 5]
+const resultMap = arrayMap.map(current => {
+    return current + 5;
+})
+console.log('/******** Método Map *********/');
+console.log(resultMap);
+
 
