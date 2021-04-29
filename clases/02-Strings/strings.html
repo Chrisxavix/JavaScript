@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body style="height: 100%;">
+    <h1 class="itemTitle">Strings</h1>
+    <!-- ---------- concatenar con la coma ---------- -->
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">Concatenar con la coma</h3>
+        <h4 class="itemInfo__subtitle">
+            Al poner ',' se concatena las cadenas con variables
+            <br>Existe un expaciado extra en la impresión.
+        </h4>
+        <h4 class="itemInfo__subtitle">Usando:</h4>
+        <h5 class="itemInfo__example">
+            let nombre = "Chris"
+            <br>console.log('Hola ',nombre,'. Su nombre tiene: ',nombre.length,' letras.');
+        </h5>
+    </div>
+
+    <div class="content-img">
+        <img src="assets/concatenar0.jpg" alt="">
+    </div>
+    <!-- ---------- concatenar con la coma ---------- -->
+
+    <!-- ---------- concatenar con el signo + ---------- -->
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">Concatenar con el signo +</h3>
+        <h4 class="itemInfo__subtitle">
+            Al poner '+' se concatena las cadenas con variables
+            <br>No existe un expaciado extra en la impresión.
+        </h4>
+        <h4 class="itemInfo__subtitle">Usando:</h4>
+        <h5 class="itemInfo__example">
+            let nombre = "Chris"
+            <br>console.log('Hola '+nombre+'. Su nombre tiene: '+nombre.length+' letras.');
+        </h5>
+    </div>
+
+    <div class="content-img">
+        <img src="assets/concatenar1.jpg" alt="">
+    </div>
+    <!-- ---------- concatenar con el signo + ---------- -->
+
+    <!-- ---------- concatenar con el signo ` ---------- -->
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">Concatenar con el signo `</h3>
+        <h4 class="itemInfo__subtitle">
+            Al poner '`' se concatena las cadenas con variables
+            Es lo recomendado a usar
+        </h4>
+        <h4 class="itemInfo__subtitle">Usando:</h4>
+        <h5 class="itemInfo__example">
+            let nombre = "Chris"
+            <br>console.log(`Hola ${nombre}. Su nombre tiene: ${nombre.length} letras.`);
+        </h5>
+    </div>
+
+    <div class="content-img">
+        <img src="assets/concatenar2.jpg" alt="">
+    </div>
+    <!-- ---------- concatenar con el signo ` ---------- -->
+
+
+    <script src="strings.js"></script>
+</body>
+</html>
