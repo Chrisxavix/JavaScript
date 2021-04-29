@@ -4,123 +4,81 @@
 Al poner ',' se concatena las cadenas con variables
 Existe un espaciado extra
 */
-/* let nombre = "Chris"
-console.log('Hola ',nombre,'. Su nombre tiene: ',nombre.length,' letras.'); */
+console.log('--------- 1 ---------');
+const nombre1 = "Chris";
+console.log('Hola ',nombre1,'. Su nombre tiene: ',nombre1.length,' letras.');
 
 /* 
 Al poner '+' se concatena las cadenas con variables
 No existe un espaciado extra
 */
-/* let nombre = "Chris"
-console.log('Hola '+nombre+'. Su nombre tiene: '+nombre.length+' letras.'); */
+console.log('--------- 2 ---------');
+const nombre2 = "Chris";
+console.log('Hola '+nombre2+'. Su nombre tiene: '+nombre2.length+' letras.');
 
 /* 
 Al poner '`' se concatena las cadenas con variables
 Es lo recomendado a usar
 */
-/* let nombre = "Chris"
-console.log(`Hola ${nombre}. Su nombre tiene: ${nombre.length} letras.`); */
+console.log('--------- 3 ---------');
+const nombre3 = "Chris";
+console.log(`Hola ${nombre3}. Su nombre tiene: ${nombre3.length} letras.`);
 
+/* Test  -------------------------------------------------------------------------------------------------*/
 
+/* Convertir un texto a minúscula */
+console.log('--------- 4 ---------');
+const texto1 = 'MARIA';
+console.log(texto1.toLowerCase());
 
+/* Convertir un texto a mayúscula */
+console.log('--------- 5 ---------');
+const texto2 = 'carlos';
+console.log(texto2.toUpperCase());
 
+/* Includes verifica que exista el string en la cadena y responde con true o false */
+console.log('--------- 6 ---------');
+const texto3 = 'lorem tres cuatro cinco';
+console.log(texto3.includes('cinco'));
 
+/* Elimina los espacios de inicio y fin con trim */
+console.log('--------- 7 ---------');
+const texto4 = '  lorem tres cuatro cinco     ';
+console.log(texto4);
+console.log(texto4.trim());
 
+/* Separa las cadenas a partir un espacio y lo visualiza en un array con Split */
+console.log('--------- 8 ---------');
+const texto5 = 'lorem tres cuatro cinco';
+console.log(texto5.split(' '));
 
+/* Imprime el primer string despues del "." a partir de la posición */
+console.log('--------- 9 ---------');
+const texto6 = "Dani Fhn. Filth. Test. Juan"; 
+const splitTexto6 = texto6.split('.')[2];
+console.log(splitTexto6);
 
+/* Separa la cadena después de un punto e imprime separadas en un array con Split */
+console.log('--------- 10 ---------');
+const texto7 = "Dani.Chris"; 
+const splitTexto7 = texto7.split('.');
+console.log(splitTexto7);
 
+/* Imprime la primera letra de la cadena con Substring */
+console.log('--------- 11 ---------');
+const texto8 = "dani Fhn Filth asd, asddsf"; 
+const splitTexto8 = texto8.substring(0, 1);
+console.log(splitTexto8);
 
+/* Imprime la primera letra de la cadena y lo convierte a mayúscula */
+console.log('--------- 12 ---------');
+const texto9 = "dani Fhn Filth asd, asddsf"; 
+const splitTexto9 = texto9.substring(0, 1).toUpperCase();
+console.log(splitTexto9);
 
-/* Ingresa mayúsculas y todo lo pone en minúsculas 
-con el método toLowerCase */ 
-/* let name = prompt("Escriba su nombre");
-alert('Hola '+ name.toLowerCase()); */
-/* Ingresa: DANI
-Imprime: dani */
-
-/* Ingresa minúsculas y todo lo pone en mayúsculas con
-el método toUpperCase */ 
-/* let name = prompt("Escriba su nombre");
-alert('Hola '+ name.toUpperCase()); */
-/* Ingresa: dani
-Imprime: DANI */
-
-/* El includes verifica que exista el valor */
-/* let res = 'lorem tres cuatro cinco'
-alert(res.includes('cinco')); */
-/* Imprime:
-true */
-
-/* trim, elimina los espacios de inicio y fin */
-/* let res = ' lorem tres cuatro cinco '
-console.log(res);
-console.log(res.trim()); */
-/* Imprime1:  
-    lorem tres cuatro cinco
-Imprime2:
-lorem tres cuatro cinco */
-
-/* split. separa las cadenas a partir un espacio y
-lo visualiza en un array */
-/* let res = 'lorem tres cuatro cinco'
-console.log(res.split(' ')); */
-/* Imprime: 
-["lorem", "tres", "cuatro", "cinco"] /*
-
-/* Impime la primera cadena despues del "." */
-/* var str = "Dani Fhn. Filth"; 
-var splitted = str.split('.')[1];
-console.log(splitted); */
-/* Imprime: 
-Filth */
-
-/* Separa la cadena después de un punto e imprime separadas 
-en un array */
-/* var str = "Dani.Chris"; 
-var splitted = str.split('.');
-console.log(splitted); */
-/* Imprime: 
-["Dani", "Chris"] */
-
-/* Imprime la primera letra de la cadena y lo convierte a 
-mayúscula */
-/* let str = "dani Fhn Filth asd, asddsf"; 
-let splitted = str.substring(0, 1).toUpperCase()
-console.log(splitted); */
-/* Imprime: 
-D */
-
-/* Imprime las cuatro letras de la cadena y lo convierte a 
-mayúscula */
-/* let str = "dani Fhn Filth asd, asddsf"; 
-let splitted = str.substring(0, 4).toUpperCase()
-console.log(splitted);  */
-/* Imprime: 
-DANI */
-
-/* Elimina la primera letra de la cadena */
-/* let str = "Dani Fhn Filth asd, asddsf"; 
-let splitted = str.substring(1);
-console.log(splitted) ; */
-/* Imprime: 
-ani Fhn Filth asd, asddsf */
-
-/* Imprime la cadena desde el 0 al 8 */
-/* let str = "Dani Fhn Filth asd, asddsf"; 
-let splitted = str.substring(0,8);
-console.log(splitted); */
-/* Imprime: 
-Dani Fhn */
-
-/* Interpolación o concatecación */
-/* let nombre='Chris';
-let edad=25;
-console.log(`Hola ${nombre}, tienes ${edad} años.`); */
-
-/* Manda notificación de ingreso del nombre, (maggot) 
-está ingresado por defecto */
-/* const nombre = prompt("Escribe tu nombre", "maggot");
-document.write("Hola " + nombre); */
-/* Imprime: 
-Hola maggot */
+/* Elimina la primera letra de la cadena con Substring */
+console.log('--------- 13 ---------');
+const texto10 = "Dani Fhn Filth asd, asddsf"; 
+const splitTexto10 = texto10.substring(1);
+console.log(splitTexto10);
 /* --------------------- Strings ------------------------- */

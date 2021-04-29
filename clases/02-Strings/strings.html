@@ -10,16 +10,16 @@
 </head>
 <body style="height: 100%;">
     <h1 class="itemTitle">Strings</h1>
-    <!-- ---------- concatenar con la coma ---------- -->
+    <!-- ---------- Concatenar con la coma ---------- -->
     <div class="itemInfo">
-        <h3 class="itemInfo__title">Concatenar con la coma</h3>
+        <h3 class="itemInfo__title">1) Concatenar con la coma</h3>
         <h4 class="itemInfo__subtitle">
             Al poner ',' se concatena las cadenas con variables
             <br>Existe un expaciado extra en la impresión.
         </h4>
         <h4 class="itemInfo__subtitle">Usando:</h4>
         <h5 class="itemInfo__example">
-            let nombre = "Chris"
+            const nombre = "Chris";
             <br>console.log('Hola ',nombre,'. Su nombre tiene: ',nombre.length,' letras.');
         </h5>
     </div>
@@ -27,18 +27,18 @@
     <div class="content-img">
         <img src="assets/concatenar0.jpg" alt="">
     </div>
-    <!-- ---------- concatenar con la coma ---------- -->
+    <!-- ---------- Concatenar con la coma ---------- -->
 
-    <!-- ---------- concatenar con el signo + ---------- -->
+    <!-- ---------- Concatenar con el signo + ---------- -->
     <div class="itemInfo">
-        <h3 class="itemInfo__title">Concatenar con el signo +</h3>
+        <h3 class="itemInfo__title">2) Concatenar con el signo +</h3>
         <h4 class="itemInfo__subtitle">
             Al poner '+' se concatena las cadenas con variables
             <br>No existe un expaciado extra en la impresión.
         </h4>
         <h4 class="itemInfo__subtitle">Usando:</h4>
         <h5 class="itemInfo__example">
-            let nombre = "Chris"
+            const nombre = "Chris";
             <br>console.log('Hola '+nombre+'. Su nombre tiene: '+nombre.length+' letras.');
         </h5>
     </div>
@@ -46,18 +46,18 @@
     <div class="content-img">
         <img src="assets/concatenar1.jpg" alt="">
     </div>
-    <!-- ---------- concatenar con el signo + ---------- -->
+    <!-- ---------- Concatenar con el signo + ---------- -->
 
-    <!-- ---------- concatenar con el signo ` ---------- -->
+    <!-- ---------- Concatenar con el signo ` ---------- -->
     <div class="itemInfo">
-        <h3 class="itemInfo__title">Concatenar con el signo `</h3>
+        <h3 class="itemInfo__title">3) Concatenar con el signo `</h3>
         <h4 class="itemInfo__subtitle">
             Al poner '`' se concatena las cadenas con variables
             Es lo recomendado a usar
         </h4>
         <h4 class="itemInfo__subtitle">Usando:</h4>
         <h5 class="itemInfo__example">
-            let nombre = "Chris"
+            const nombre = "Chris"
             <br>console.log(`Hola ${nombre}. Su nombre tiene: ${nombre.length} letras.`);
         </h5>
     </div>
@@ -65,8 +65,163 @@
     <div class="content-img">
         <img src="assets/concatenar2.jpg" alt="">
     </div>
-    <!-- ---------- concatenar con el signo ` ---------- -->
+    <!-- ---------- Concatenar con el signo ` ---------- -->
 
+    <!-- ---------- Convertir un texto a minúscula ---------- -->
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">4) Convertir un texto a minúscula</h3>
+        <h4 class="itemInfo__subtitle">Usando:</h4>
+        <h5 class="itemInfo__example">
+            const texto1 = 'MARIA';
+            <br>console.log(texto1.toLowerCase());
+        </h5>
+    </div>
+
+    <!-- <div class="content-img">
+        <img src="assets/concatenar2.jpg" alt="">
+    </div> -->
+    <!-- ---------- Convertir un texto a minúscula ---------- -->
+
+    <!-- ---------- Convertir un texto a mayúscula ---------- -->
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">5) Convertir un texto a mayúscula</h3>
+        <h4 class="itemInfo__subtitle">Usando:</h4>
+        <h5 class="itemInfo__example">
+            const texto2 = 'carlos';
+            <br>console.log(texto2.toUpperCase());
+        </h5>
+    </div>
+
+    <!-- <div class="content-img">
+        <img src="assets/concatenar2.jpg" alt="">
+    </div> -->
+    <!-- ---------- Convertir un texto a mayúscula ---------- -->
+    
+    <!-- ---------- Verifica que exista el string en la cadena ---------- -->
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">6) Verifica que exista el string en la cadena</h3>
+        <h4 class="itemInfo__subtitle">Usando:</h4>
+        <h5 class="itemInfo__example">
+            const texto3 = 'lorem tres cuatro cinco';
+            <br>console.log(texto3.includes('cinco'));
+        </h5>
+    </div>
+
+    <!-- <div class="content-img">
+        <img src="assets/concatenar2.jpg" alt="">
+    </div> -->
+    <!-- ---------- Verifica que exista el string en la cadena ---------- -->
+
+    <!-- ---------- Elimina los espacios de inicio y fin ---------- -->
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">7) Elimina los espacios de inicio y fin con trim</h3>
+        <h4 class="itemInfo__subtitle">Usando:</h4>
+        <h5 class="itemInfo__example">
+            const texto4 = '  lorem tres cuatro cinco     ';
+            <br>console.log(texto4);
+            <br>console.log(texto4.trim());
+        </h5>
+    </div>
+
+    <!-- <div class="content-img">
+        <img src="assets/concatenar2.jpg" alt="">
+    </div> -->
+    <!-- ---------- Elimina los espacios de inicio y fin ---------- -->
+
+    <!-- ---------- Separa las cadenas ---------- -->
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">8) Separa las cadenas a partir un espacio y lo visualiza en un array con Split</h3>
+        <h4 class="itemInfo__subtitle">Usando:</h4>
+        <h5 class="itemInfo__example">
+            const texto5 = 'lorem tres cuatro cinco';
+            <br>console.log(texto5.split(' '));
+        </h5>
+    </div>
+
+    <!-- <div class="content-img">
+        <img src="assets/concatenar2.jpg" alt="">
+    </div> -->
+    <!-- ---------- Separa las cadenas ---------- -->
+
+    <!-- ---------- Imprime el primer string despues del "." a partir de la posición ---------- -->
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">9) Separa las cadenas a partir un espacio y lo visualiza en un array con Split</h3>
+        <h4 class="itemInfo__subtitle">Usando:</h4>
+        <h5 class="itemInfo__example">
+            const texto6 = "Dani Fhn. Filth. Test. Juan"; 
+            <br>const splitTexto6 = texto6.split('.')[2];
+            <br>console.log(splitTexto6);
+        </h5>
+    </div>
+
+    <!-- <div class="content-img">
+        <img src="assets/concatenar2.jpg" alt="">
+    </div> -->
+    <!-- ---------- Imprime el primer string despues del "." a partir de la posición ---------- -->
+
+    <!-- ---------- Separa la cadena después de un punto e imprime separadas en un array con Split ---------- -->
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">10) Separa las cadenas a partir un espacio y lo visualiza en un array con Split</h3>
+        <h4 class="itemInfo__subtitle">Usando:</h4>
+        <h5 class="itemInfo__example">
+            const texto7 = "Dani.Chris"; 
+            <br>const splitTexto7 = texto7.split('.');
+            <br>console.log(splitTexto7);
+        </h5>
+    </div>
+
+    <!-- <div class="content-img">
+        <img src="assets/concatenar2.jpg" alt="">
+    </div> -->
+    <!-- ---------- Separa la cadena después de un punto e imprime separadas en un array con Split ---------- -->
+
+    <!-- ---------- Imprime la primera letra de la cadena con Substring ---------- -->
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">11) Imprime la primera letra de la cadena con Substring</h3>
+        <h4 class="itemInfo__subtitle">Usando:</h4>
+        <h5 class="itemInfo__example">
+            const texto8 = "dani Fhn Filth asd, asddsf"; 
+            <br>const splitTexto8 = texto8.substring(0, 1);
+            <br>console.log(splitTexto8);
+        </h5>
+    </div>
+
+    <!-- <div class="content-img">
+        <img src="assets/concatenar2.jpg" alt="">
+    </div> -->
+    <!-- ---------- Imprime la primera letra de la cadena con Substring ---------- -->
+
+    <!-- ---------- Imprime la primera letra de la cadena y lo convierte a mayúscula ---------- -->
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">12) Imprime la primera letra de la cadena y lo convierte a mayúscula</h3>
+        <h4 class="itemInfo__subtitle">Usando:</h4>
+        <h5 class="itemInfo__example">
+            const texto9 = "dani Fhn Filth asd, asddsf"; 
+            <br>const splitTexto9 = texto9.substring(0, 1).toUpperCase();
+            <br>console.log(splitTexto9);
+        </h5>
+    </div>
+
+    <!-- <div class="content-img">
+        <img src="assets/concatenar2.jpg" alt="">
+    </div> -->
+    <!-- ---------- Imprime la primera letra de la cadena y lo convierte a mayúscula ---------- -->
+
+    <!-- ---------- Elimina la primera letra de la cadena con Substring ---------- -->
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">13) Imprime la primera letra de la cadena y lo convierte a mayúscula</h3>
+        <h4 class="itemInfo__subtitle">Usando:</h4>
+        <h5 class="itemInfo__example">
+            const texto10 = "Dani Fhn Filth asd, asddsf"; 
+            <br>const splitTexto10 = texto10.substring(1);
+            <br>console.log(splitTexto10);
+        </h5>
+    </div>
+
+    <!-- <div class="content-img">
+        <img src="assets/concatenar2.jpg" alt="">
+    </div> -->
+    <!-- ---------- Elimina la primera letra de la cadena con Substring ---------- -->
 
     <script src="strings.js"></script>
 </body>
