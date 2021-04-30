@@ -55,7 +55,7 @@ console.log(texto5.split(' '));
 /* Imprime el primer string despues del "." a partir de la posición */
 console.log('--------- 9 ---------');
 const texto6 = "Dani Fhn. Filth. Test. Juan"; 
-const splitTexto6 = texto6.split('.')[2];
+const splitTexto6 = texto6.split('.')[1];
 console.log(splitTexto6);
 
 /* Separa la cadena después de un punto e imprime separadas en un array con Split */
