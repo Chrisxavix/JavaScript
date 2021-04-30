@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body style="height: 100%;">
+    <h1 class="itemTitle">Arrays</h1>
+    <div class="main-containerv2">
+        <a class="linkv2" href="#ancla1">1.- Declaración de un arreglo vacío, opción 1</a>
+        <a class="linkv2" href="#ancla2">2.- Declaración de un arreglo vacío, opción 2</a>
+        <a class="linkv2" href="#ancla3">3.- Declaración de un arreglo vacío con límite de 3</a>
+        <a class="linkv2" href="#ancla4">4.- Array.isArray</a>
+        <a class="linkv2" href="#ancla5">5.- Declaración e impresión de un array</a>
+        <a class="linkv2" href="#ancla6">6.- Declaración e impresión de un array de arrays</a>
+        <a class="linkv2" href="#ancla7">7.- Declaración e impresión de una posición en el array</a>
+        <a class="linkv2" href="#ancla8">8.- Declaración e impresión de una posición dentro de un array del array</a>
+        <a class="linkv2" href="#ancla9">9.- Declarar un array con límite y lo llena de un valor</a>
+        <a class="linkv2" href="#ancla10">10.- La función forEach recorre el array por cada elemento</a>
+        <a class="linkv2" href="#ancla11">11.- A cada valor con el recorrido forEach se le multiplica por 3</a>
+        <p class="middle-parrafo">Métodos</p>
+        <a class="linkv2" href="#ancla12">12.- Método push</a>
+        <a class="linkv2" href="#ancla13">13.- Método pop</a>
+        <a class="linkv2" href="#ancla14">14.- Método shift</a>
+        <a class="linkv2" href="#ancla15">15.- Método slice</a>
+        <a class="linkv2" href="#ancla16">16.- Método unshift</a>
+        <a class="linkv2" href="#ancla17">17.- Método splice</a>
+        <a class="linkv2" href="#ancla18">18.- Método indexOf</a>
+        <a class="linkv2" href="#ancla19">19.- Método includes</a>
+        <a class="linkv2" href="#ancla20">20.- Método filter</a>
+        <a class="linkv2" href="#ancla21">21.- Método find</a>
+        <a class="linkv2" href="#ancla22">22.- Método map</a>
+    </div>
+
+    <!-- ---------- 1.- Declaración de un arreglo vacío, opción 1 ---------- -->
+    <section id="ancla1">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">1.- Declaración de un arreglo vacío, opción 1</h3>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                const arrayNew = new Array();
+                <br>console.log(arrayNew);
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/arrayvacio.jpg" alt="">
+        </div>
+    </section>
+    <!-- ---------- 1.- Declaración de un arreglo vacío, opción 1 ---------- -->
+
+    <!-- ---------- 2.- Declaración de un arreglo vacío, opción 2 ---------- -->
+    <section id="ancla2">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">2.- Declaración de un arreglo vacío, opción 2</h3>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                const arrayNewv1 = [];
+                <br>console.log(arrayNewv1);
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/arrayvacio.jpg" alt="">
+        </div>
+    </section>
+    <!-- ---------- 2.- Declaración de un arreglo vacío, opción 2 ---------- -->
+
+    <!-- ---------- 3.- Declaración de un arreglo vacío con límite de 3 ---------- -->
+    <section id="ancla3">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">3.- Declaración de un arreglo vacío con límite de 3</h3>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                const arrayNewv2 = Array(3)
+                <br>console.log(arrayNewv2);
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/03-vacio.jpg" alt="">
+        </div>
+    </section>
+    <!-- ---------- 3.- Declaración de un arreglo vacío con límite de 3 ---------- -->
+
+    <!-- ---------- 4.- Array.isArray ---------- -->
+    <section id="ancla4">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">4.- Array.isArray</h3>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                const arrayType = ['Madrid', 'Cuenca', 'Loja', 'Quito']
+                <br>console.log(Array.isArray(arrayType));
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/04-is-array.jpg" alt="">
+        </div>
+    </section>
+    <!-- ---------- 4.- Array.isArray ---------- -->
+
+    <!-- ---------- 5.- Declaración e impresión de un array ---------- -->
+    <section id="ancla5">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">5.- Declaración e impresión de un array</h3>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                const arrayDifferent = [1, 2, 9, 12];
+                <br>console.log(arrayDifferent);
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/05-imprimir-array.jpg" alt="">
+        </div>
+    </section>
+    <!-- ---------- 5.- Declaración e impresión de un array ---------- -->
+
+    <!-- ---------- 6.- Declaración e impresión de un array de arrays ---------- -->
+    <section id="ancla6">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">6.- Declaración e impresión de un array de arrays</h3>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                const arrayDifferentv1 = [1, true, [1, 2, 'tres'], 'Maggot', 10];
+                <br>console.log(arrayDifferentv1);
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/06-imprimir-array-arrays.jpg" alt="">
+        </div>
+    </section>
+    <!-- ---------- 6.- Declaración e impresión de un array de arrays ---------- -->
+
+    <!-- ---------- 7.- Declaración e impresión de una posición en el array ---------- -->
+    <section id="ancla7">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">7.- Declaración e impresión de una posición en el array</h3>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                const arrayPosicion = [1, true, [1, 2, 'tres'], 'Maggot', 10]
+                <br>console.log(arrayPosicion[1]);
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/07-imprimir-array.jpg" alt="">
+        </div>
+    </section>
+    <!-- ---------- 7.- Declaración e impresión de una posición en el array ---------- -->
+
+    <!-- ---------- 8.- Declaración e impresión de una posición dentro de un array del array ---------- -->
+    <section id="ancla8">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">8.- Declaración e impresión de una posición dentro de un array del array</h3>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                const arrayPosicionv1 = [1, true, [1, 2, 'tres'], 'Maggot', 10]
+                <br>console.log(arrayPosicionv1[2][1]);
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/08-array-of-arrays.jpg" alt="">
+        </div>
+    </section>
+    <!-- ---------- 8.- Declaración e impresión de una posición dentro de un array del array ---------- -->
+
+    <!-- ---------- 9.- Declarar un array con límite y lo llena de un valor ---------- -->
+    <section id="ancla9">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">9.- Declarar un array con límite y lo llena de un valor</h3>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                const arrayLimit = Array(3).fill(false);
+                <br>console.log(arrayLimit);
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/09-limite-llenar.jpg" alt="">
+        </div>
+    </section>
+    <!-- ---------- 9.- Declarar un array con límite y lo llena de un valor ---------- -->
+
+    <!-- ---------- 10.- La función forEach recorre el array por cada elemento ---------- -->
+    <section id="ancla10">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">10.- La función forEach recorre el array por cada elemento</h3>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                const coloresForEach = ['rojo', 'verde', 'amarillo'];
+                <br>coloresForEach.forEach(element => {
+                    <br>console.log(element);
+                <br>});
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/10-recorrer-elementos.jpg" alt="">
+        </div>
+    </section>
+    <!-- ---------- 10.- La función forEach recorre el array por cada elemento ---------- -->
+
+    <!-- ---------- 11.- A cada valor con el recorrido forEach se le multiplica por 3 ---------- -->
+    <section  id="ancla11">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">11.- A cada valor con el recorrido forEach se le multiplica por 3</h3>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                const valoresForEach = [2, 4, 9];
+                <br>valoresForEach.forEach(element => {
+                    <br>console.log(element * 3);
+                <br>});
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/11-recorrer-operacion.jpg" alt="">
+        </div>
+    </section>
+    <!-- ---------- 11.- A cada valor con el recorrido forEach se le multiplica por 3 ---------- -->
+
+
+
+
+
+    <!-- --------------- MÉTODOS --------------- -->
+
+
+
+
+
+    <!-- ---------- 12.- Método push ---------- -->
+    <section  id="ancla12">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">12.- Método push</h3>
+            <h4 class="itemInfo__subtitle">
+                Agrega valores a un array
+                <br>El array original se modifica
+            </h4>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                const coloresPush = ['rojo', 'verde', 'amarillo'];
+                <br>console.log(coloresPush, 'original');
+                <br>coloresPush.push('verde');
+                <br>console.log(coloresPush, 'modificado ');
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/12-push.jpg" alt="">
+        </div>
+    </section>
+    <!-- ---------- 12.- Método push ---------- -->
+
+    <!-- ---------- 13.- Método pop ---------- -->
+    <section  id="ancla13">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">13.- Método pop</h3>
+            <h4 class="itemInfo__subtitle">
+                Elimina el último valor en el array y devuelve el valor eliminado
+                <br>El array original se modifica
+            </h4>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                const coloresPop = ['rojo', 'verde', 'amarillo']
+                <br>console.log(coloresPop, 'original');
+                <br>const resultPop = coloresPop.pop('verde');
+                <br>console.log(resultPop, 'valor eliminado');
+                <br>console.log(coloresPop, 'modificado');
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/13-pop.jpg" alt="">
+        </div>
+    </section>
+    <!-- ---------- 13.- Método pop ---------- -->
+
+    <!-- ---------- 14.- Método shift ---------- -->
+    <section  id="ancla14">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">14.- Método shift</h3>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h4 class="itemInfo__subtitle">
+                Elimina el primer elemento del array y devuelve el elemento eliminado
+                <br>El array original se modifica
+            </h4>
+            <h5 class="itemInfo__example">
+                const arrayShift = ['Madrid', 'Cuenca', 'Loja', 'Quito'];
+                <br>console.log(arrayShift, 'original');
+                <br>const resultShift = arrayShift.shift();
+                <br>console.log(resultShift, 'valor eliminado');
+                <br>console.log(arrayShift, 'modificado');
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/14-shift.jpg" alt="">
+        </div>
+    </section>
+    <!-- ---------- 14.- Método shift ---------- -->
+
+    <!-- ---------- 15.- Método slice ---------- -->
+    <section  id="ancla15">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">15.- Método slice</h3>
+            <h4 class="itemInfo__subtitle">
+                Devuelve una copia de una parte del array de acuerdo a la posición slice(0, 2)
+                <br>El array original no se modifica
+            </h4>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                const arraySlice = ['Madrid', 'Cuenca', 'Loja', 'Quito'];
+                <br>console.log(arraySlice, 'original');
+                <br>const resultSlice = arraySlice.slice(0, 2)
+                <br>console.log(resultSlice, 'copia');
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/15-slice.jpg" alt="">
+        </div>
+    </section>
+    <!-- ---------- 15.- Método slice ---------- -->
+
+    <!-- ---------- 16.- Método unshift ---------- -->
+    <section  id="ancla16">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">16.- Método unshift</h3>
+            <h4 class="itemInfo__subtitle">
+                Agrega uno o más elementos al inicio de un array y devuelve la longitud del array
+                <br>Mofifica el array original
+            </h4>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                const arrayUnshift = ['Madrid', 'Cuenca', 'Loja', 'Quito'];
+                <br>console.log(arrayUnshift, 'original');
+                <br>const resultUnshift = arrayUnshift.unshift('Barcelona', 'Cordova');
+                <br>console.log(resultUnshift, 'valor de longitud');
+                <br>console.log(arrayUnshift, 'moficado');
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/16-unshift.jpg" alt="">
+        </div>
+    </section>
+    <!-- ---------- 16.- Método unshift ---------- -->
+
+    <!-- ---------- 17.- Método splice ---------- -->
+    <section  id="ancla17">
+        <section>
+            <div class="itemInfo">
+                <h3 class="itemInfo__title">17.- Método splice</h3>
+            </div>
+        </section>
+
+        <section>
+            <div class="itemInfo">
+                <h3 class="itemInfo__title">1) Trae los dos primeros valores</h3>
+                <h4 class="itemInfo__subtitle">
+                    Mofifica el array original
+                </h4>
+                <h4 class="itemInfo__subtitle">Usando:</h4>
+                <h5 class="itemInfo__example">
+                    const arraySplicev1 = ['Madrid', 'Cuenca', 'Zamora', 'Loja', 'Quito', 'Puyo'];
+                    <br>console.log(arraySplicev1, 'original');
+                    <br>arraySplicev1.splice(2);
+                    <br>console.log(arraySplicev1, 'modificado');
+                </h5>
+            </div>
+        
+            <!-- <div class="content-img">
+                <img src="assets/16-unshift.jpg" alt="">
+            </div> -->
+        </section>
+
+        <section>
+            <div class="itemInfo">
+                <h3 class="itemInfo__title">2) Al poner negativo empieza eliminando valores desde el último </h3>
+                <h4 class="itemInfo__subtitle">
+                    Mofifica el array original
+                </h4>
+                <h4 class="itemInfo__subtitle">Usando:</h4>
+                <h5 class="itemInfo__example">
+                    const arraySplicev2 = ['Madrid', 'Cuenca', 'Zamora', 'Loja', 'Quito', 'Puyo'];
+                    <br>console.log(arraySplicev2, 'original');
+                    <br>arraySplicev2.splice(-2);
+                    <br>console.log(arraySplicev2, 'modificado');
+                </h5>
+            </div>
+        
+            <!-- <div class="content-img">
+                <img src="assets/16-unshift.jpg" alt="">
+            </div> -->
+        </section>
+
+        <section>
+            <div class="itemInfo">
+                <h3 class="itemInfo__title">3) Elimina desde la posición declarada, inicio y final</h3>
+                <h4 class="itemInfo__subtitle">
+                    Mofifica el array original
+                </h4>
+                <h4 class="itemInfo__subtitle">Usando:</h4>
+                <h5 class="itemInfo__example">
+                    const arraySplicev3 = ['Madrid', 'Cuenca', 'Zamora', 'Loja', 'Quito', 'Puyo'];
+                    <br>console.log(arraySplicev3, 'original');
+                    <br>arraySplicev3.splice(1, 2);
+                    <br>console.log(arraySplicev3, 'modificado');
+                </h5>
+            </div>
+        
+            <!-- <div class="content-img">
+                <img src="assets/16-unshift.jpg" alt="">
+            </div> -->
+        </section>
+
+        <section>
+            <div class="itemInfo">
+                <h3 class="itemInfo__title">3) Elimina desde la posición declarada, inicio y final</h3>
+                <h4 class="itemInfo__subtitle">
+                    Mofifica el array original
+                </h4>
+                <h4 class="itemInfo__subtitle">Usando:</h4>
+                <h5 class="itemInfo__example">
+                    const arraySplicev3 = ['Madrid', 'Cuenca', 'Zamora', 'Loja', 'Quito', 'Puyo'];
+                    <br>console.log(arraySplicev3, 'original');
+                    <br>arraySplicev3.splice(1, 2);
+                    <br>console.log(arraySplicev3, 'modificado');
+                </h5>
+            </div>
+        
+            <!-- <div class="content-img">
+                <img src="assets/16-unshift.jpg" alt="">
+            </div> -->
+        </section>
+    </section>
+    <!-- ---------- 17.- Método splice ---------- -->
+
+    <!-- ----------  ---------- -->
+    <section  id="ancla18">
+        <!-- <div class="itemInfo">
+            <h3 class="itemInfo__title"></h3>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                
+            </h5>
+        </div> -->
+    
+        <!-- <div class="content-img">
+            <img src="assets/11-recorrer-operacion.jpg" alt="">
+        </div> -->
+    </section>
+    <!-- ----------  ---------- -->
+
+    <!-- ----------  ---------- -->
+    <section  id="ancla19">
+        <!-- <div class="itemInfo">
+            <h3 class="itemInfo__title"></h3>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                
+            </h5>
+        </div> -->
+    
+        <!-- <div class="content-img">
+            <img src="assets/11-recorrer-operacion.jpg" alt="">
+        </div> -->
+    </section>
+    <!-- ----------  ---------- -->
+
+    <!-- ----------  ---------- -->
+    <section  id="ancla20">
+        <!-- <div class="itemInfo">
+            <h3 class="itemInfo__title"></h3>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                
+            </h5>
+        </div> -->
+    
+        <!-- <div class="content-img">
+            <img src="assets/11-recorrer-operacion.jpg" alt="">
+        </div> -->
+    </section>
+    <!-- ----------  ---------- -->
+
+    <!-- ----------  ---------- -->
+    <section  id="ancla21">
+        <!-- <div class="itemInfo">
+            <h3 class="itemInfo__title"></h3>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                
+            </h5>
+        </div> -->
+    
+        <!-- <div class="content-img">
+            <img src="assets/11-recorrer-operacion.jpg" alt="">
+        </div> -->
+    </section>
+    <!-- ----------  ---------- -->
+
+    <!-- ----------  ---------- -->
+    <section  id="ancla22">
+        <!-- <div class="itemInfo">
+            <h3 class="itemInfo__title"></h3>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                
+            </h5>
+        </div> -->
+    
+        <!-- <div class="content-img">
+            <img src="assets/11-recorrer-operacion.jpg" alt="">
+        </div> -->
+    </section>
+    <!-- ----------  ---------- -->
+
+
+
+    <script src="arrays.js"></script>
+</body>
+</html>

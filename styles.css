@@ -68,6 +68,30 @@ body {
     text-shadow: -0.2px -0.2px 0.2px #01010c, 0.2px -0.2px 0.2px #01010c, -0.2px 0.2px 0.2px #01010c, 0.2px 0.2px 0.2px #01010c;
 }
 
+.main-containerv2 {
+    border: 1px solid black;
+    width: 90%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: start;
+}
+
+.linkv2 {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(97, 43, 12);
+    text-decoration: none;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.middle-parrafo {
+    font-weight: bold;
+    font-size: 22px;
+}
+
 .link:hover {
     color: rgb(245, 239, 239);
     text-shadow: -0.2px -0.2px 0.2px #efeff5, 0.2px -0.2px 0.2px #efeff5, -0.2px 0.2px 0.2px #efeff5, 0.2px 0.2px 0.2px #efeff5;
