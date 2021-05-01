@@ -163,7 +163,7 @@ const resultIndexOf = arrayIndexOf.indexOf('Loja');
 console.log(resultIndexOf);
 console.log('18.1 -----------------');
 /* Si encuentra el valor imprime que encontró, caso contrario no encontró */
-console.log('--------- 19 ---------');
+console.log('--------- 18.1 ---------');
 const arrayIndexOf1 = ['Madrid', 'Cuenca', 'Loja', 'Quito'];
 if (arrayIndexOf1.indexOf('Lojas') > -1) {
     console.log('Encontró');
@@ -173,7 +173,7 @@ if (arrayIndexOf1.indexOf('Lojas') > -1) {
 
 /* Método "includes" */
 /* Busca y devuelve true o false si encuentra el valor en el array */
-console.log('--------- 18 ---------');
+console.log('--------- 19 ---------');
 const arrayIncludes = ['Madrid', 'Cuenca', 'Loja', 'Quito'];
 const resultIncludes = arrayIncludes.includes('Cuenca');
 console.log(resultIncludes);
@@ -181,7 +181,7 @@ console.log(resultIncludes);
 /* Método "filter" */
 /* No mofifica el array original */
 /* Si encuentra de acuerdo a un item del array retorna el array nuevo con los valores buscados, y si no encuentra devuelve vacío */
-console.log('--------- 19 ---------');
+console.log('--------- 20 ---------');
 const arrayFilter = ['Madrid', 'Cuenca', 'Loja', 'Quito'];
 const resultFilter = arrayFilter.filter(city => {
     return city === 'Cuenca' || city === 'Loja';
@@ -190,7 +190,7 @@ console.log(resultFilter);
 
 /* Método "find" */
 /* Devuelve el elemento que cumpla una condición dada, cuando lo encuentra deja de recorrer el array, mientras que con filter recorre todo el array así haya encontrado el elemento */
-console.log('--------- 20 ---------');
+console.log('--------- 21 ---------');
 const arrayFind = ['Madrid', 'Cuenca', 'Loja', 'Quito'];
 const resultFind = arrayFind.find((ele, index) => {
     console.log(index, 'index');
@@ -201,7 +201,7 @@ console.log(resultFind);
 /* Método "map" */
 /* Crea un nuevo array y devuelve de acuerdo a la operacíon realizada */
 /* No mofifica el array original */
-console.log('--------- 21 ---------');
+console.log('--------- 22 ---------');
 const arrayMap = [3, 4, 5];
 const resultMap = arrayMap.map(current => {
     return current + 5;

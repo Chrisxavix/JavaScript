@@ -91,6 +91,9 @@
     <section id="ancla4">
         <div class="itemInfo">
             <h3 class="itemInfo__title">4.- Array.isArray</h3>
+            <h4 class="itemInfo__subtitle">
+                Para saber si un array es de tipo array, no se usa el typeof, sino Array.isArray('nombre del array')
+            </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
             <h5 class="itemInfo__example">
                 const arrayType = ['Madrid', 'Cuenca', 'Loja', 'Quito']
@@ -465,85 +468,143 @@
     </section>
     <!-- ---------- 17.- Método splice ---------- -->
 
-    <!-- ----------  ---------- -->
+    <!-- ---------- 18.- Método indexOf ---------- -->
     <section  id="ancla18">
-        <!-- <div class="itemInfo">
-            <h3 class="itemInfo__title"></h3>
-            <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                
-            </h5>
-        </div> -->
-    
-        <!-- <div class="content-img">
-            <img src="assets/11-recorrer-operacion.jpg" alt="">
-        </div> -->
-    </section>
-    <!-- ----------  ---------- -->
+        <section>
+            <div class="itemInfo">
+                <h3 class="itemInfo__title">18.- Método indexOf</h3>
+                <h4 class="itemInfo__subtitle">
+                    Busca y devuelve el índice, si encuentra devuelve el índice de posición, caso contrario devuelve -1
+                </h4>
+                <h4 class="itemInfo__subtitle">Usando:</h4>
+                <h5 class="itemInfo__example">
+                    const arrayIndexOf = ['Madrid', 'Cuenca', 'Loja', 'Quito'];
+                    <br>const resultIndexOf = arrayIndexOf.indexOf('Loja');
+                    <br>console.log(resultIndexOf);
+                </h5>
+            </div>
+        
+            <div class="content-img">
+                <img src="assets/18-indexof.png" alt="">
+            </div>
+        </section>
 
-    <!-- ----------  ---------- -->
+        <section>
+            <div class="itemInfo">
+                <h3 class="itemInfo__title">18.1.- Ejemplo usual con el método indexOf</h3>
+                <h4 class="itemInfo__subtitle">
+                    Si encuentra el valor imprime que encontró, caso contrario no encontró
+                </h4>
+                <h4 class="itemInfo__subtitle">Usando:</h4>
+                <h5 class="itemInfo__example">
+                    const arrayIndexOf1 = ['Madrid', 'Cuenca', 'Loja', 'Quito'];
+                    <br>if (arrayIndexOf1.indexOf('Lojas') > -1) {
+                    <br>    console.log('Encontró');
+                    <br>} else {
+                    <br>    console.log('No encontró');
+                    <br>}
+                </h5>
+            </div>
+        
+            <div class="content-img">
+                <img src="assets/18-1-indexof.png" alt="">
+            </div>
+        </section>
+    </section>
+    <!-- ---------- 18.- Método indexOf ---------- -->
+
+    <!-- ---------- 19.- Método includes ---------- -->
     <section  id="ancla19">
-        <!-- <div class="itemInfo">
-            <h3 class="itemInfo__title"></h3>
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">19.- Método includes</h3>
+            <h4 class="itemInfo__subtitle">
+                Busca y devuelve true o false si encuentra el valor en el array
+            </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
             <h5 class="itemInfo__example">
-                
+                const arrayIncludes = ['Madrid', 'Cuenca', 'Loja', 'Quito'];
+                <br>const resultIncludes = arrayIncludes.includes('Cuenca');
+                <br>console.log(resultIncludes);
             </h5>
-        </div> -->
+        </div>
     
-        <!-- <div class="content-img">
-            <img src="assets/11-recorrer-operacion.jpg" alt="">
-        </div> -->
+        <div class="content-img">
+            <img src="assets/19-includes.png" alt="">
+        </div>
     </section>
-    <!-- ----------  ---------- -->
+    <!-- ---------- 19.- Método includes ---------- -->
 
-    <!-- ----------  ---------- -->
+    <!-- ---------- 20.- Método filter ---------- -->
     <section  id="ancla20">
-        <!-- <div class="itemInfo">
-            <h3 class="itemInfo__title"></h3>
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">20.- Método filter</h3>
+            <h4 class="itemInfo__subtitle">
+                No mofifica el array original
+                <br>Si encuentra de acuerdo a un item del array retorna el array nuevo con los valores buscados, y si no encuentra devuelve vacío
+            </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
             <h5 class="itemInfo__example">
-                
+                const arrayFilter = ['Madrid', 'Cuenca', 'Loja', 'Quito'];
+                <br>const resultFilter = arrayFilter.filter(city => {
+                <br>    return city === 'Cuenca' || city === 'Loja';
+                <br>});
+                <br>console.log(resultFilter);
             </h5>
-        </div> -->
+        </div>
     
-        <!-- <div class="content-img">
-            <img src="assets/11-recorrer-operacion.jpg" alt="">
-        </div> -->
+        <div class="content-img">
+            <img src="assets/20-filter.png" alt="">
+        </div>
     </section>
-    <!-- ----------  ---------- -->
+    <!-- ---------- 20.- Método filter ---------- -->
 
-    <!-- ----------  ---------- -->
+    <!-- ---------- 21.- Método find ---------- -->
     <section  id="ancla21">
-        <!-- <div class="itemInfo">
-            <h3 class="itemInfo__title"></h3>
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">21.- Método find</h3>
+            <h4 class="itemInfo__subtitle">
+                Devuelve el elemento que cumpla una condición dada, cuando lo encuentra deja de recorrer el array, mientras que con filter recorre todo el array así haya encontrado el elemento
+            </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
             <h5 class="itemInfo__example">
-                
+                const arrayFind = ['Madrid', 'Cuenca', 'Loja', 'Quito'];
+                <br>const resultFind = arrayFind.find((ele, index) => {
+                <br>    console.log(index, 'index');
+                <br>    return ele === 'Loja';
+                <br>});
+                <br>console.log(resultFind);
             </h5>
-        </div> -->
+        </div>
     
-        <!-- <div class="content-img">
-            <img src="assets/11-recorrer-operacion.jpg" alt="">
-        </div> -->
+        <div class="content-img">
+            <img src="assets/21-find.png" alt="">
+        </div>
     </section>
-    <!-- ----------  ---------- -->
+    <!-- ---------- 21.- Método find ---------- -->
 
-    <!-- ----------  ---------- -->
+    <!-- ---------- 22.- Método map ---------- -->
     <section  id="ancla22">
-        <!-- <div class="itemInfo">
-            <h3 class="itemInfo__title"></h3>
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">22.- Método map</h3>
+            <h4 class="itemInfo__subtitle">
+                Crea un nuevo array y devuelve de acuerdo a la operacíon realizada
+                <br>No mofifica el array original
+            </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
             <h5 class="itemInfo__example">
-                
+                const arrayMap = [3, 4, 5];
+                <br>const resultMap = arrayMap.map(current => {
+                <br>    return current + 5;
+                <br>});
+                <br>console.log(resultMap);
             </h5>
-        </div> -->
+        </div>
     
-        <!-- <div class="content-img">
-            <img src="assets/11-recorrer-operacion.jpg" alt="">
-        </div> -->
+        <div class="content-img">
+            <img src="assets/22-map.png" alt="">
+        </div>
     </section>
-    <!-- ----------  ---------- -->
+    <!-- ---------- 22.- Método map ---------- -->
 
 
 
