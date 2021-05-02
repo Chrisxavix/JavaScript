@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If-Switch-Ternario</title>
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body style="height: 100%;">
+    <h1 class="itemTitle">If - Switch - Ternario</h1>
+    
+    <!-- ---------- Bucle if, condición de sí y no ---------- -->
+    <section id="ancla1">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">1.- Bucle if, condición de sí y no</h3>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                let edadPerson1 = 19;
+                <br>if (edadPerson1 > 19) {
+                <br>    console.log('Mayor de edad');
+                <br>} else {
+                <br>    console.log('Menor de edad');
+                <br>}
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/01-condicional.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Bucle if, condición de sí y no ---------- -->
+
+    <!-- ---------- Bucle if con varias condiciones ---------- -->
+    <section id="ancla2">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">2.- Bucle if con varias condiciones</h3>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                let edadPerson2 = 28;
+                <br>if (edadPerson2 <= 10) {
+                <br>    console.log('Niño');
+                <br>} else if (edadPerson2 === 18) {
+                <br>    console.log('Adulto');
+                <br>} else {
+                <br>    console.log('Tercera edad');
+                <br>}
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/02-condicional.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Bucle if con varias condiciones ---------- -->
+
+    <!-- ---------- Operador ternario ---------- -->
+    <section id="ancla3">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">3.- Operador ternario</h3>
+            <h4 class="itemInfo__subtitle">
+                Solo una línea de código: verdadero o falso
+            </h4>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                let edadPerson3 = 24;
+                <br>let mayorEdad = (edadPerson3 >= 18) ? 'Eres mayor de edad' : 'Eres menor de edad';
+                <br>console.log(mayorEdad);
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/03-ternario.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Operador ternario ---------- -->
+
+    <!-- ---------- Switch de opciones ---------- -->
+    <section id="ancla4">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">4.- Switch de opciones</h3>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                let dia = 2;
+                <br>switch (dia) {
+                <br>    case 1:
+                <br>        console.log('Lunes');
+                <br>        break;
+                <br>    case 2:
+                <br>        console.log('Martes');
+                <br>        break;
+                <br>    default:
+                <br>        console.log('No hay día');
+                <br>        break;
+                <br>}
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/04-switch.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Switch de opciones ---------- -->
+
+    <script src="if-switch.js"></script>
+</body>
+</html>

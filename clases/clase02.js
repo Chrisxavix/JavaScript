@@ -1,6 +1,5 @@
 /* --------------------- CURSO JAVASCRIPT ------------------- */
 /* 
-1) Estructura If - Switch: Línea 12
 2) Estructura while, for: Linea 64
 3) Control de errores: Línea 182
 4) Palabras Reservadas (Break - Continue): Línea 239
@@ -8,58 +7,6 @@
 6) Parámetros Rest & Operador Spread (propagar: Línea 359
 7) Arrow Functions: 402
 */
-
-/* 1) ------------- Estructura If - Switch ------------- */
-
-/* Bucle if, condición de sí y no */
-
-/* let edad = 19;
-if (edad>19) {
-    console.log('Mayor de edad');
-} else {
-    console.log('Menor de edad');
-} */
-/* Imprime: 
-Mayor de edad */
-
-/* Bucle if con varias condiciones*/
-/* let edad = 28;
-if (edad<=10) {
-    console.log('Niño');
-} else if (edad===18) {
-    console.log('Adulto');
-} else {
-    console.log('Tercera edad');
-} */
-/* Imprime: 
-Tercera edad */
-
-/* Operador ternario
-Solo una línea de código: verdadero o falso */
-/* edad=24;
-let mayor = (edad>=18) 
-? 'Eres mayor de edad':
-'Eres menor de edad';
-console.log(mayor); */
-/* Imprime: 
-Eres mayor de edad */
-
-/* Switch de opciones */
-/* let dia=2;
-switch (dia) {
-case 1:
-    console.log('Lunes');
-    break;
-case 2:
-    console.log('Martes');
-    break;
-default: 
-    console.log('No hay día');   
-    break;
-} */
-/* Imprime: 
-Martes */
-/* --------------- Estructura If - Switch ------------- */
 
 /* 2) ------------ Estructura while, for -------------- */
 
