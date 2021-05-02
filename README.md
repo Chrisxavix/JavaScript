@@ -45,3 +45,5 @@ Temas:
     * *=
     * ++
     * !
+  * If loop, switch and ternario
+  * For (in-of) loop and while

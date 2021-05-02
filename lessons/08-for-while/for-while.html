@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For-While</title>
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body style="height: 100%;">
+    <h1 class="itemTitle">For (in-of) - While</h1>
+    
+    <!-- ---------- Estructura while ---------- -->
+    <section id="ancla1">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">1.- Estructura while</h3>
+            <h4 class="itemInfo__subtitle">
+                Se repite mientras se cumpla la condición
+            </h4>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                let contador = 0;
+                <br>while (contador < 10) {
+                <br>    contador = contador + 1;
+                <br>    console.log(contador);
+                <br>}
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/01-while.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Estructura while ---------- -->
+
+    <!-- ---------- Estructura for ---------- -->
+    <section id="ancla2">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">2.- Estructura for</h3>
+            <h4 class="itemInfo__subtitle">
+                for(inicializar variable; condición, incremento) {
+                <br>   sentencias de código;
+                <br>}
+            </h4>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                for (let i = 0; i < 10; i++) {
+                <br>    console.log('for', i)
+                <br>}
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/02-for.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Estructura for ---------- -->
+
+    <!-- ---------- For, imprime el array ---------- -->
+    <section id="ancla3">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">3.- For, imprime el array</h3>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                let numeros = [10, 20, 30, 40, 50, 60, 70];
+                <br>for (let i = 0; i < numeros.length; i++) {
+                <br>    console.log('forArray', numeros[i])
+                <br>}
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/03-for-array.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- For, imprime el array ---------- -->
+
+    <!-- ---------- For in, recorre el objeto e imprime el id ---------- -->
+    <section id="ancla4">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">4.- For in, recorre el objeto e imprime el id</h3>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                const objectChris = { nombre: 'Chris', apellido: 'Chillo', edad: 24 }
+                <br>for (const propiedad in objectChris) {
+                <br>    console.log(propiedad);
+                <br>}
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/04-for-in1.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- For in, recorre el objeto e imprime el id ---------- -->
+
+    <!-- ---------- For in: recorre el objeto e imprime el id y valor ---------- -->
+    <section id="ancla5">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">5.- For in: recorre el objeto e imprime el id y valor</h3>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                const objectChrisV1 = { nombre: 'Chris', apellido: 'Chillo', edad: 24 }
+                <br>for (const propiedad in objectChrisV1) {
+                <br>    console.log(`Id: ${propiedad} - Valor: ${objectChrisV1[propiedad]}`);
+                <br>}
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/05-for-in2.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- For in: recorre el objeto e imprime el id y valor ---------- -->
+
+    <!-- ---------- For of: permite recorrer todos los elementos ---------- -->
+    <section id="ancla6">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">6.- For of: permite recorrer todos los elementos</h3>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                let numerosArray = [10, 20, 30, 40, 50, 60, 70];
+                <br>for (const elemento of numerosArray) {
+                <br>    console.log(elemento);
+                <br>}
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/6-for.of.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- For of: permite recorrer todos los elementos ---------- -->
+
+    <script src="for-while.js"></script>
+</body>
+</html>
