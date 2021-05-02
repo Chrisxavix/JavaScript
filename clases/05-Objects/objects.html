@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body style="height: 100%;">
+    <h1 class="itemTitle">Objects</h1>
+    <div class="main-containerv2">
+        <a class="linkv2" href="#ancla1">1.- Declaración de un arreglo vacío, opción 1</a>
+        <a class="linkv2" href="#ancla2">2.- Declaración de un arreglo vacío, opción 2</a>
+        <a class="linkv2" href="#ancla3">3.- Declaración de un arreglo vacío, opción 3</a>
+        <a class="linkv2" href="#ancla4">4.- Acceder a los datos en un objeto, opción 1</a>
+        <a class="linkv2" href="#ancla5">5.- Acceder a los datos en un objeto, opción 2</a>
+        <a class="linkv2" href="#ancla6">6.- Acceder a valores del id o value del objeto</a>
+    </div>
+
+    <!-- ---------- 1.- Declaración de un arreglo vacío, opción 1 ---------- -->
+    <section id="ancla1">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">1.- Declaración de un arreglo vacío, opción 1</h3>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                const objectNew = {};
+                <br>console.log(objectNew);
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/01-objeto-declaracion.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- 1.- Declaración de un arreglo vacío, opción 1 ---------- -->
+
+    <!-- ---------- 2.- Declaración de un arreglo vacío, opción 2 ---------- -->
+    <section id="ancla2">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">2.- Declaración de un arreglo vacío, opción 2</h3>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                const objectNewV2 = new Object();
+                <br>console.log(objectNewV2);
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/02-objeto-declaracion.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- 2.- Declaración de un arreglo vacío, opción 2 ---------- -->
+
+    <!-- ---------- 3.- Declaración de un arreglo vacío, opción 3 ---------- -->
+    <section id="ancla3">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">3.- Declaración de un arreglo vacío, opción 3</h3>
+            <h4 class="itemInfo__subtitle">
+                Arrays y objetos dentro de un objeto declarado
+            </h4>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                const objectPerson = {
+                <br>    nombre: 'Chris',
+                <br>    edad: 24,
+                <br>    correo: 'chris@gmail.com',
+                <br>    pasatiempos: ['jugar', 'caminar', 'leer'],
+                <br>    soltero: true,
+                <br>    contacto: { tel: 1234, correo: 'lorem' }  
+                <br>}
+                <br>console.log(objectPerson);
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/03-objeto-declaracion.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- 3.- Declaración de un arreglo vacío, opción 3 ---------- -->
+
+    <!-- ---------- 4.- Acceder a los datos en un objeto, opción 1 ---------- -->
+    <section id="ancla4">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">4.- Acceder a los datos en un objeto, opción 1</h3>
+            <h4 class="itemInfo__subtitle">
+                Acceder mediante la declaración con []
+            </h4>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                const objectPersonChris = {
+                <br>    nombre: 'Chris',
+                <br>    edad: 24,
+                <br>    correo: 'chris@gmail.com',
+                <br>    pasatiempos: ['jugar', 'caminar', 'leer'],
+                <br>    soltero: true,
+                <br>    contacto: { tel: 1234, correo: 'lorem' }
+                <br>}
+                <br>console.log(objectPersonChris['nombre']);
+                <br>console.log(objectPersonChris['contacto']);
+                <br>console.log(objectPersonChris['contacto']['correo']);
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/04-acceder.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- 4.- Acceder a los datos en un objeto, opción 1 ---------- -->
+
+    <!-- ---------- 5.- Acceder a los datos en un objeto, opción 2 ---------- -->
+    <section id="ancla5">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">5.- Acceder a los datos en un objeto, opción 2</h3>
+            <h4 class="itemInfo__subtitle">
+                Acceder mediante la declaración con el punto "."
+            </h4>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                const objectPersonChrisV2 = {
+                <br>    nombre: 'Chris',
+                <br>    edad: 24,
+                <br>    correo: 'chris@gmail.com',
+                <br>    pasatiempos: ['jugar', 'caminar', 'leer'],
+                <br>    soltero: true,
+                <br>    contacto: { tel: 1234, correo: 'lorem' },
+                <br>    saludar: function () { console.log('Hola'); }
+                <br>}
+                <br>console.log(objectPersonChrisV2.nombre);
+                <br>console.log(objectPersonChrisV2.contacto);
+                <br>console.log(objectPersonChrisV2.contacto.correo);
+                <br>objectPersonChrisV2.saludar();
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/05-acceder.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- 5.- Acceder a los datos en un objeto, opción 2 ---------- -->
+
+    <!-- ---------- 6.- Acceder a valores del id o value del objeto ---------- -->
+    <section id="ancla5">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">6.- Acceder a valores del id o value del objeto</h3>
+            <h4 class="itemInfo__subtitle">
+                EL (.keys) me da los ids del objeto
+                <br>El (.values) me da los valores de las ids
+                <br>El (.hasOwnProperty) pregunta si exite el id 'nombre'
+            </h4>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                const objectPersonChrisV3 = {
+                <br>    nombre: 'Chris',
+                <br>    edad: 24,
+                <br>    correo: 'chris@gmail.com',
+                <br>    pasatiempos: ['jugar', 'caminar', 'leer'],
+                <br>    soltero: true,
+                <br>    contacto: { tel: 1234, correo: 'lorem' },
+                <br>    saludar: function () { console.log('Hola'); }
+                <br>}
+                <br>console.log(Object.keys(objectPersonChrisV3));
+                <br>console.log(Object.values(objectPersonChrisV3));
+                <br>console.log(objectPersonChrisV3.hasOwnProperty('nombre'));
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/06-acceder.png" alt="">
+        </div>
+
+        <div class="content-img">
+            <img src="assets/06-1-acceder.png" alt="">
+        </div>
+
+        <div class="content-img">
+            <img src="assets/06-2-acceder.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- 6.- Acceder a valores del id o value del objeto ---------- -->
+
+    <script src="objects.js"></script>
+</body>
+</html>
