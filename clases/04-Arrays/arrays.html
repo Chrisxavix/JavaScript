@@ -584,25 +584,50 @@
 
     <!-- ---------- 22.- Método map ---------- -->
     <section  id="ancla22">
-        <div class="itemInfo">
-            <h3 class="itemInfo__title">22.- Método map</h3>
-            <h4 class="itemInfo__subtitle">
-                Crea un nuevo array y devuelve de acuerdo a la operacíon realizada
-                <br>No mofifica el array original
-            </h4>
-            <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                const arrayMap = [3, 4, 5];
-                <br>const resultMap = arrayMap.map(current => {
-                <br>    return current + 5;
-                <br>});
-                <br>console.log(resultMap);
-            </h5>
-        </div>
-    
-        <div class="content-img">
-            <img src="assets/22-map.png" alt="">
-        </div>
+        <section>
+            <div class="itemInfo">
+                <h3 class="itemInfo__title">22.- Método map</h3>
+                <h4 class="itemInfo__subtitle">
+                    Crea un nuevo array y devuelve de acuerdo a la operacíon realizada
+                    <br>No mofifica el array original
+                </h4>
+                <h4 class="itemInfo__subtitle">Usando:</h4>
+                <h5 class="itemInfo__example">
+                    const arrayMap = [3, 4, 5];
+                    <br>const resultMap = arrayMap.map(current => {
+                    <br>    return current + 5;
+                    <br>});
+                    <br>console.log(resultMap);
+                </h5>
+            </div>
+        
+            <div class="content-img">
+                <img src="assets/22-map.png" alt="">
+            </div>
+        </section>
+
+        <section>
+            <div class="itemInfo">
+                <h3 class="itemInfo__title">22.1.- Devuelve un array con nombres de cada objeto dentro de un array</h3>
+                <h4 class="itemInfo__subtitle">Usando:</h4>
+                <h5 class="itemInfo__example">
+                    const arrayMapObject = [
+                    <br>    { name: 'Chris', age: 12, lastname: 'Test01' },
+                    <br>    { name: 'Dani', age: 12, lastname: 'Test02' },
+                    <br>    { name: 'Xavi', age: 12, lastname: 'Test03' },
+                    <br>    { name: 'Lucas', age: 12, lastname: 'Test04' }
+                    <br>];
+                    <br>const resultMapObject = arrayMapObject.map(elemn => {
+                    <br>    return elemn.name;
+                    <br>});
+                    <br>console.log(resultMapObject);
+                </h5>
+            </div>
+        
+            <div class="content-img">
+                <img src="assets/22-1-map.png" alt="">
+            </div>
+        </section>
     </section>
     <!-- ---------- 22.- Método map ---------- -->
 

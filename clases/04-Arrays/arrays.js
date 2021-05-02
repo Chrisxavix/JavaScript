@@ -207,4 +207,16 @@ const resultMap = arrayMap.map(current => {
     return current + 5;
 });
 console.log(resultMap);
+/* Devuelve un array con nombres de cada objeto dentro de un array */
+console.log('--------- 22.1 ---------');
+const arrayMapObject = [
+    { name: 'Chris', age: 12, lastname: 'Test01' },
+    { name: 'Dani', age: 12, lastname: 'Test02' },
+    { name: 'Xavi', age: 12, lastname: 'Test03' },
+    { name: 'Lucas', age: 12, lastname: 'Test04' }
+];
+const resultMapObject = arrayMapObject.map(elemn => {
+    return elemn.name;
+});
+console.log(resultMapObject);
 /* ------------------- Arrays ----------------- */
