@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try Catch</title>
+    <link rel="shortcut icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png" type="image/x-icon">
+    <!-- Hojas de estilos -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/normalize.css">
+    <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/styles.css">
+    <!-- Datos -->
+    <meta name="description" content="Control de errores con try, catch y finally.">
+    <link rel="apple-touch-icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png">
+    <meta name="theme-color" content="rgb(103, 104, 59)">
+    <!-- Para Twitter:name="twitter:title"  y Facebook:property="og:title" -->
+    <meta property="og:title" name="twitter:title" content="Try, Catch and Finally">
+    <meta property="og:image" name="twitter:image"
+    content="https://chrisxavix.github.io/JavaScript/assets/meta-home-cover-js.jpg">
+    <!-- Url del sitio -->
+    <meta property="og:url" name="twitter:url" content="https://chrisxavix.github.io/JavaScript/lessons/09-Try-catch/try-catch.html">
+    <meta property="og:description" name="twitter:description" content="Control de errores con try, catch y finally.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <link rel="canonical" href="https://chrisxavix.github.io/JavaScript/lessons/09-Try-catch/try-catch.html">
+</head>
+<body style="height: 100%;">
+    <h1 class="itemTitle">Try, Catch and Finally</h1>
+    
+    <!-- ---------- Estructura del control de errores ---------- -->
+    <section id="ancla1">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">1.- Estructura del control de errores</h3>
+            <h4 class="itemInfo__subtitle">
+                El try contiene el código que será evaluado
+                <br>El catch contiene los errores en caso de presentarse, 
+                <br>El finally siempre se ejecuta, haya o no errores.
+            </h4>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                try {
+                <br>    console.log('Se agrega el código a evaluar');
+                <br>} catch (error) {
+                <br>    console.log('Captura cualquier error lanzado en el try');
+                <br>    console.log(error);
+                <br>} finally {
+                <br>    console.log('Se ejecuta siempre al final de un bloque try-catch');
+                <br>}
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/01-try-catch.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Estructura del control de errores ---------- -->
+
+    <!-- ---------- Error generado con (test), ya que no está definida, por lo que encuentra el error ---------- -->
+    <section id="ancla1">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">2.- Error generado con (test), ya que no está definida</h3>
+            <h4 class="itemInfo__subtitle">
+                Entra al catch por tener una variable no definida.
+            </h4>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                try {
+                <br>    console.log('Se agrega el código a evaluar');
+                <br>    test;
+                <br>    console.log('Segundo mensaje');
+                <br>} catch (error) {
+                <br>    console.log('Captura cualquier error lanzado en el try');
+                <br>    console.log(error);
+                <br>} finally {
+                <br>    console.log('Se ejecuta siempre al final de un bloque try-catch');
+                <br>}
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/02-try-catch-error.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Error generado con (test), ya que no está definida, por lo que encuentra el error ---------- -->
+
+    <!-- ---------- Error generado con el tipo de dato ---------- -->
+    <section id="ancla1">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">3.- Error generado con el tipo de dato</h3>
+            <h4 class="itemInfo__subtitle">
+                Usando (isNaN) para conocer si es un número.
+                <br>throw para errores personalizados
+                <br>console.trace(), indica la línea de error.
+            </h4>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                try {
+                <br>    let numero = 'lo';
+                <br>    if (isNaN(numero)) {
+                <br>        throw new Error('El caracter no es un número.')
+                <br>    }
+                <br>    console.log(numero * numero);
+                <br>} catch (error) {
+                <br>   console.trace(`Se produjo el error:  ${error}`);
+                <br>}
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/03-try-catch-error.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Error generado con el tipo de dato ---------- -->
+
+    <script src="try-catch.js"></script>
+</body>
+</html>

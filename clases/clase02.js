@@ -1,68 +1,10 @@
 /* --------------------- CURSO JAVASCRIPT ------------------- */
 /* 
-3) Control de errores: Línea 182
 4) Palabras Reservadas (Break - Continue): Línea 239
 5) Destructuración: Línea 290
 6) Parámetros Rest & Operador Spread (propagar: Línea 359
 7) Arrow Functions: 402
 */
-
-/* 3) ------------- Control de errores --------------- */
-
-/* El try contiene el código que será evaluado
-El catch contiene los errores que daría la consola, 
-al imprimir el error muestra como lo haría la consola
-del navegador.
-El finally siempre se ejecuta, haya o no errores. */
-
-/* try {
-    console.log('Se agrega el código a evaluar');
-} catch (error) {
-    console.log('Captura cualquier error lanzado en el try');
-    console.log(error);
-} finally {
-    console.log('Se ejecuta siempre al final de un bloque try-catch');
-} */
-/* Imprime:  
-Se agrega el código a evaluar
-Se ejecuta siempre al final de un bloque try-catch */
-
-/* Agregar un error con (NaNN) ya que no está definida, 
-por lo que encuentra el error y no continuá, por eso no 
-imprime el "console.log('Segundo mensaje');" */
-/* try {
-    console.log('Se agrega el código a evaluar');
-    NaNN;
-    console.log('Segundo mensaje');
-} catch (error) {
-    console.log('Captura cualquier error lanzado en el try');
-    console.log(error);
-} finally {
-    console.log('Se ejecuta siempre al final de un bloque try-catch');
-} */
-/* Imprime:  
-Se agrega el código a evaluar
-Captura cualquier error lanzado en el try
-ReferenceError: NaNN is not defined at main.js:439
-Se ejecuta siempre al final de un bloque try-catch */
-
-/* Declarar un error con el tipo de dato, usando (isNaN)
-para conocer si es un número.
-console.trace(), indica la línea de error.*/
-/* try {
-    let numero = 'lo';
-    if (isNaN(numero)) {
-        throw new Error('El caracter no es un número.')
-    }
-    console.log(numero * numero);
-} catch (error) {
-   console.trace(`Se produjo el error ${error}`);
-}  */
-/* Imprime: 
-Se produjo el error Error: El caracter no es un número.
-(anonymous)	@	main.js:463 
-O sea, la línea 463 tiene el error. */
-/* --------------- Control de errores ----------------- */
 
 /* 4) ---- Palabras Reservadas (Break - Continue) ----- */
 
