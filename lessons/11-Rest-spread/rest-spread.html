@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest - Spread</title>
+    <link rel="shortcut icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png" type="image/x-icon">
+    <!-- Hojas de estilos -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/normalize.css">
+    <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/styles.css">
+    <!-- Datos -->
+    <meta name="description" content="El uso de los tres puntos como parámetros y agregación.">
+    <link rel="apple-touch-icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png">
+    <meta name="theme-color" content="rgb(103, 104, 59)">
+    <!-- Para Twitter:name="twitter:title"  y Facebook:property="og:title" -->
+    <meta property="og:title" name="twitter:title" content="Rest - Spread">
+    <meta property="og:image" name="twitter:image"
+    content="https://chrisxavix.github.io/JavaScript/assets/meta-home-cover-js.jpg">
+    <!-- Url del sitio -->
+    <meta property="og:url" name="twitter:url" content="https://chrisxavix.github.io/JavaScript/lessons/11-Rest-spread/rest-spread.html">
+    <meta property="og:description" name="twitter:description" content="El uso de los tres puntos como parámetros y agregación.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <link rel="canonical" href="https://chrisxavix.github.io/JavaScript/lessons/11-Rest-spread/rest-spread.html">
+</head>
+<body style="height: 100%;">
+    <h1 class="itemTitle">Rest - Spread</h1>
+    
+    <!-- ---------- Parámetro Rest, tres puntos (...) ---------- -->
+    <section id="ancla1">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">1.- Parámetro Rest, tres puntos (...)</h3>
+            <h4 class="itemInfo__subtitle">
+                Permite agregar valores no definidos
+            </h4>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                function sum(valor1, valor2, ...valorNuevo) {
+                <br>    let result = valor1 + valor2;
+                <br>    valorNuevo.forEach(function (n) {
+                <br>        result += n;
+                <br>    })
+                <br>    return result;
+                <br>}
+                <br>let resultadoTotal = sum(8, 4, 9, 10);
+                <br>console.log('La respuesta es:', resultadoTotal);
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/01-rest-spread.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Parámetro Rest, tres puntos (...) ---------- -->
+
+    <!-- ---------- Operador Spread con arrays, tres puntos (...) ---------- -->
+    <section id="ancla2">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">2.- Operador Spread con arrays, tres puntos (...)</h3>
+            <h4 class="itemInfo__subtitle">
+                Al agregar los puntos (...), une los dos arreglos y les da posición a cada valor
+            </h4>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                const Array1 = [1, 2, 3, 4, 5];
+                <br>const Array2 = [11, 12, 13, 14, 15];
+                <br>const Array3 = [...Array1, ...Array2]
+                <br>console.log(Array1, 'array1');
+                <br>console.log(Array2, 'array2');
+                <br>console.log(Array3, 'array final');
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/02-rest-spread.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Operador Spread con arrays, tres puntos (...) ---------- -->
+
+    <!-- ---------- Operador Spread con objects, tres puntos (...) ---------- -->
+    <section id="ancla3">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">3.- Operador Spread con objects, tres puntos (...)</h3>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                const Object1 = { id: 1, name: 'Chris' };
+                <br>const Object2 = { lastname: 'Chillogalli' };
+                <br>const Object3 = { ...Object1, ...Object2 };
+                <br>console.log(Object1, 'objeto1');
+                <br>console.log(Object2, 'objeto2');
+                <br>console.log(Object3, 'objeto final');
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/03-rest-spread.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Operador Spread con objects, tres puntos (...) ---------- -->
+
+    <script src="rest-spread.js"></script>
+</body>
+</html>
