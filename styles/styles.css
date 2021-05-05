@@ -3,7 +3,7 @@ body {
     background-image: radial-gradient(rgb(189, 180, 180), rgb(103, 104, 59));
     background-repeat: no-repeat;
     margin: 0;
-    height: 100vh;
+    height: 100%;
 }
 
 .itemTitle {
@@ -68,10 +68,6 @@ body {
     text-shadow: -0.2px -0.2px 0.2px #01010c, 0.2px -0.2px 0.2px #01010c, -0.2px 0.2px 0.2px #01010c, 0.2px 0.2px 0.2px #01010c;
 }
 
-.container {
-    height: 95vh;
-}
-
 .main-containerv2 {
     border: 1px solid black;
     width: 90%;
@@ -115,7 +111,7 @@ body {
 
 /* *********** FOOTER *********** */
 .footer {
-    height: 5vh;
+    margin-top: 30px;
     text-align: center;
     color: #fff;
     background-color: #14192d;

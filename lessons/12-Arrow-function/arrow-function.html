@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+    <link rel="shortcut icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png" type="image/x-icon">
+    <!-- Hojas de estilos -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/normalize.css">
+    <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/styles.css">
+    <!-- Datos -->
+    <meta name="description" content="Una alternativa compacta a una expresión de función tradicional.">
+    <link rel="apple-touch-icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png">
+    <meta name="theme-color" content="rgb(103, 104, 59)">
+    <!-- Para Twitter:name="twitter:title"  y Facebook:property="og:title" -->
+    <meta property="og:title" name="twitter:title" content="Arrow Functions">
+    <meta property="og:image" name="twitter:image"
+    content="https://chrisxavix.github.io/JavaScript/assets/meta-home-cover-js.jpg">
+    <!-- Url del sitio -->
+    <meta property="og:url" name="twitter:url" content="https://chrisxavix.github.io/JavaScript/lessons/12-Arrow-function/arrow-function.html">
+    <meta property="og:description" name="twitter:description" content="Una alternativa compacta a una expresión de función tradicional.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <link rel="canonical" href="https://chrisxavix.github.io/JavaScript/lessons/12-Arrow-function/arrow-function.html">
+</head>
+<body style="height: 100%;">
+    <h1 class="itemTitle">Arrow Functions</h1>
+    
+    <!-- ---------- Arrow function ---------- -->
+    <section id="ancla1">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">1.- Arrow function</h3>
+            <h4 class="itemInfo__subtitle">
+                Cuando es una sola sentencia es opcional las llaves de una función tradicional
+            </h4>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                saludar = () => console.log('Hola');
+                <br>saludar();
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/01-arrow.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Arrow function ---------- -->
+
+    <!-- ---------- Arrow function con parámetro ---------- -->
+    <section id="ancla2">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">2.- Arrow function con parámetro</h3>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                saludarNombre = nombre => console.log('Hola', nombre);
+                <br>saludarNombre('Chris');
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/02-arrow.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Arrow function con parámetro ---------- -->
+
+    <!-- ---------- Ejemplo de uso normal con funciones ---------- -->
+    <section id="ancla3">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">3.- Ejemplo de uso normal con funciones</h3>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                sumar = function (valor1, valor2) {
+                <br>   return valor1 + valor2;
+                <br>}
+                <br>let result = sumar(4, 5);
+                <br>console.log('La suma es:', result);
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/03-arrow.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Ejemplo de uso normal con funciones ---------- -->
+
+    <!-- ---------- Funciones usando arrow ---------- -->
+    <section id="ancla4">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">4.- Funciones usando arrow</h3>
+            <h4 class="itemInfo__subtitle">
+                Es obligado usar paréntesis para los parámetros cuando son más de dos.
+                <br>La flecha indica el return.
+            </h4>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                sumarArrow = (valor1, valor2) => valor1 + valor2;
+                <br>let resultArrow = sumarArrow(9, 5);
+                <br>console.log('La suma es:', resultArrow);
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/04-arrow.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Funciones usando arrow ---------- -->
+
+    <!-- ---------- Usando (.forEach) para iterar el array ---------- -->
+    <section id="ancla5">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">5.- Usando (.forEach) para iterar el array</h3>
+            <h4 class="itemInfo__subtitle">
+                Ejemplo con "function"
+            </h4>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                const numeros = [1, 5, 8, 7];
+                <br>numeros.forEach(function (element) {
+                <br>    console.log(element)
+                <br>})
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/05-arrow.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Usando (.forEach) para iterar el array ---------- -->
+
+    <!-- ---------- Evadiendo "function" por "=>" ---------- -->
+    <section id="ancla6">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">6.- Evadiendo "function" por "=>"</h3>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                const numeros = [1, 5, 8, 7];
+                <br>numerosArrow.forEach((element) => {
+                <br>    console.log(element)
+                <br>})
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/06-arrow.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Evadiendo "function" por "=>" ---------- -->
+
+    <script src="arrow-function.js"></script>
+</body>
+</html>
