@@ -1,61 +1,9 @@
 /* --------------------- CURSO JAVASCRIPT ------------------- */
 /* 
-4) Palabras Reservadas (Break - Continue): Línea 239
 5) Destructuración: Línea 290
 6) Parámetros Rest & Operador Spread (propagar: Línea 359
 7) Arrow Functions: 402
 */
-
-/* 4) ---- Palabras Reservadas (Break - Continue) ----- */
-
-/* El break detiene el bucle cuando la condición se cumple */
-/* const numeros = [1, 2, 3, 4, 5, 6, 7];
-for (i=0; i<numeros.length; i++) {
-    if(i===3) {
-        break;
-    }
-    console.log(numeros[i]);
-} */
-/* Imprime: 
-1
-2
-3 */
-
-/* El continue elimina la posición y continua con el bucle
-normalmente */
-/* const numeros = [1, 2, 3, 4, 5, 6, 7];
-for (i=0; i<numeros.length; i++) {
-    if(i===3) {
-        continue;
-    }
-    console.log(numeros[i]);
-} */
-/* Imprime:
-1
-2
-3
-5
-6
-7 */
-
-/* Ejercicio de valores que sean divisibles para 2 con el
-módulo, ejemplo: 34%2=0, por lo que se imprime, cosa
-distinta sucede con: 63%2=1, por lo que elimina y continua */
-/* let nums = [1, 2, 63, 34, 56, 345, 76, 2, 67, 22];
-for (let i = 0; i < nums.length; i++) {
-    if (nums[i] % 2 === 1) {
-        continue;
-    }
-    console.log(nums[i]);
-} */
-/* Imprime: 
-2
-34
-56
-76
-2
-22 */
-/* ------ Palabras Reservadas (Break - Continue) -------- */
 
 /* 5) -------------- Destructuración -------------------- */
 

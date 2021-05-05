@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break - Continue</title>
+    <link rel="shortcut icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png" type="image/x-icon">
+    <!-- Hojas de estilos -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/normalize.css">
+    <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/styles.css">
+    <!-- Datos -->
+    <meta name="description" content="Palabras reservadas para continuar o detener el flujo.">
+    <link rel="apple-touch-icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png">
+    <meta name="theme-color" content="rgb(103, 104, 59)">
+    <!-- Para Twitter:name="twitter:title"  y Facebook:property="og:title" -->
+    <meta property="og:title" name="twitter:title" content="Break - Continue">
+    <meta property="og:image" name="twitter:image"
+    content="https://chrisxavix.github.io/JavaScript/assets/meta-home-cover-js.jpg">
+    <!-- Url del sitio -->
+    <meta property="og:url" name="twitter:url" content="https://chrisxavix.github.io/JavaScript/lessons/10-Break-continue/break-continue.html">
+    <meta property="og:description" name="twitter:description" content="Palabras reservadas para continuar o detener el flujo.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <link rel="canonical" href="https://chrisxavix.github.io/JavaScript/lessons/10-Break-continue/break-continue.html">
+</head>
+<body style="height: 100%;">
+    <h1 class="itemTitle">Break - Continue</h1>
+    
+    <!-- ---------- Break ---------- -->
+    <section id="ancla1">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">1.- Break</h3>
+            <h4 class="itemInfo__subtitle">
+                Detiene el bucle cuando la condición se cumple.
+            </h4>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                const numerosBreak = [1, 2, 3, 4, 5, 6, 7];
+                <br>for (i = 0; i < numerosBreak.length; i++) {
+                <br>    if (i === 3) {
+                <br>        break;
+                <br>    }
+                <br>    console.log(numerosBreak[i]);
+                <br>}
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/01-break-continue.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Break ---------- -->
+
+    <!-- ---------- Continue ---------- -->
+    <section id="ancla2">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">2.- Continue</h3>
+            <h4 class="itemInfo__subtitle">
+                Elimina la posición y continua con el bucle normalmente.
+            </h4>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                const numerosContinue = [1, 2, 3, 4, 5, 6, 7];
+                <br>for (i = 0; i < numerosContinue.length; i++) {
+                <br>    if (i === 3) {
+                <br>        continue;
+                <br>    }
+                <br>    console.log(numerosContinue[i]);
+                <br>}
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/02-break-continue.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Continue ---------- -->
+
+    <!-- ---------- Ejercicio ---------- -->
+    <section id="ancla3">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">3.- Ejercicio</h3>
+            <h4 class="itemInfo__subtitle">
+                Valores que sean divisibles para 2 con el módulo, ejemplo: 34 % 2 = 0, por lo que se imprime, cosa distinta sucede con: 63 % 2 = 1, por lo que elimina y continua
+            </h4>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                let nums = [1, 2, 63, 34, 56, 345, 76, 2, 67, 22];
+                <br>for (let i = 0; i < nums.length; i++) {
+                <br>    if (nums[i] % 2 === 1) {
+                <br>        continue;
+                <br>    }
+                <br>    console.log(nums[i]);
+                <br>}
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/03-break-continue.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Ejercicio ---------- -->
+
+    <script src="break-continue.js"></script>
+</body>
+</html>
