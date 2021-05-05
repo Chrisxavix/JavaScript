@@ -1,68 +1,9 @@
 /* --------------------- CURSO JAVASCRIPT ------------------- */
-/* 
-1) Prototipos: Línea 9
+/*
 2) Herencia: Linea 67
 3) Clases y Herencia: Línea 110
 4) Métodos estáticos, getters y setters: Línea 283
 */
-
-/* 1) ----------------- Prototipos ------------------ */
-
-/* P.O.O: Programación orientada a objetos
-1) Clases: Modelo a seguir
-2) Objetos: Una instancia de una clase
-    Atributos: Característica del objeto, variables
-    Metodos: Acciones que un objeto realiza, funciones */
-
-/* Funcion constructora=Javascript lo toma como clase, 
-poder ocupar variables y métodos sin tener que copiar y 
-pegar código para cada objeto */
-/* function Animal (nombre, genero) {
-    // Atributos
-    this.nombre = nombre;
-    this.genero = genero;
-    // Método
-    this.sonar = function () {
-        console.log('Hacer sonido del animal');
-    }
-}
-// "new" crea una Instancia del tipo que se le asigne
-const snoop = new Animal('Mal', 'Macho');
-const snoopy = new Animal('Dana', 'Hembra');
-console.log(snoop);
-console.log(snoopy); */
-/* Imprime:
-Animal {nombre: "Mal", genero: "Macho", sonar: ƒ}
-Animal {nombre: "Dana", genero: "Hembra", sonar: ƒ} */
-
-/* Funcion constructora, cada que genero una instancia
-lleva el método "this.sonar" y "this.saludar", lo cual 
-ocuparía memoria, por lo que se puede dejarlo fuera */
-/* function Animal (nombre, genero) {
-    // Atributos
-    this.nombre = nombre;
-    this.genero = genero;
-}
-// Métodos
-Animal.prototype.sonar = function () {
-    console.log('Hacer sonido del animal');
-}
-Animal.prototype.saludar = function () {
-    console.log('Hola, me llamo', this.nombre);
-}
-// "new" crea una Instancia del tipo que se le asigne
-const snoop = new Animal('Mal', 'Macho');
-const snoopy = new Animal('Dana', 'Hembra');
-console.log(snoop);
-console.log(snoopy);
-snoopy.sonar();
-snoopy.saludar(); */
-/* Imprime:
-Animal {nombre: "Mal", genero: "Macho"}
-Animal {nombre: "Dana", genero: "Hembra"}
-Hacer sonido del animal
-Hola, me llamo Dana */
-/* -------------------- Prototipos -------------------- */
 
 /* 2) ----------------- Herencia ------------------------ */
 

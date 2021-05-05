@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype</title>
+    <link rel="shortcut icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png" type="image/x-icon">
+    <!-- Hojas de estilos -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/normalize.css">
+    <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/styles.css">
+    <!-- Datos -->
+    <meta name="description" content="Programación orientada a objetos con prototipos.">
+    <link rel="apple-touch-icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png">
+    <meta name="theme-color" content="rgb(103, 104, 59)">
+    <!-- Para Twitter:name="twitter:title"  y Facebook:property="og:title" -->
+    <meta property="og:title" name="twitter:title" content="Prototype">
+    <meta property="og:image" name="twitter:image"
+    content="https://chrisxavix.github.io/JavaScript/assets/meta-home-cover-js.jpg">
+    <!-- Url del sitio -->
+    <meta property="og:url" name="twitter:url" content="https://chrisxavix.github.io/JavaScript/lessons/13-Prototype/prototype.html">
+    <meta property="og:description" name="twitter:description" content="Programación orientada a objetos con prototipos.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <link rel="canonical" href="https://chrisxavix.github.io/JavaScript/lessons/13-Prototype/prototype.html">
+</head>
+<body style="height: 100%;">
+    <h1 class="itemTitle">Prototype</h1>
+    
+    <!-- ---------- Funcion constructora con métodos ---------- -->
+    <section id="ancla1">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">1.- Funcion constructora con métodos</h3>
+            <h4 class="itemInfo__subtitle">
+                Puede ocupar variables y métodos sin tener que copiar y pegar código para cada objeto .
+            </h4>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                <br>function Animal (nombre, genero) {
+                <br>    // Atributos
+                <br>    this.nombre = nombre;
+                <br>    this.genero = genero;
+                <br>    // Método
+                <br>    this.sonar = function () { console.log('Hacer sonido del animal'); }
+                <br>}
+                <br>// "new" crea una Instancia del tipo que se le asigne
+                <br>const snoop = new Animal('Mal', 'Macho');
+                <br>const snoopy = new Animal('Dana', 'Hembra');
+                <br>console.log(snoop);
+                <br>console.log(snoopy);
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/01-prototype.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Funcion constructora con métodos ---------- -->
+
+    <!-- ---------- Funcion constructora sin métodos ---------- -->
+    <section id="ancla2">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">2.- Funcion constructora sin métodos</h3>
+            <h4 class="itemInfo__subtitle">
+                Cada que genero una instancia lleva el método "this.sonar" y "this.saludar", lo cual ocupa memoria, por lo que se puede dejarlos fuera, y de todas maneras se puede llamarlos
+            </h4>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                function AnimalV2 (nombre, genero) {
+                <br>    // Atributos
+                <br>    this.nombre = nombre;
+                <br>    this.genero = genero;
+                <br>}
+                <br>// Métodos
+                <br>AnimalV2.prototype.sonar = function () {  console.log('Hacer sonido del animal'); }
+                <br>AnimalV2.prototype.saludar = function () { console.log('Hola, me llamo', this.nombre); }
+                <br>// "new" crea una Instancia del tipo que se le asigne
+                <br>const snoopV2 = new AnimalV2('Mal', 'Macho');
+                <br>const snoopyV2 = new AnimalV2('Dana', 'Hembra');
+                <br>console.log(snoopV2);
+                <br>console.log(snoopyV2);
+                <br>snoopV2.sonar();
+                <br>snoopyV2.saludar();                
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/02-prototype.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Funcion constructora sin métodos ---------- -->
+
+    <script src="prototype.js"></script>
+</body>
+</html>
