@@ -36,13 +36,13 @@
             </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
             <h5 class="itemInfo__example">
-                <br>function Animal (nombre, genero) {
+                function Animal (nombre, genero) {
                 <br>    // Atributos
                 <br>    this.nombre = nombre;
                 <br>    this.genero = genero;
-                <br>    // Método
+                <br><br>    // Método
                 <br>    this.sonar = function () { console.log('Hacer sonido del animal'); }
-                <br>}
+                <br>}<br>
                 <br>// "new" crea una Instancia del tipo que se le asigne
                 <br>const snoop = new Animal('Mal', 'Macho');
                 <br>const snoopy = new Animal('Dana', 'Hembra');
@@ -71,10 +71,10 @@
                 <br>    this.nombre = nombre;
                 <br>    this.genero = genero;
                 <br>}
-                <br>// Métodos
+                <br><br>// Métodos
                 <br>AnimalV2.prototype.sonar = function () {  console.log('Hacer sonido del animal'); }
                 <br>AnimalV2.prototype.saludar = function () { console.log('Hola, me llamo', this.nombre); }
-                <br>// "new" crea una Instancia del tipo que se le asigne
+                <br><br>// "new" crea una Instancia del tipo que se le asigne
                 <br>const snoopV2 = new AnimalV2('Mal', 'Macho');
                 <br>const snoopyV2 = new AnimalV2('Dana', 'Hembra');
                 <br>console.log(snoopV2);
