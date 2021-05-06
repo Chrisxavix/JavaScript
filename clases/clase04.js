@@ -1,30 +1,10 @@
 /* --------------------- CURSO JAVASCRIPT ------------------- */
 /* 
-1) Prototipos: Línea 10
 2) Objeto Math: Linea 29
 3) Objeto Date: Línea 57
 4) Operador Cortocircuito: Línea 101
 5) Expresiones regulares: Línea 149
 */
-
-/* 1) ---------------- Objeto console ------------------ */
-
-/* console.error('Esto es un error'); */
-/* Imprime: (color rojo)
-Esto es un error */
-
-/* console.warn('Esto es un aviso'); */
-/* Imprime: (color amarillo)
-Esto es un aviso */
-
-/* console.log('Esto es un registro de lo que pasa'); */
-/* Imprime: (color amarillo)
-Esto es un registro de lo que pasa */
-
-/* console.clear(); */
-/* Imprime:
-Console was cleared */
-/* ------------------ Objeto console -------------------- */
 
 /* 2) ---------------- Objeto Date --------------------- */
 

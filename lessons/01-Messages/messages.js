@@ -6,6 +6,13 @@ alert: notificación en el navegador
 prompt: ventana de ingreso de valores 
 document.write: imprime en la página */ 
 
+/* Tipos de console */
+console.log('--------- 1 ---------');
+console.clear();
+console.log('Esto es un registro de lo que pasa')
+console.error('Esto es un error');
+console.warn('Esto es un aviso');
+
 /* alert('hola'); */
 /* Imprime: con botón de aceptar
 Hola */
