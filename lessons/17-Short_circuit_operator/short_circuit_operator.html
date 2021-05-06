@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short Circuit Operator</title>
+    <link rel="shortcut icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png" type="image/x-icon">
+    <!-- Hojas de estilos -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/normalize.css">
+    <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/styles.css">
+    <!-- Datos -->
+    <meta name="description" content="Validar valores predeterminados.">
+    <link rel="apple-touch-icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png">
+    <meta name="theme-color" content="rgb(103, 104, 59)">
+    <!-- Para Twitter:name="twitter:title" y Facebook:property="og:title" -->
+    <meta property="og:title" name="twitter:title" content="Short Circuit Operato">
+    <meta property="og:image" name="twitter:image"
+    content="https://chrisxavix.github.io/JavaScript/assets/meta-home-cover-js.jpg">
+    <!-- Url del sitio -->
+    <meta property="og:url" name="twitter:url" content="https://chrisxavix.github.io/JavaScript/lessons/17-Short_circuit_operator/short_circuit_operator.html">
+    <meta property="og:description" name="twitter:description" content="Validar valores predeterminados.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <link rel="canonical" href="https://chrisxavix.github.io/JavaScript/lessons/17-Short_circuit_operator/short_circuit_operator.html">
+</head>
+<body style="height: 100vh">
+    <h1 class="itemTitle">Short Circuit Operator</h1>
+
+    <!-- ---------- Cortocircuito en (name = name || "Desconocido";) ---------- -->
+    <section id="ancla1">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">1.- Cortocircuito en (name = name || "Desconocido";)</h3>
+            <h4 class="itemInfo__subtitle">
+                En caso de que el llamado de la función no esté con parámetros defnidos mandar (Desconocido).
+            </h4>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                function saludarV1(name) {
+                <br>   name = name || "Desconocido";
+                <br>    console.log('Hola', name);
+                <br>}
+                <br>saludarV1('Dani');
+                <br>saludarV1();
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/01-circuit.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Cortocircuito en (name = name || "Desconocido";) ---------- -->
+
+    <!-- ---------- Opción 2 de validación usual ---------- -->
+    <section id="ancla2">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">2.- Opción 2 de validación usual</h3>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                function saludarV2(name = 'Desconocido') {
+                <br>   console.log('Hola', name);
+                <br>}
+                <br>saludarV2('Chris');
+                <br>saludarV2();
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/02-circuit.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Opción 2 de validación usual ---------- -->
+
+    <script src="short_circuit_operator.js"></script>
+</body>
+</html>
