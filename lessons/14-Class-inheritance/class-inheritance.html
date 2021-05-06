@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Inheritance</title>
+    <link rel="shortcut icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png" type="image/x-icon">
+    <!-- Hojas de estilos -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/normalize.css">
+    <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/styles.css">
+    <!-- Datos -->
+    <meta name="description" content="Azucar sintático para el uso de clases y herencia.">
+    <link rel="apple-touch-icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png">
+    <meta name="theme-color" content="rgb(103, 104, 59)">
+    <!-- Para Twitter:name="twitter:title"  y Facebook:property="og:title" -->
+    <meta property="og:title" name="twitter:title" content="Class Inheritance">
+    <meta property="og:image" name="twitter:image"
+    content="https://chrisxavix.github.io/JavaScript/assets/meta-home-cover-js.jpg">
+    <!-- Url del sitio -->
+    <meta property="og:url" name="twitter:url" content="https://chrisxavix.github.io/JavaScript/lessons/14-Class-inheritance/class-inheritance.html">
+    <meta property="og:description" name="twitter:description" content="Azucar sintático para el uso de clases y herencia.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <link rel="canonical" href="https://chrisxavix.github.io/JavaScript/lessons/14-Class-inheritance/class-inheritance.html">
+</head>
+<body style="height: 100%;">
+    <h1 class="itemTitle">Class Inheritance</h1>
+    
+    <!-- ---------- Azucar sintático con clases ---------- -->
+    <section id="ancla1">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">1.- Azucar sintático con clases</h3>
+            <h4 class="itemInfo__subtitle">
+                A pesar de usar clases, JavaScript lo tomará como funciones contructoras en la ejecución.
+            </h4>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                <br>class Animal {
+                <br>    constructor(nombre, genero) {
+                <br>    // Atributos
+                <br>    this.nombre = nombre;
+                <br>    this.genero = genero;   
+                <br>    }
+                <br>    // Métodos
+                <br>    sonar() { console.log('Hacer sonido del animal'); }
+                <br>    saludar() { console.log('Hola, me llamo', this.nombre); }
+                <br>}
+                <br>const mimi = new Animal('Mimi', 'Hembra');
+                <br>const scooby = new Animal('Scooby', 'Macho');
+                <br>mimi.sonar();
+                <br>mimi.saludar();
+                <br>console.log(mimi);
+                <br>console.log(scooby);
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/01-clase-herencia.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Azucar sintático con clases ---------- -->
+
+    <!-- ---------- Herencia ---------- -->
+    <section id="ancla2">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">2.- Herencia</h3>
+            <h4 class="itemInfo__subtitle">
+                La clase perroV1 hereda desde la clase padre Animal con la palabra extends
+            </h4>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                class AnimalV1 {
+                <br>    constructor(nombre, genero) {
+                <br>    // Atributos
+                <br>    this.nombre = nombre;
+                <br>    this.genero = genero;   
+                <br>    }
+                <br>    // Métodos
+                <br>    sonar() { console.log('Hacer sonido del animal'); }
+                <br>    saludar() { console.log('Hola, me llamo', this.nombre); }
+                <br>}
+                <br><br>class PerroV1 extends AnimalV1 {
+                <br>    constructor(nombre, genero, tamanio) {
+                <br>        // Super manda a llamar al constructor de la clase Padre (Animal)
+                <br>        super (nombre, genero);
+                <br>        // Atributo
+                <br>        this.tamanio = tamanio;
+                <br>    }
+                <br>    sonar() { console.log('Soy un perro'); }
+                <br>    ladrar() { console.log('guuuuuuuuuuuao'); }
+                <br>}
+                <br>const mimiV1 = new AnimalV1('Mimi', 'Hembra');
+                <br>const scoobyV1 = new PerroV1('Scooby', 'Macho', 'Cazador');
+                <br>console.log(mimiV1);
+                <br>mimiV1.sonar();
+                <br>mimiV1.saludar();
+                <br><br>// scoobyV1 al ser declarado como PerroV1 y que esta clase hija hereda de AnimalV1 puede acceder a los métodos, como es el caso con el método de saludar()
+                <br>console.log(scoobyV1);
+                <br>scoobyV1.sonar();
+                <br>scoobyV1.saludar();
+                <br>scoobyV1.ladrar();
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/02-clase-herencia.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Herencia ---------- -->
+
+    <!-- ---------- Ejercicio de clases y herencia, 1 ---------- -->
+    <section id="ancla3">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">3.- Ejercicio de clases y herencia, 1</h3>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                class Datos {
+                <br>    constructor (num1, num2) {
+                <br>        this.num1 = num1
+                <br>        this.num2 = num2
+                <br>    }
+                <br>}
+                <br><br>class Suma extends Datos {
+                <br>    // Constructor agrega más parámetros en caso de necesitar
+                <br>    constructor (num1, num2, respuesta) {
+                <br>        super(num1, num2)
+                <br>        this.respuesta = respuesta;
+                <br>    }
+                <br>    operar () {
+                <br>        this.respuesta = this.num1 + this.num2;
+                <br>        console.log(`${this.num1} + ${this.num2} = ${this.respuesta}`)
+                <br>    }
+                <br>} 
+                <br>const suma = new Suma(80,20)
+                <br>suma.operar()
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/03-clase-herencia.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Ejercicio de clases y herencia, 1 ---------- -->
+
+    <!-- ---------- Ejercicio de clases y herencia, 2 ---------- -->
+    <section id="ancla4">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">4.- Ejercicio de clases y herencia, 2</h3>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                class DatosV1 {
+                <br>    constructor (num1, num2) {
+                <br>        this.num1 = num1
+                <br>        this.num2 = num2
+                <br>    }
+                <br>}
+                <br><br>class Operaciones extends DatosV1 {
+                <br>    constructor (num1, num2, operador) {
+                <br>        super(num1, num2);
+                <br>        this.operador = operador;
+                <br>    }
+                <br>    operar () {
+                <br>        let respuesta;
+                <br>        if(this.operador === "+") {
+                <br>            respuesta = this.num1 + this.num2;
+                <br>            console.log(`${this.num1} ${this.operador} ${this.num2} = ${respuesta}`)
+                <br>        } else if(this.operador === "-"){
+                <br>            respuesta = this.num1 - this.num2;
+                <br>            console.log(`${this.num1} ${this.operador} ${this.num2} = ${respuesta}`)
+                <br>        } else if(this.operador === "*"){
+                <br>            respuesta = this.num1 * this.num2;
+                <br>            console.log(`${this.num1} ${this.operador} ${this.num2} = ${respuesta}`)
+                <br>        } else if(this.operador === "/"){
+                <br>            let respuesta = this.num1 / this.num2;
+                <br>            console.log(`${this.num1} ${this.operador} ${this.num2} = ${respuesta}`)
+                <br>        }
+                <br>    }
+                <br>} 
+                <br>const sumaV1 = new Operaciones(10,20,"+")
+                <br>const restaV1 = new Operaciones(30,20,"-")
+                <br>const multiV1 = new Operaciones(8,2,"*")
+                <br>const divV1 = new Operaciones(10,2,"/")
+                <br>sumaV1.operar()
+                <br>restaV1.operar()
+                <br>multiV1.operar()
+                <br>divV1.operar()
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/04-clase-herencia.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Ejercicio de clases y herencia, 2 ---------- -->
+
+    <script src="class-inheritance.js"></script>
+</body>
+</html>
