@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular expressions</title>
+    <link rel="shortcut icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png" type="image/x-icon">
+    <!-- Hojas de estilos -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/normalize.css">
+    <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/styles.css">
+    <!-- Datos -->
+    <meta name="description" content="Secuencia de caracteres que forman un patrón de búsqueda.">
+    <link rel="apple-touch-icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png">
+    <meta name="theme-color" content="rgb(103, 104, 59)">
+    <!-- Para Twitter:name="twitter:title" y Facebook:property="og:title" -->
+    <meta property="og:title" name="twitter:title" content="Regular expressions">
+    <meta property="og:image" name="twitter:image"
+    content="https://chrisxavix.github.io/JavaScript/assets/meta-home-cover-js.jpg">
+    <!-- Url del sitio -->
+    <meta property="og:url" name="twitter:url" content="https://chrisxavix.github.io/JavaScript/lessons/18-Regular expressions/regular_expressions.html">
+    <meta property="og:description" name="twitter:description" content="Secuencia de caracteres que forman un patrón de búsqueda.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <link rel="canonical" href="https://chrisxavix.github.io/JavaScript/lessons/18-Regular expressions/regular_expressions.html">
+</head>
+<body style="height: 100%;">
+    <h1 class="itemTitle">Regular expressions</h1>
+
+    <!-- ---------- La (g) es búsqueda global ---------- -->
+    <section id="ancla1">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">1.- La (g) es búsqueda global</h3>
+            <h4 class="itemInfo__subtitle">
+                Secuencia de caracteres que forman un patrón de búsqueda.
+                <br>Busca la expresión dentro de la cadena con la función test() para saber si existe.
+            </h4>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                let cadena = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis velit assumenda dolorem at autem, fugiat quia dicta sint aperiam facere accusantium nam! Enim, eum. Error, molestias soluta. Delectus, asperiores illum.";
+                <br><br>let expReg = new RegExp("lorem", "g");
+                <br>console.log(expReg.test(cadena));
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/01-expresion.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- La (g) es búsqueda global ---------- -->
+
+    <!-- ---------- La (i) ignora mayúsculas ---------- -->
+    <section id="ancla2">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">2.- La (i) ignora mayúsculas</h3>
+            <h4 class="itemInfo__subtitle">
+                Secuencia de caracteres que forman un patrón de búsqueda.
+                <br>Busca la expresión dentro de la cadena con la función test() para saber si existe.
+            </h4>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                let cadenaV1 = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis velit assumenda dolorem at autem, fugiat quia dicta sint aperiam facere accusantium nam! Enim, eum. Error, molestias soluta. Delectus, asperiores illum.";
+                <br><br>let expRegV1 = new RegExp("lorem", "i");
+                <br>console.log(expRegV1.test(cadenaV1));
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/01-expresion.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- La (i) ignora mayúsculas ---------- -->
+
+    <!-- ---------- Devuelve un arreglo con la función exec() con información de la búsqueda ---------- -->
+    <section id="ancla3">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">3.- Devuelve un arreglo con la función exec() con información de la búsqueda</h3>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                let cadenaV2 = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis velit assumenda dolorem at autem, fugiat quia dicta sint aperiam facere accusantium nam! Enim, eum. Error, molestias soluta. Delectus, asperiores illum.";
+                <br><br>let expRegV2 = new RegExp("lorem", "g");
+                <br>console.log(expRegV2.exec(cadenaV2));   
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/03-expresion.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Devuelve un arreglo con la función exec() con información de la búsqueda ---------- -->
+
+    <script src="regular_expressions.js"></script>
+</body>
+</html>
