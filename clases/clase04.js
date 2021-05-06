@@ -1,53 +1,8 @@
 /* --------------------- CURSO JAVASCRIPT ------------------- */
 /* 
-2) Objeto Math: Linea 29
 4) Operador Cortocircuito: Línea 101
 5) Expresiones regulares: Línea 149
 */
-
-/* 3) ------------------ Objeto Math -------------------- */
-
-/* El menor valor */
-/* console.log(Math.min(1,5,7)); */
-/* Imprime:
-1 */
-
-/* El máximo valor */
-/* console.log(Math.max(1,5,7)); */
-/* Imprime:
-7 */
-
-/* El valor redondeado */
-/* console.log(Math.round(7.5)); */
-/* Imprime:
-8 */
-
-/* Raíz cuadrada */
-/* console.log(Math.sqrt(81)); */
-/* Imprime: 
-81 */
-
-/* Potencia */
-/* console.log(Math.pow(2,3)); */
-/* Imprime: 
-8 */
-
-/* El ramdom, entre 0 a 1 */
-/* console.log(Math.random()); */
-/* Imprime: 
-0.4593201250271899 */
-
-/* El ramdom, del 0 al 10 */
-/* console.log(Math.random() * 10); */
-/* Imprime: 
-2.5817324454330404 */
-
-/* El ramdom, dentro de un round se quita la parte decimal,
-además, es del 0 al 10 */
-/* console.log(Math.round(Math.random() * 10)); */
-/* Imprime: 
-87 */
-/* --------------------- Objeto Math -------------------- */
 
 /* 4) ------------- Operador Cortocircuito -------------- */
 
