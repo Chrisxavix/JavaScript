@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Inheritance</title>
+    <link rel="shortcut icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png" type="image/x-icon">
+    <!-- Hojas de estilos -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/normalize.css">
+    <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/styles.css">
+    <!-- Datos -->
+    <meta name="description" content="Diferentes maneras de manipular el Date para la visualización de información.">
+    <link rel="apple-touch-icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png">
+    <meta name="theme-color" content="rgb(103, 104, 59)">
+    <!-- Para Twitter:name="twitter:title" y Facebook:property="og:title" -->
+    <meta property="og:title" name="twitter:title" content="Date">
+    <meta property="og:image" name="twitter:image"
+    content="https://chrisxavix.github.io/JavaScript/assets/meta-home-cover-js.jpg">
+    <!-- Url del sitio -->
+    <meta property="og:url" name="twitter:url" content="https://chrisxavix.github.io/JavaScript/lessons/15-Date/date.html">
+    <meta property="og:description" name="twitter:description" content="Diferentes maneras de manipular el Date para la visualización de información.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <link rel="canonical" href="https://chrisxavix.github.io/JavaScript/lessons/15-Date/date.html">
+</head>
+<body style="height: 100%;">
+    <h1 class="itemTitle">Date</h1>
+    
+    <!-- ---------- Date ---------- -->
+    <section id="ancla1">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">1.- Date</h3>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                console.log('--------- 1 ---------');
+                <br>console.log('Fecha Completa');
+                <br>console.log(fecha);
+                <br>console.log('--------- 2 ---------');
+                <br>console.log('Día del mes, 0-30');
+                <br>console.log(fecha.getDate());
+                <br>console.log('--------- 3 ---------');
+                <br>console.log('Día de la semana,  D-L-M-MI-J-V-S - 0-6');
+                <br>console.log(fecha.getDay());
+                <br>console.log('--------- 4 ---------');
+                <br>console.log('Mes, 0-11');
+                <br>console.log(fecha.getMonth());
+                <br>console.log('--------- 5 ---------');
+                <br>console.log('Año');
+                <br>console.log(fecha.getFullYear());
+                <br>console.log('--------- 6 ---------');
+                <br>console.log('Fecha formato: 6/5/2021 14:00:40');
+                <br>console.log(fecha.toLocaleString());
+                <br>console.log('--------- 7 ---------');
+                <br>console.log('Fecha formato: 6/5/2021');
+                <br>console.log(fecha.toLocaleDateString());
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/01-date.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Date ---------- -->
+
+    <script src="date.js"></script>
+</body>
+</html>

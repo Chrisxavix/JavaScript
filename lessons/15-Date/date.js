@@ -1,0 +1,23 @@
+/* ---------------- Objeto Date --------------------- */
+let fecha = new Date();
+console.log('--------- 1 ---------');
+console.log('Fecha Completa');
+console.log(fecha);
+console.log('--------- 2 ---------');
+console.log('Día del mes, 0-30');
+console.log(fecha.getDate());
+console.log('--------- 3 ---------');
+console.log('Día de la semana,  D-L-M-MI-J-V-S - 0-6');
+console.log(fecha.getDay());
+console.log('--------- 4 ---------');
+console.log('Mes, 0-11');
+console.log(fecha.getMonth());
+console.log('--------- 5 ---------');
+console.log('Año');
+console.log(fecha.getFullYear());
+console.log('--------- 6 ---------');
+console.log('Fecha formato: 6/5/2021 14:00:40');
+console.log(fecha.toLocaleString());
+console.log('--------- 7 ---------');
+console.log('Fecha formato: 6/5/2021');
+console.log(fecha.toLocaleDateString());
