@@ -1,52 +1,10 @@
 /* --------------------- CURSO JAVASCRIPT ------------------- */
 /* 
-1) Temporizadores: Línea 10
 2) Asincronía y Event Loop: Linea 51
 3) Callbacks: Línea 104
 4) Promesas: Línea 128
 5) Async Await: Línea 181
 */
-
-/* 1) ---------------- Temporizadores ------------------ */
-
-/* El setTimeout se ejecuta una sola vez, esto con el tiempo
-estimado, que es de 3s (3000) */
-/* console.log('inicio');
-setTimeout(() => {
-    console.log('ejecutando setTime');
-},3000); */
-/* Imprime1:
-inicio
-Imprime2: después de 3s
-ejecutando setTime */
-
-/* Borrar o detener el setTimeout, hay que darle 
-una variable */
-/* let temporizador = setTimeout(() => {
-    console.log('ejecutando setTime');
-},3000); 
-console.log('borrando');
-clearTimeout(temporizador); */
-/* Imprime:
-borrando */
-
-/* El setInterval se ejecuta indefinidamente, 
-esto con el tiempo estimado, que es de 3s (3000) */
-/* console.log('inicio');
-setInterval(() => {
-    console.log('ejecutando setInterval');
-},3000); */
-
-/* Borrar o detener el setInterval, hay que darle 
-una variable */
-/* let temporizador = setInterval(() => {
-    console.log('ejecutando setTime');
-},3000); 
-console.log('borrando');
-clearInterval(temporizador); */
-/* Imprime:
-borrando */
-/* 1) ---------------- Temporizadores ------------------ */
 
 /* 2) ------------ Asincronía y Event Loop ------------- */
 

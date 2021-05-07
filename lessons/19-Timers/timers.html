@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timers</title>
+    <link rel="shortcut icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png" type="image/x-icon">
+    <!-- Hojas de estilos -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/normalize.css">
+    <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/styles.css">
+    <!-- Datos -->
+    <meta name="description" content="Funciones para jugar con los tiempos.">
+    <link rel="apple-touch-icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png">
+    <meta name="theme-color" content="rgb(103, 104, 59)">
+    <!-- Para Twitter:name="twitter:title" y Facebook:property="og:title" -->
+    <meta property="og:title" name="twitter:title" content="Timers">
+    <meta property="og:image" name="twitter:image"
+    content="https://chrisxavix.github.io/JavaScript/assets/meta-home-cover-js.jpg">
+    <!-- Url del sitio -->
+    <meta property="og:url" name="twitter:url" content="https://chrisxavix.github.io/JavaScript/lessons/19-Timers/timers.html">
+    <meta property="og:description" name="twitter:description" content="Funciones para jugar con los tiempos.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <link rel="canonical" href="https://chrisxavix.github.io/JavaScript/lessons/19-Timers/timers.html">
+</head>
+<body style="height: 100%;">
+    <h1 class="itemTitle">Math</h1>
+
+    <!-- ---------- El setTimeout ---------- -->
+    <section id="ancla1">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">1.- El setTimeout</h3>
+            <h4 class="itemInfo__subtitle">
+                Se ejecuta una sola vez con el tiempo estimado, que es de 3s (3000)
+            </h4>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                console.log('inicio 1');
+                <br>setTimeout(() => {
+                <br>    console.log('setTime 1');
+                <br>}, 3000);
+                <br>console.log('fin 1');
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/01-timers.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- El setTimeout ---------- -->
+
+    <!-- ---------- Borrar o detener el setTimeout ---------- -->
+    <section id="ancla2">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">2.- Borrar o detener el setTimeout</h3>
+            <h4 class="itemInfo__subtitle">
+                Hay que darle una variable
+            </h4>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                console.log('inicio 2');
+                <br>let temporizador = setTimeout(() => {
+                <br>    console.log('setTimeVariable');
+                <br>}, 3000);
+                <br>clearTimeout(temporizador);
+                <br>console.log('fin 2');
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/02-timers.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Borrar o detener el setTimeout ---------- -->
+
+    <!-- ---------- El setInterval ---------- -->
+    <section id="ancla3">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">3.- El setInterval</h3>
+            <h4 class="itemInfo__subtitle">
+                Se ejecuta indefinidamente con el tiempo estimado, que es de 3s (3000)
+            </h4>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                console.log('inicio 3');
+                <br>setInterval(() => {
+                <br>    console.log('setInterval 1');
+                <br>}, 3000);
+                <br>console.log('fin 3');
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/03-timers.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- El setInterval ---------- -->
+
+    <!-- ---------- Borrar o detener el setInterval ---------- -->
+    <section id="ancla4">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">4.- Borrar o detener el setInterval</h3>
+            <h4 class="itemInfo__subtitle">
+                Hay que darle una variable
+            </h4>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                console.log('inicio 4');
+                <br>let temporizadorInterval = setInterval(() => {
+                <br>    console.log('setIntervalVariable');
+                <br>}, 3000);
+                <br>clearInterval(temporizadorInterval);
+                <br>console.log('fin 4');
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/04-timers.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Borrar o detener el setInterval ---------- -->
+
+    <!-- ---------- Borrar o detener el setInterval con condición ---------- -->
+    <section id="ancla5">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">5.- Borrar o detener el setInterval con condición</h3>
+            <h4 class="itemInfo__subtitle">
+                Si se repite dos veces se detiene o borra
+            </h4>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+            <h5 class="itemInfo__example">
+                console.log('inicio 5');
+                <br>let cont = 0;
+                <br>let temporizadorIntervalV1 = setInterval((elemn, index) => {
+                <br>    cont++;
+                <br>    console.log('setIntervalVariable', cont);
+                <br>    if (cont === 2) {
+                <br>        clearInterval(temporizadorIntervalV1);
+                <br>    }
+                <br>}, 3000);
+                <br>console.log('fin 5');
+            </h5>
+        </div>
+    
+        <div class="content-img">
+            <img src="assets/05-timers.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Borrar o detener el setInterval con condición ---------- -->
+
+    <script src="timers.js"></script>
+</body>
+</html>
