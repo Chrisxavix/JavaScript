@@ -9,6 +9,8 @@
     <!-- Hojas de estilos -->
     <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/normalize.css">
     <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/styles.css">
+    <!-- Comment Code Style -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/Css/comment-code/prism.css">
     <!-- Datos -->
     <meta name="description" content="Una alternativa compacta a una expresión de función tradicional.">
     <link rel="apple-touch-icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png">
@@ -35,11 +37,12 @@
                 Cuando es una sola sentencia es opcional las llaves de una función tradicional
             </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                saludar = () => console.log('Hola');
-                <br>saludar();
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+saludar = () => console.log('Hola');
+saludar();
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/01-arrow.png" alt="">
@@ -52,11 +55,12 @@
         <div class="itemInfo">
             <h3 class="itemInfo__title">2.- Arrow function con parámetro</h3>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                saludarNombre = nombre => console.log('Hola', nombre);
-                <br>saludarNombre('Chris');
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+saludarNombre = nombre => console.log('Hola', nombre);
+saludarNombre('Chris');
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/02-arrow.png" alt="">
@@ -69,14 +73,15 @@
         <div class="itemInfo">
             <h3 class="itemInfo__title">3.- Ejemplo de uso normal con funciones</h3>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                sumar = function (valor1, valor2) {
-                <br>   return valor1 + valor2;
-                <br>}
-                <br>let result = sumar(4, 5);
-                <br>console.log('La suma es:', result);
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+sumar = function (valor1, valor2) {
+   return valor1 + valor2;
+}
+let result = sumar(4, 5);
+console.log('La suma es:', result);
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/03-arrow.png" alt="">
@@ -93,12 +98,13 @@
                 <br>La flecha indica el return.
             </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                sumarArrow = (valor1, valor2) => valor1 + valor2;
-                <br>let resultArrow = sumarArrow(9, 5);
-                <br>console.log('La suma es:', resultArrow);
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+sumarArrow = (valor1, valor2) => valor1 + valor2;
+let resultArrow = sumarArrow(9, 5);
+console.log('La suma es:', resultArrow);
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/04-arrow.png" alt="">
@@ -114,13 +120,14 @@
                 Ejemplo con "function"
             </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                const numeros = [1, 5, 8, 7];
-                <br>numeros.forEach(function (element) {
-                <br>    console.log(element)
-                <br>})
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+const numeros = [1, 5, 8, 7];
+numeros.forEach(function (element) {
+    console.log(element)
+})
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/05-arrow.png" alt="">
@@ -133,13 +140,14 @@
         <div class="itemInfo">
             <h3 class="itemInfo__title">6.- Evadiendo "function" por "=>"</h3>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                const numeros = [1, 5, 8, 7];
-                <br>numerosArrow.forEach((element) => {
-                <br>    console.log(element)
-                <br>})
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+const numeros = [1, 5, 8, 7];
+numerosArrow.forEach((element) => {
+    console.log(element)
+})
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/06-arrow.png" alt="">
@@ -148,5 +156,7 @@
     <!-- ---------- Evadiendo "function" por "=>" ---------- -->
 
     <script src="arrow-function.js"></script>
+    <!-- Comment Code Style -->
+    <script src="https://chrisxavix.github.io/Css/comment-code/prism.js"></script>
 </body>
 </html>

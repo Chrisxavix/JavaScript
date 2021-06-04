@@ -8,6 +8,8 @@
     <!-- Hojas de estilos -->
     <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/normalize.css">
     <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/styles.css">
+    <!-- Comment Code Style -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/Css/comment-code/prism.css">
     <!-- Datos -->
     <meta name="description" content="Conceptos y métodos de los objects.">
     <link rel="apple-touch-icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png">
@@ -39,11 +41,12 @@
         <div class="itemInfo">
             <h3 class="itemInfo__title">1.- Declaración de un arreglo vacío, opción 1</h3>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                const objectNew = {};
-                <br>console.log(objectNew);
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+const objectNew = {};
+console.log(objectNew);
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/01-objeto-declaracion.png" alt="">
@@ -56,11 +59,12 @@
         <div class="itemInfo">
             <h3 class="itemInfo__title">2.- Declaración de un arreglo vacío, opción 2</h3>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                const objectNewV2 = new Object();
-                <br>console.log(objectNewV2);
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+const objectNewV2 = new Object();
+console.log(objectNewV2);
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/02-objeto-declaracion.png" alt="">
@@ -76,18 +80,19 @@
                 Arrays y objetos dentro de un objeto declarado
             </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                const objectPerson = {
-                <br>    nombre: 'Chris',
-                <br>    edad: 24,
-                <br>    correo: 'chris@gmail.com',
-                <br>    pasatiempos: ['jugar', 'caminar', 'leer'],
-                <br>    soltero: true,
-                <br>    contacto: { tel: 1234, correo: 'lorem' }  
-                <br>}
-                <br>console.log(objectPerson);
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+const objectPerson = {
+    nombre: 'Chris',
+    edad: 24,
+    correo: 'chris@gmail.com',
+    pasatiempos: ['jugar', 'caminar', 'leer'],
+    soltero: true,
+    contacto: { tel: 1234, correo: 'lorem' }  
+}
+console.log(objectPerson);
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/03-objeto-declaracion.png" alt="">
@@ -103,20 +108,21 @@
                 Acceder mediante la declaración con []
             </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                const objectPersonChris = {
-                <br>    nombre: 'Chris',
-                <br>    edad: 24,
-                <br>    correo: 'chris@gmail.com',
-                <br>    pasatiempos: ['jugar', 'caminar', 'leer'],
-                <br>    soltero: true,
-                <br>    contacto: { tel: 1234, correo: 'lorem' }
-                <br>}
-                <br>console.log(objectPersonChris['nombre']);
-                <br>console.log(objectPersonChris['contacto']);
-                <br>console.log(objectPersonChris['contacto']['correo']);
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+const objectPersonChris = {
+    nombre: 'Chris',
+    edad: 24,
+    correo: 'chris@gmail.com',
+    pasatiempos: ['jugar', 'caminar', 'leer'],
+    soltero: true,
+    contacto: { tel: 1234, correo: 'lorem' }
+}
+console.log(objectPersonChris['nombre']);
+console.log(objectPersonChris['contacto']);
+console.log(objectPersonChris['contacto']['correo']);
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/04-acceder.png" alt="">
@@ -132,22 +138,23 @@
                 Acceder mediante la declaración con el punto "."
             </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                const objectPersonChrisV2 = {
-                <br>    nombre: 'Chris',
-                <br>    edad: 24,
-                <br>    correo: 'chris@gmail.com',
-                <br>    pasatiempos: ['jugar', 'caminar', 'leer'],
-                <br>    soltero: true,
-                <br>    contacto: { tel: 1234, correo: 'lorem' },
-                <br>    saludar: function () { console.log('Hola'); }
-                <br>}
-                <br>console.log(objectPersonChrisV2.nombre);
-                <br>console.log(objectPersonChrisV2.contacto);
-                <br>console.log(objectPersonChrisV2.contacto.correo);
-                <br>objectPersonChrisV2.saludar();
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+const objectPersonChrisV2 = {
+    nombre: 'Chris',
+    edad: 24,
+    correo: 'chris@gmail.com',
+    pasatiempos: ['jugar', 'caminar', 'leer'],
+    soltero: true,
+    contacto: { tel: 1234, correo: 'lorem' },
+    saludar: function () { console.log('Hola'); }
+}
+console.log(objectPersonChrisV2.nombre);
+console.log(objectPersonChrisV2.contacto);
+console.log(objectPersonChrisV2.contacto.correo);
+objectPersonChrisV2.saludar();
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/05-acceder.png" alt="">
@@ -165,21 +172,22 @@
                 <br>El (.hasOwnProperty) pregunta si exite el id 'nombre'
             </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                const objectPersonChrisV3 = {
-                <br>    nombre: 'Chris',
-                <br>    edad: 24,
-                <br>    correo: 'chris@gmail.com',
-                <br>    pasatiempos: ['jugar', 'caminar', 'leer'],
-                <br>    soltero: true,
-                <br>    contacto: { tel: 1234, correo: 'lorem' },
-                <br>    saludar: function () { console.log('Hola'); }
-                <br>}
-                <br>console.log(Object.keys(objectPersonChrisV3));
-                <br>console.log(Object.values(objectPersonChrisV3));
-                <br>console.log(objectPersonChrisV3.hasOwnProperty('nombre'));
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+const objectPersonChrisV3 = {
+    nombre: 'Chris',
+    edad: 24,
+    correo: 'chris@gmail.com',
+    pasatiempos: ['jugar', 'caminar', 'leer'],
+    soltero: true,
+    contacto: { tel: 1234, correo: 'lorem' },
+    saludar: function () { console.log('Hola'); }
+}
+console.log(Object.keys(objectPersonChrisV3));
+console.log(Object.values(objectPersonChrisV3));
+console.log(objectPersonChrisV3.hasOwnProperty('nombre'));
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/06-acceder.png" alt="">
@@ -196,5 +204,8 @@
     <!-- ---------- 6.- Acceder a valores del id o value del objeto ---------- -->
 
     <script src="objects.js"></script>
+    <script src="messages.js"></script>
+    <!-- Comment Code Style -->
+    <script src="https://chrisxavix.github.io/Css/comment-code/prism.js"></script>
 </body>
 </html>

@@ -8,6 +8,8 @@
     <!-- Hojas de estilos -->
     <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/normalize.css">
     <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/styles.css">
+    <!-- Comment Code Style -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/Css/comment-code/prism.css">
     <!-- Datos -->
     <meta name="description" content="For (in-of) y While.">
     <link rel="apple-touch-icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png">
@@ -34,14 +36,15 @@
                 Se repite mientras se cumpla la condición
             </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                let contador = 0;
-                <br>while (contador < 10) {
-                <br>    contador = contador + 1;
-                <br>    console.log(contador);
-                <br>}
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+let contador = 0;
+while (contador < 10) {
+    contador = contador + 1;
+    console.log(contador);
+}
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/01-while.png" alt="">
@@ -59,12 +62,13 @@
                 <br>}
             </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                for (let i = 0; i < 10; i++) {
-                <br>    console.log('for', i)
-                <br>}
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+for (let i = 0; i < 10; i++) {
+    console.log('for', i)
+}
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/02-for.png" alt="">
@@ -77,13 +81,14 @@
         <div class="itemInfo">
             <h3 class="itemInfo__title">3.- For, imprime el array</h3>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                let numeros = [10, 20, 30, 40, 50, 60, 70];
-                <br>for (let i = 0; i < numeros.length; i++) {
-                <br>    console.log('forArray', numeros[i])
-                <br>}
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+let numeros = [10, 20, 30, 40, 50, 60, 70];
+for (let i = 0; i < numeros.length; i++) {
+    console.log('forArray', numeros[i])
+}
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/03-for-array.png" alt="">
@@ -96,14 +101,15 @@
         <div class="itemInfo">
             <h3 class="itemInfo__title">4.- For in, recorre el objeto e imprime el id</h3>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                const objectChris = { nombre: 'Chris', apellido: 'Chillo', edad: 24 }
-                <br>for (const propiedad in objectChris) {
-                <br>    console.log(propiedad);
-                <br>}
-            </h5>
         </div>
     
+        <pre style="font-size: 12px;"><code class="language-javascript">
+const objectChris = { nombre: 'Chris', apellido: 'Chillo', edad: 24 }
+for (const propiedad in objectChris) {
+    console.log(propiedad);
+}
+        </code></pre>
+
         <div class="content-img">
             <img src="assets/04-for-in1.png" alt="">
         </div>
@@ -115,14 +121,15 @@
         <div class="itemInfo">
             <h3 class="itemInfo__title">5.- For in: recorre el objeto e imprime el id y valor</h3>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                const objectChrisV1 = { nombre: 'Chris', apellido: 'Chillo', edad: 24 }
-                <br>for (const propiedad in objectChrisV1) {
-                <br>    console.log(`Id: ${propiedad} - Valor: ${objectChrisV1[propiedad]}`);
-                <br>}
-            </h5>
         </div>
     
+        <pre style="font-size: 12px;"><code class="language-javascript">
+const objectChrisV1 = { nombre: 'Chris', apellido: 'Chillo', edad: 24 }
+for (const propiedad in objectChrisV1) {
+    console.log(`Id: ${propiedad} - Valor: ${objectChrisV1[propiedad]}`);
+}
+        </code></pre>
+
         <div class="content-img">
             <img src="assets/05-for-in2.png" alt="">
         </div>
@@ -134,13 +141,14 @@
         <div class="itemInfo">
             <h3 class="itemInfo__title">6.- For of: permite recorrer todos los elementos</h3>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                let numerosArray = [10, 20, 30, 40, 50, 60, 70];
-                <br>for (const elemento of numerosArray) {
-                <br>    console.log(elemento);
-                <br>}
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+let numerosArray = [10, 20, 30, 40, 50, 60, 70];
+for (const elemento of numerosArray) {
+    console.log(elemento);
+}
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/6-for.of.png" alt="">
@@ -149,5 +157,7 @@
     <!-- ---------- For of: permite recorrer todos los elementos ---------- -->
 
     <script src="for-while.js"></script>
+    <!-- Comment Code Style -->
+    <script src="https://chrisxavix.github.io/Css/comment-code/prism.js"></script>
 </body>
 </html>

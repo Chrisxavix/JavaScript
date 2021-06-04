@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +9,8 @@
     <!-- Hojas de estilos -->
     <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/normalize.css">
     <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/styles.css">
+    <!-- Comment Code Style -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/Css/comment-code/prism.css">
     <!-- Datos -->
     <meta name="description" content="Programación orientada a objetos con prototipos.">
     <link rel="apple-touch-icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png">
@@ -35,21 +37,22 @@
                 Puede ocupar variables y métodos sin tener que copiar y pegar código para cada objeto .
             </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                function Animal (nombre, genero) {
-                <br>    // Atributos
-                <br>    this.nombre = nombre;
-                <br>    this.genero = genero;
-                <br><br>    // Método
-                <br>    this.sonar = function () { console.log('Hacer sonido del animal'); }
-                <br>}<br>
-                <br>// "new" crea una Instancia del tipo que se le asigne
-                <br>const snoop = new Animal('Mal', 'Macho');
-                <br>const snoopy = new Animal('Dana', 'Hembra');
-                <br>console.log(snoop);
-                <br>console.log(snoopy);
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+function Animal (nombre, genero) {
+    /* Atributos */
+    this.nombre = nombre;
+    this.genero = genero;
+    /* Método */
+    this.sonar = function () { console.log('Hacer sonido del animal'); }
+}
+/* "new" crea una Instancia del tipo que se le asigne */
+const snoop = new Animal('Mal', 'Macho');
+const snoopy = new Animal('Dana', 'Hembra');
+console.log(snoop);
+console.log(snoopy);
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/01-prototype.png" alt="">
@@ -65,24 +68,25 @@
                 Cada que genero una instancia lleva el método "this.sonar" y "this.saludar", lo cual ocupa memoria, por lo que se puede dejarlos fuera, y de todas maneras se puede llamarlos
             </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                function AnimalV2 (nombre, genero) {
-                <br>    // Atributos
-                <br>    this.nombre = nombre;
-                <br>    this.genero = genero;
-                <br>}
-                <br><br>// Métodos
-                <br>AnimalV2.prototype.sonar = function () {  console.log('Hacer sonido del animal'); }
-                <br>AnimalV2.prototype.saludar = function () { console.log('Hola, me llamo', this.nombre); }
-                <br><br>// "new" crea una Instancia del tipo que se le asigne
-                <br>const snoopV2 = new AnimalV2('Mal', 'Macho');
-                <br>const snoopyV2 = new AnimalV2('Dana', 'Hembra');
-                <br>console.log(snoopV2);
-                <br>console.log(snoopyV2);
-                <br>snoopV2.sonar();
-                <br>snoopyV2.saludar();                
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+function AnimalV2 (nombre, genero) {
+    /* Atributos */
+    this.nombre = nombre;
+    this.genero = genero;
+}
+/* Métodos */
+AnimalV2.prototype.sonar = function () {  console.log('Hacer sonido del animal'); }
+AnimalV2.prototype.saludar = function () { console.log('Hola, me llamo', this.nombre); }
+/* "new" crea una Instancia del tipo que se le asigne */
+const snoopV2 = new AnimalV2('Mal', 'Macho');
+const snoopyV2 = new AnimalV2('Dana', 'Hembra');
+console.log(snoopV2);
+console.log(snoopyV2);
+snoopV2.sonar();
+snoopyV2.saludar(); 
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/02-prototype.png" alt="">
@@ -91,5 +95,7 @@
     <!-- ---------- Funcion constructora sin métodos ---------- -->
 
     <script src="prototype.js"></script>
+    <!-- Comment Code Style -->
+    <script src="https://chrisxavix.github.io/Css/comment-code/prism.js"></script>
 </body>
 </html>

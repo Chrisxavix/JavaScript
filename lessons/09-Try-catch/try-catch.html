@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +9,8 @@
     <!-- Hojas de estilos -->
     <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/normalize.css">
     <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/styles.css">
+    <!-- Comment Code Style -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/Css/comment-code/prism.css">
     <!-- Datos -->
     <meta name="description" content="Control de errores con try, catch y finally.">
     <link rel="apple-touch-icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png">
@@ -37,18 +39,19 @@
                 <br>El finally siempre se ejecuta, haya o no errores.
             </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                try {
-                <br>    console.log('Se agrega el código a evaluar');
-                <br>} catch (error) {
-                <br>    console.log('Captura cualquier error lanzado en el try');
-                <br>    console.log(error);
-                <br>} finally {
-                <br>    console.log('Se ejecuta siempre al final de un bloque try-catch');
-                <br>}
-            </h5>
         </div>
     
+        <pre style="font-size: 12px;"><code class="language-javascript">
+try {
+    console.log('Se agrega el código a evaluar');
+} catch (error) {
+    console.log('Captura cualquier error lanzado en el try');
+    console.log(error);
+} finally {
+    console.log('Se ejecuta siempre al final de un bloque try-catch');
+}
+        </code></pre>
+
         <div class="content-img">
             <img src="assets/01-try-catch.png" alt="">
         </div>
@@ -63,19 +66,20 @@
                 Entra al catch por tener una variable no definida.
             </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                try {
-                <br>    console.log('Se agrega el código a evaluar');
-                <br>    test;
-                <br>    console.log('Segundo mensaje');
-                <br>} catch (error) {
-                <br>    console.log('Captura cualquier error lanzado en el try');
-                <br>    console.log(error);
-                <br>} finally {
-                <br>    console.log('Se ejecuta siempre al final de un bloque try-catch');
-                <br>}
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+try {
+    console.log('Se agrega el código a evaluar');
+    test;
+    console.log('Segundo mensaje');
+} catch (error) {
+    console.log('Captura cualquier error lanzado en el try');
+    console.log(error);
+} finally {
+    console.log('Se ejecuta siempre al final de un bloque try-catch');
+}
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/02-try-catch-error.png" alt="">
@@ -93,18 +97,19 @@
                 <br>console.trace(), indica la línea de error.
             </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                try {
-                <br>    let numero = 'lo';
-                <br>    if (isNaN(numero)) {
-                <br>        throw new Error('El caracter no es un número.')
-                <br>    }
-                <br>    console.log(numero * numero);
-                <br>} catch (error) {
-                <br>   console.trace(`Se produjo el error:  ${error}`);
-                <br>}
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+try {
+let numero = 'lo';
+if (isNaN(numero)) {
+    throw new Error('El caracter no es un número.')
+    }
+    console.log(numero * numero);
+} catch (error) {
+   console.trace(`Se produjo el error:  ${error}`);
+}
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/03-try-catch-error.png" alt="">
@@ -113,5 +118,7 @@
     <!-- ---------- Error generado con el tipo de dato ---------- -->
 
     <script src="try-catch.js"></script>
+    <!-- Comment Code Style -->
+    <script src="https://chrisxavix.github.io/Css/comment-code/prism.js"></script>
 </body>
 </html>

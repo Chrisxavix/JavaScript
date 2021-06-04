@@ -9,6 +9,8 @@
     <!-- Hojas de estilos -->
     <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/normalize.css">
     <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/styles.css">
+    <!-- Comment Code Style -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/Css/comment-code/prism.css">
     <!-- Datos -->
     <meta name="description" content="Funciones para jugar con los tiempos.">
     <link rel="apple-touch-icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png">
@@ -35,14 +37,15 @@
                 Se ejecuta una sola vez con el tiempo estimado, que es de 3s (3000)
             </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                console.log('inicio 1');
-                <br>setTimeout(() => {
-                <br>    console.log('setTime 1');
-                <br>}, 3000);
-                <br>console.log('fin 1');
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+console.log('inicio 1');
+setTimeout(() => {
+    console.log('setTime 1');
+}, 3000);
+console.log('fin 1');
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/01-timers.png" alt="">
@@ -58,15 +61,16 @@
                 Hay que darle una variable
             </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                console.log('inicio 2');
-                <br>let temporizador = setTimeout(() => {
-                <br>    console.log('setTimeVariable');
-                <br>}, 3000);
-                <br>clearTimeout(temporizador);
-                <br>console.log('fin 2');
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+console.log('inicio 2');
+let temporizador = setTimeout(() => {
+    console.log('setTimeVariable');
+}, 3000);
+clearTimeout(temporizador);
+console.log('fin 2');
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/02-timers.png" alt="">
@@ -82,15 +86,16 @@
                 Se ejecuta indefinidamente con el tiempo estimado, que es de 3s (3000)
             </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                console.log('inicio 3');
-                <br>setInterval(() => {
-                <br>    console.log('setInterval 1');
-                <br>}, 3000);
-                <br>console.log('fin 3');
-            </h5>
         </div>
     
+        <pre style="font-size: 12px;"><code class="language-javascript">
+console.log('inicio 3');
+setInterval(() => {
+    console.log('setInterval 1');
+}, 3000);
+console.log('fin 3');
+        </code></pre>
+
         <div class="content-img">
             <img src="assets/03-timers.png" alt="">
         </div>
@@ -105,15 +110,16 @@
                 Hay que darle una variable
             </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                console.log('inicio 4');
-                <br>let temporizadorInterval = setInterval(() => {
-                <br>    console.log('setIntervalVariable');
-                <br>}, 3000);
-                <br>clearInterval(temporizadorInterval);
-                <br>console.log('fin 4');
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+console.log('inicio 4');
+let temporizadorInterval = setInterval(() => {
+    console.log('setIntervalVariable');
+}, 3000);
+clearInterval(temporizadorInterval);
+console.log('fin 4');
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/04-timers.png" alt="">
@@ -129,19 +135,20 @@
                 Si se repite dos veces se detiene o borra
             </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                console.log('inicio 5');
-                <br>let cont = 0;
-                <br>let temporizadorIntervalV1 = setInterval((elemn, index) => {
-                <br>    cont++;
-                <br>    console.log('setIntervalVariable', cont);
-                <br>    if (cont === 2) {
-                <br>        clearInterval(temporizadorIntervalV1);
-                <br>    }
-                <br>}, 3000);
-                <br>console.log('fin 5');
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+console.log('inicio 5');
+let cont = 0;
+let temporizadorIntervalV1 = setInterval((elemn, index) => {
+    cont++;
+    console.log('setIntervalVariable', cont);
+    if (cont === 2) {
+        clearInterval(temporizadorIntervalV1);
+    }
+}, 3000);
+console.log('fin 5');
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/05-timers.png" alt="">
@@ -150,5 +157,7 @@
     <!-- ---------- Borrar o detener el setInterval con condición ---------- -->
 
     <script src="timers.js"></script>
+    <!-- Comment Code Style -->
+    <script src="https://chrisxavix.github.io/Css/comment-code/prism.js"></script>
 </body>
 </html>

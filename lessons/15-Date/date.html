@@ -9,6 +9,8 @@
     <!-- Hojas de estilos -->
     <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/normalize.css">
     <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/styles.css">
+    <!-- Comment Code Style -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/Css/comment-code/prism.css">
     <!-- Datos -->
     <meta name="description" content="Diferentes maneras de manipular el Date para la visualización de información.">
     <link rel="apple-touch-icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png">
@@ -32,30 +34,31 @@
         <div class="itemInfo">
             <h3 class="itemInfo__title">1.- Date</h3>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                console.log('--------- 1 ---------');
-                <br>console.log('Fecha Completa');
-                <br>console.log(fecha);
-                <br>console.log('--------- 2 ---------');
-                <br>console.log('Día del mes, 0-30');
-                <br>console.log(fecha.getDate());
-                <br>console.log('--------- 3 ---------');
-                <br>console.log('Día de la semana,  D-L-M-MI-J-V-S - 0-6');
-                <br>console.log(fecha.getDay());
-                <br>console.log('--------- 4 ---------');
-                <br>console.log('Mes, 0-11');
-                <br>console.log(fecha.getMonth());
-                <br>console.log('--------- 5 ---------');
-                <br>console.log('Año');
-                <br>console.log(fecha.getFullYear());
-                <br>console.log('--------- 6 ---------');
-                <br>console.log('Fecha formato: 6/5/2021 14:00:40');
-                <br>console.log(fecha.toLocaleString());
-                <br>console.log('--------- 7 ---------');
-                <br>console.log('Fecha formato: 6/5/2021');
-                <br>console.log(fecha.toLocaleDateString());
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+console.log('--------- 1 ---------');
+console.log('Fecha Completa');
+console.log(fecha);
+console.log('--------- 2 ---------');
+console.log('Día del mes, 0-30');
+console.log(fecha.getDate());
+console.log('--------- 3 ---------');
+console.log('Día de la semana,  D-L-M-MI-J-V-S - 0-6');
+console.log(fecha.getDay());
+console.log('--------- 4 ---------');
+console.log('Mes, 0-11');
+console.log(fecha.getMonth());
+console.log('--------- 5 ---------');
+console.log('Año');
+console.log(fecha.getFullYear());
+console.log('--------- 6 ---------');
+console.log('Fecha formato: 6/5/2021 14:00:40');
+console.log(fecha.toLocaleString());
+console.log('--------- 7 ---------');
+console.log('Fecha formato: 6/5/2021');
+console.log(fecha.toLocaleDateString());
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/01-date.png" alt="">
@@ -64,5 +67,7 @@
     <!-- ---------- Date ---------- -->
 
     <script src="date.js"></script>
+    <!-- Comment Code Style -->
+    <script src="https://chrisxavix.github.io/Css/comment-code/prism.js"></script>
 </body>
 </html>

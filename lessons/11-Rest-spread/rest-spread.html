@@ -9,6 +9,8 @@
     <!-- Hojas de estilos -->
     <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/normalize.css">
     <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/styles.css">
+    <!-- Comment Code Style -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/Css/comment-code/prism.css">
     <!-- Datos -->
     <meta name="description" content="El uso de los tres puntos como parámetros y agregación.">
     <link rel="apple-touch-icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png">
@@ -35,18 +37,19 @@
                 Permite agregar valores no definidos
             </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                function sum(valor1, valor2, ...valorNuevo) {
-                <br>    let result = valor1 + valor2;
-                <br>    valorNuevo.forEach(function (n) {
-                <br>        result += n;
-                <br>    })
-                <br>    return result;
-                <br>}
-                <br>let resultadoTotal = sum(8, 4, 9, 10);
-                <br>console.log('La respuesta es:', resultadoTotal);
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+function sum(valor1, valor2, ...valorNuevo) {
+    let result = valor1 + valor2;
+    valorNuevo.forEach(function (n) {
+        result += n;
+    })
+    return result;
+}
+let resultadoTotal = sum(8, 4, 9, 10);
+console.log('La respuesta es:', resultadoTotal);
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/01-rest-spread.png" alt="">
@@ -62,15 +65,16 @@
                 Al agregar los puntos (...), une los dos arreglos y les da posición a cada valor
             </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                const Array1 = [1, 2, 3, 4, 5];
-                <br>const Array2 = [11, 12, 13, 14, 15];
-                <br>const Array3 = [...Array1, ...Array2]
-                <br>console.log(Array1, 'array1');
-                <br>console.log(Array2, 'array2');
-                <br>console.log(Array3, 'array final');
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+const Array1 = [1, 2, 3, 4, 5];
+const Array2 = [11, 12, 13, 14, 15];
+const Array3 = [...Array1, ...Array2]
+console.log(Array1, 'array1');
+console.log(Array2, 'array2');
+console.log(Array3, 'array final');
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/02-rest-spread.png" alt="">
@@ -83,15 +87,16 @@
         <div class="itemInfo">
             <h3 class="itemInfo__title">3.- Operador Spread con objects, tres puntos (...)</h3>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                const Object1 = { id: 1, name: 'Chris' };
-                <br>const Object2 = { lastname: 'Chillogalli' };
-                <br>const Object3 = { ...Object1, ...Object2 };
-                <br>console.log(Object1, 'objeto1');
-                <br>console.log(Object2, 'objeto2');
-                <br>console.log(Object3, 'objeto final');
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+const Object1 = { id: 1, name: 'Chris' };
+const Object2 = { lastname: 'Chillogalli' };
+const Object3 = { ...Object1, ...Object2 };
+console.log(Object1, 'objeto1');
+console.log(Object2, 'objeto2');
+console.log(Object3, 'objeto final');
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/03-rest-spread.png" alt="">
@@ -100,5 +105,7 @@
     <!-- ---------- Operador Spread con objects, tres puntos (...) ---------- -->
 
     <script src="rest-spread.js"></script>
+    <!-- Comment Code Style -->
+    <script src="https://chrisxavix.github.io/Css/comment-code/prism.js"></script>
 </body>
 </html>

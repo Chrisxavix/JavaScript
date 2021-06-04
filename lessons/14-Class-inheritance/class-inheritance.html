@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +9,8 @@
     <!-- Hojas de estilos -->
     <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/normalize.css">
     <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/styles.css">
+    <!-- Comment Code Style -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/Css/comment-code/prism.css">
     <!-- Datos -->
     <meta name="description" content="Azucar sintático para el uso de clases y herencia.">
     <link rel="apple-touch-icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png">
@@ -35,25 +37,26 @@
                 A pesar de usar clases, JavaScript lo tomará como funciones contructoras en la ejecución.
             </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                <br>class Animal {
-                <br>    constructor(nombre, genero) {
-                <br>    // Atributos
-                <br>    this.nombre = nombre;
-                <br>    this.genero = genero;   
-                <br>    }
-                <br>    // Métodos
-                <br>    sonar() { console.log('Hacer sonido del animal'); }
-                <br>    saludar() { console.log('Hola, me llamo', this.nombre); }
-                <br>}
-                <br>const mimi = new Animal('Mimi', 'Hembra');
-                <br>const scooby = new Animal('Scooby', 'Macho');
-                <br>mimi.sonar();
-                <br>mimi.saludar();
-                <br>console.log(mimi);
-                <br>console.log(scooby);
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+class Animal {
+    constructor(nombre, genero) {
+    // Atributos
+    this.nombre = nombre;
+    this.genero = genero;   
+    }
+    // Métodos
+    sonar() { console.log('Hacer sonido del animal'); }
+    saludar() { console.log('Hola, me llamo', this.nombre); }
+}
+const mimi = new Animal('Mimi', 'Hembra');
+const scooby = new Animal('Scooby', 'Macho');
+mimi.sonar();
+mimi.saludar();
+console.log(mimi);
+console.log(scooby);
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/01-clase-herencia.png" alt="">
@@ -69,39 +72,40 @@
                 La clase perroV1 hereda desde la clase padre Animal con la palabra extends
             </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                class AnimalV1 {
-                <br>    constructor(nombre, genero) {
-                <br>    // Atributos
-                <br>    this.nombre = nombre;
-                <br>    this.genero = genero;   
-                <br>    }
-                <br>    // Métodos
-                <br>    sonar() { console.log('Hacer sonido del animal'); }
-                <br>    saludar() { console.log('Hola, me llamo', this.nombre); }
-                <br>}
-                <br><br>class PerroV1 extends AnimalV1 {
-                <br>    constructor(nombre, genero, tamanio) {
-                <br>        // Super manda a llamar al constructor de la clase Padre (Animal)
-                <br>        super (nombre, genero);
-                <br>        // Atributo
-                <br>        this.tamanio = tamanio;
-                <br>    }
-                <br>    sonar() { console.log('Soy un perro'); }
-                <br>    ladrar() { console.log('guuuuuuuuuuuao'); }
-                <br>}
-                <br>const mimiV1 = new AnimalV1('Mimi', 'Hembra');
-                <br>const scoobyV1 = new PerroV1('Scooby', 'Macho', 'Cazador');
-                <br>console.log(mimiV1);
-                <br>mimiV1.sonar();
-                <br>mimiV1.saludar();
-                <br><br>// scoobyV1 al ser declarado como PerroV1 y que esta clase hija hereda de AnimalV1 puede acceder a los métodos, como es el caso con el método de saludar()
-                <br>console.log(scoobyV1);
-                <br>scoobyV1.sonar();
-                <br>scoobyV1.saludar();
-                <br>scoobyV1.ladrar();
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+class AnimalV1 {
+    constructor(nombre, genero) {
+    // Atributos
+    this.nombre = nombre;
+    this.genero = genero;   
+    }
+    // Métodos
+    sonar() { console.log('Hacer sonido del animal'); }
+    saludar() { console.log('Hola, me llamo', this.nombre); }
+    }
+    class PerroV1 extends AnimalV1 {
+        constructor(nombre, genero, tamanio) {
+        // Super manda a llamar al constructor de la clase Padre (Animal)
+        super (nombre, genero);
+        // Atributo
+        this.tamanio = tamanio;
+    }
+    sonar() { console.log('Soy un perro'); }
+    ladrar() { console.log('guuuuuuuuuuuao'); }
+}
+const mimiV1 = new AnimalV1('Mimi', 'Hembra');
+const scoobyV1 = new PerroV1('Scooby', 'Macho', 'Cazador');
+console.log(mimiV1);
+mimiV1.sonar();
+mimiV1.saludar();
+// scoobyV1 al ser declarado como PerroV1 y que esta clase hija hereda de AnimalV1 puede acceder a los métodos, como es el caso con el método de saludar()
+console.log(scoobyV1);
+scoobyV1.sonar();
+scoobyV1.saludar();
+scoobyV1.ladrar();
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/02-clase-herencia.png" alt="">
@@ -114,28 +118,29 @@
         <div class="itemInfo">
             <h3 class="itemInfo__title">3.- Ejercicio de clases y herencia, 1</h3>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                class Datos {
-                <br>    constructor (num1, num2) {
-                <br>        this.num1 = num1
-                <br>        this.num2 = num2
-                <br>    }
-                <br>}
-                <br><br>class Suma extends Datos {
-                <br>    // Constructor agrega más parámetros en caso de necesitar
-                <br>    constructor (num1, num2, respuesta) {
-                <br>        super(num1, num2)
-                <br>        this.respuesta = respuesta;
-                <br>    }
-                <br>    operar () {
-                <br>        this.respuesta = this.num1 + this.num2;
-                <br>        console.log(`${this.num1} + ${this.num2} = ${this.respuesta}`)
-                <br>    }
-                <br>} 
-                <br>const suma = new Suma(80,20)
-                <br>suma.operar()
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+class Datos {
+    constructor (num1, num2) {
+        this.num1 = num1
+        this.num2 = num2
+    }
+}
+class Suma extends Datos {
+// Constructor agrega más parámetros en caso de necesitar
+    constructor (num1, num2, respuesta) {
+        super(num1, num2)
+        this.respuesta = respuesta;
+    }
+    operar () {
+        this.respuesta = this.num1 + this.num2;
+        console.log(`${this.num1} + ${this.num2} = ${this.respuesta}`)
+    }
+} 
+const suma = new Suma(80,20)
+suma.operar()
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/03-clase-herencia.png" alt="">
@@ -148,45 +153,46 @@
         <div class="itemInfo">
             <h3 class="itemInfo__title">4.- Ejercicio de clases y herencia, 2</h3>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                class DatosV1 {
-                <br>    constructor (num1, num2) {
-                <br>        this.num1 = num1
-                <br>        this.num2 = num2
-                <br>    }
-                <br>}
-                <br><br>class Operaciones extends DatosV1 {
-                <br>    constructor (num1, num2, operador) {
-                <br>        super(num1, num2);
-                <br>        this.operador = operador;
-                <br>    }
-                <br>    operar () {
-                <br>        let respuesta;
-                <br>        if(this.operador === "+") {
-                <br>            respuesta = this.num1 + this.num2;
-                <br>            console.log(`${this.num1} ${this.operador} ${this.num2} = ${respuesta}`)
-                <br>        } else if(this.operador === "-"){
-                <br>            respuesta = this.num1 - this.num2;
-                <br>            console.log(`${this.num1} ${this.operador} ${this.num2} = ${respuesta}`)
-                <br>        } else if(this.operador === "*"){
-                <br>            respuesta = this.num1 * this.num2;
-                <br>            console.log(`${this.num1} ${this.operador} ${this.num2} = ${respuesta}`)
-                <br>        } else if(this.operador === "/"){
-                <br>            let respuesta = this.num1 / this.num2;
-                <br>            console.log(`${this.num1} ${this.operador} ${this.num2} = ${respuesta}`)
-                <br>        }
-                <br>    }
-                <br>} 
-                <br>const sumaV1 = new Operaciones(10,20,"+")
-                <br>const restaV1 = new Operaciones(30,20,"-")
-                <br>const multiV1 = new Operaciones(8,2,"*")
-                <br>const divV1 = new Operaciones(10,2,"/")
-                <br>sumaV1.operar()
-                <br>restaV1.operar()
-                <br>multiV1.operar()
-                <br>divV1.operar()
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+class DatosV1 {
+    constructor (num1, num2) {
+        this.num1 = num1
+        this.num2 = num2
+    }
+}
+class Operaciones extends DatosV1 {
+    constructor (num1, num2, operador) {
+        super(num1, num2);
+        this.operador = operador;
+    }
+    operar () {
+        let respuesta;
+        if(this.operador === "+") {
+            respuesta = this.num1 + this.num2;
+            console.log(`${this.num1} ${this.operador} ${this.num2} = ${respuesta}`)
+        } else if(this.operador === "-"){
+            respuesta = this.num1 - this.num2;
+            console.log(`${this.num1} ${this.operador} ${this.num2} = ${respuesta}`)
+        } else if(this.operador === "*"){
+            respuesta = this.num1 * this.num2;
+            console.log(`${this.num1} ${this.operador} ${this.num2} = ${respuesta}`)
+        } else if(this.operador === "/"){
+            let respuesta = this.num1 / this.num2;
+            console.log(`${this.num1} ${this.operador} ${this.num2} = ${respuesta}`)
+        }
+    }
+} 
+const sumaV1 = new Operaciones(10,20,"+")
+const restaV1 = new Operaciones(30,20,"-")
+const multiV1 = new Operaciones(8,2,"*")
+const divV1 = new Operaciones(10,2,"/")
+sumaV1.operar()
+restaV1.operar()
+multiV1.operar()
+divV1.operar()
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/04-clase-herencia.png" alt="">
@@ -195,5 +201,7 @@
     <!-- ---------- Ejercicio de clases y herencia, 2 ---------- -->
 
     <script src="class-inheritance.js"></script>
+    <!-- Comment Code Style -->
+    <script src="https://chrisxavix.github.io/Css/comment-code/prism.js"></script>
 </body>
 </html>

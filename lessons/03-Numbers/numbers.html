@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,8 @@
     <!-- Hojas de estilos -->
     <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/normalize.css">
     <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/styles.css">
+    <!-- Comment Code Style -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/Css/comment-code/prism.css">
     <!-- Datos -->
     <meta name="description" content="Conceptos y métodos de los numbers.">
     <link rel="apple-touch-icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png">
@@ -29,13 +31,14 @@
     <div class="itemInfo">
         <h3 class="itemInfo__title">1) Suma de dos valores con interpolación</h3>
         <h4 class="itemInfo__subtitle">Usando:</h4>
-        <h5 class="itemInfo__example">
-            const valor1 = 5;
-            <br>const valor2 = 10;
-            <br>result = valor1 + valor2;
-            <br>console.log(`El resultado es ${result}, de la suma de ${valor1} + ${valor2}.`);
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-javascript">
+const valor1 = 5;
+const valor2 = 10;
+result = valor1 + valor2;
+console.log(`El resultado es ${result}, de la suma de ${valor1} + ${valor2}.`);
+    </code></pre>
 
     <div class="content-img">
         <img src="assets/suma1.jpg" alt="">
@@ -46,11 +49,12 @@
     <div class="itemInfo">
         <h3 class="itemInfo__title">2) Redondear decimales, el (1) define cuántos decimales</h3>
         <h4 class="itemInfo__subtitle">Usando:</h4>
-        <h5 class="itemInfo__example">
-            const valorDecimal = 7.19;
-            <br>console.log(valorDecimal.toFixed(1));
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-javascript">
+const valorDecimal = 7.19;
+console.log(valorDecimal.toFixed(1));
+    </code></pre>
 
     <div class="content-img">
         <img src="assets/redondear.jpg" alt="">
@@ -61,11 +65,12 @@
     <div class="itemInfo">
         <h3 class="itemInfo__title">3) Devuelve el número entero</h3>
         <h4 class="itemInfo__subtitle">Usando:</h4>
-        <h5 class="itemInfo__example">
-            const valorEntero = 7.19;
-            <br>console.log(parseInt(valorEntero));
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-javascript">
+const valorEntero = 7.19;
+console.log(parseInt(valorEntero));
+    </code></pre>
 
     <div class="content-img">
         <img src="assets/entero.jpg" alt="">
@@ -76,12 +81,13 @@
     <div class="itemInfo">
         <h3 class="itemInfo__title">4) Convertir string a valor numérico</h3>
         <h4 class="itemInfo__subtitle">Usando:</h4>
-        <h5 class="itemInfo__example">
-            const valorDecimal1 = 7.19;
-            <br>const valorDecimal2 = '5.6'
-            <br>console.log(valorDecimal1 + parseInt(valorDecimal2));
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-javascript">
+const valorDecimal1 = 7.19;
+const valorDecimal2 = '5.6'
+console.log(valorDecimal1 + parseInt(valorDecimal2));
+    </code></pre>
 
     <div class="content-img">
         <img src="assets/cambiar-number.jpg" alt="">
@@ -92,12 +98,13 @@
     <div class="itemInfo">
         <h3 class="itemInfo__title">5) Suma de valores sin tomar la parte decimal</h3>
         <h4 class="itemInfo__subtitle">Usando:</h4>
-        <h5 class="itemInfo__example">
-            const valorSumaDecimal1 = 7.19;
-            <br>const valorSumaDecimal2 = '5.6'
-            <br>console.log(parseInt(valorSumaDecimal1) + parseInt(valorSumaDecimal2));
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-javascript">
+const valorSumaDecimal1 = 7.19;
+const valorSumaDecimal2 = '5.6'
+console.log(parseInt(valorSumaDecimal1) + parseInt(valorSumaDecimal2));
+    </code></pre>
 
     <div class="content-img">
         <img src="assets/sin-decimales.jpg" alt="">
@@ -108,12 +115,13 @@
     <div class="itemInfo">
         <h3 class="itemInfo__title">6) Suma de números con la parte decimal</h3>
         <h4 class="itemInfo__subtitle">Usando:</h4>
-        <h5 class="itemInfo__example">
-            const valorSumaDecimalv1 = 7.19;
-            <br>const valorSumaDecimalv2 = '5.6'
-            <br>console.log(parseFloat(valorSumaDecimalv1) + parseFloat(valorSumaDecimalv2));
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-javascript">
+const valorSumaDecimalv1 = 7.19;
+const valorSumaDecimalv2 = '5.6'
+console.log(parseFloat(valorSumaDecimalv1) + parseFloat(valorSumaDecimalv2));
+    </code></pre>
 
     <div class="content-img">
         <img src="assets/con-decimales.jpg" alt="">
@@ -124,14 +132,15 @@
     <div class="itemInfo">
         <h3 class="itemInfo__title">7) Suma de dos números con ingreso de datos con parseInt()l</h3>
         <h4 class="itemInfo__subtitle">Usando:</h4>
-        <h5 class="itemInfo__example">
-            console.log('Código comentado');
-            <br>const num1 = prompt("Escriba el primer número");
-            <br>const num2 = prompt("Escriba el segundo número");
-            <br>result = parseInt(num1)  + parseInt(num2);
-            <br>console.log('Resultado: ', result);
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-javascript">
+console.log('Código comentado');
+const num1 = prompt("Escriba el primer número");
+const num2 = prompt("Escriba el segundo número");
+result = parseInt(num1)  + parseInt(num2);
+console.log('Resultado: ', result);
+    </code></pre>
 
     <div class="content-img">
         <img src="assets/ingreso1.jpg" alt="">
@@ -146,10 +155,8 @@
     </div>
     <!-- ---------- Suma de números con la parte decimal ---------- -->
 
-
-
-
-    
     <script src="numbers.js"></script>
+    <!-- Comment Code Style -->
+    <script src="https://chrisxavix.github.io/Css/comment-code/prism.js"></script>
 </body>
 </html>

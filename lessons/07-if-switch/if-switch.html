@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,8 @@
     <!-- Hojas de estilos -->
     <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/normalize.css">
     <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/styles.css">
+    <!-- Comment Code Style -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/Css/comment-code/prism.css">
     <!-- Datos -->
     <meta name="description" content="Bucle if, switch y ternario.">
     <link rel="apple-touch-icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png">
@@ -31,15 +33,16 @@
         <div class="itemInfo">
             <h3 class="itemInfo__title">1.- Bucle if, condición de sí y no</h3>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                let edadPerson1 = 19;
-                <br>if (edadPerson1 > 19) {
-                <br>    console.log('Mayor de edad');
-                <br>} else {
-                <br>    console.log('Menor de edad');
-                <br>}
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+let edadPerson1 = 19;
+if (edadPerson1 > 19) {
+    console.log('Mayor de edad');
+} else {
+    console.log('Menor de edad');
+}
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/01-condicional.png" alt="">
@@ -52,17 +55,18 @@
         <div class="itemInfo">
             <h3 class="itemInfo__title">2.- Bucle if con varias condiciones</h3>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                let edadPerson2 = 28;
-                <br>if (edadPerson2 <= 10) {
-                <br>    console.log('Niño');
-                <br>} else if (edadPerson2 === 18) {
-                <br>    console.log('Adulto');
-                <br>} else {
-                <br>    console.log('Tercera edad');
-                <br>}
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+let edadPerson2 = 28;
+if (edadPerson2 <= 10) {
+    console.log('Niño');
+} else if (edadPerson2 === 18) {
+    console.log('Adulto');
+} else {
+    console.log('Tercera edad');
+}
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/02-condicional.png" alt="">
@@ -78,12 +82,13 @@
                 Solo una línea de código: verdadero o falso
             </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                let edadPerson3 = 24;
-                <br>let mayorEdad = (edadPerson3 >= 18) ? 'Eres mayor de edad' : 'Eres menor de edad';
-                <br>console.log(mayorEdad);
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+let edadPerson3 = 24;
+let mayorEdad = (edadPerson3 >= 18) ? 'Eres mayor de edad' : 'Eres menor de edad';
+console.log(mayorEdad);
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/03-ternario.png" alt="">
@@ -96,22 +101,23 @@
         <div class="itemInfo">
             <h3 class="itemInfo__title">4.- Switch de opciones</h3>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                let dia = 2;
-                <br>switch (dia) {
-                <br>    case 1:
-                <br>        console.log('Lunes');
-                <br>        break;
-                <br>    case 2:
-                <br>        console.log('Martes');
-                <br>        break;
-                <br>    default:
-                <br>        console.log('No hay día');
-                <br>        break;
-                <br>}
-            </h5>
         </div>
     
+        <pre style="font-size: 12px;"><code class="language-javascript">
+let dia = 2;
+switch (dia) {
+    case 1:
+        console.log('Lunes');
+        break;
+    case 2:
+        console.log('Martes');
+        break;
+    default:
+        console.log('No hay día');
+        break;
+}
+        </code></pre>
+
         <div class="content-img">
             <img src="assets/04-switch.png" alt="">
         </div>
@@ -119,5 +125,8 @@
     <!-- ---------- Switch de opciones ---------- -->
 
     <script src="if-switch.js"></script>
+    <script src="messages.js"></script>
+    <!-- Comment Code Style -->
+    <script src="https://chrisxavix.github.io/Css/comment-code/prism.js"></script>
 </body>
 </html>

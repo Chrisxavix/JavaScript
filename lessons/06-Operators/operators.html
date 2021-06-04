@@ -8,6 +8,8 @@
     <!-- Hojas de estilos -->
     <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/normalize.css">
     <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/styles.css">
+    <!-- Comment Code Style -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/Css/comment-code/prism.css">
     <!-- Datos -->
     <meta name="description" content="Conceptos de los operators.">
     <link rel="apple-touch-icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png">
@@ -35,12 +37,13 @@
                 <br>Tres iguales (===) se comparan los tipos de datos y el valor
             </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                console.log('7'==7);
-                <br>console.log('7'===7);
-                <br>console.log(7===7);
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+console.log('7'==7);
+console.log('7'===7);
+console.log(7===7);
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/1-operators.png" alt="">
@@ -56,12 +59,13 @@
                 Es como tener (i = i + 2;) igual a (i += 2;)
             </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                let valor1 = 1;
-                <br>valor1 += 2;
-                <br>console.log(valor1);
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+let valor1 = 1;
+valor1 += 2;
+console.log(valor1);
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/2-operators.png" alt="">
@@ -74,12 +78,13 @@
         <div class="itemInfo">
             <h3 class="itemInfo__title">3.- Realizar cualquier operación (*=)</h3>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                let valor2 = 8;
-                <br>valor2 *= 2;
-                <br>console.log(valor2);
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+let valor2 = 8;
+valor2 *= 2;
+console.log(valor2);
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/3-operators.png" alt="">
@@ -92,13 +97,14 @@
         <div class="itemInfo">
             <h3 class="itemInfo__title">4.- Incremento binario, como un contador en +1</h3>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                let valor3 = 3;
-                <br>valor3 ++;
-                <br>console.log(valor3);
-            </h5>
         </div>
     
+        <pre style="font-size: 12px;"><code class="language-javascript">
+let valor3 = 3;
+valor3 ++;
+console.log(valor3);
+        </code></pre>
+
         <div class="content-img">
             <img src="assets/4-operators.png" alt="">
         </div>
@@ -110,12 +116,13 @@
         <div class="itemInfo">
             <h3 class="itemInfo__title">5.- Incremento binario, lo mismo que el anterior</h3>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                let valor4 = 2;
-                <br>++valor4;
-                <br>console.log(valor4);
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+let valor4 = 2;
+++valor4;
+console.log(valor4);
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/5-operators.png" alt="">
@@ -128,11 +135,12 @@
         <div class="itemInfo">
             <h3 class="itemInfo__title">6.- Operador (!), que denota negación</h3>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                let valor5 = true;
-                <br>console.log(!valor5);
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+let valor5 = true;
+console.log(!valor5);
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/6-operators.png" alt="">
@@ -141,5 +149,8 @@
     <!-- ---------- 6.- Operador (!), que denota negación ---------- -->
 
     <script src="operators.js"></script>
+    <script src="messages.js"></script>
+    <!-- Comment Code Style -->
+    <script src="https://chrisxavix.github.io/Css/comment-code/prism.js"></script>
 </body>
 </html>

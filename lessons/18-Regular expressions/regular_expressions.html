@@ -9,6 +9,8 @@
     <!-- Hojas de estilos -->
     <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/normalize.css">
     <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/styles.css">
+    <!-- Comment Code Style -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/Css/comment-code/prism.css">
     <!-- Datos -->
     <meta name="description" content="Secuencia de caracteres que forman un patrón de búsqueda.">
     <link rel="apple-touch-icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png">
@@ -36,13 +38,14 @@
                 <br>Busca la expresión dentro de la cadena con la función test() para saber si existe.
             </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                let cadena = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis velit assumenda dolorem at autem, fugiat quia dicta sint aperiam facere accusantium nam! Enim, eum. Error, molestias soluta. Delectus, asperiores illum.";
-                <br><br>let expReg = new RegExp("lorem", "g");
-                <br>console.log(expReg.test(cadena));
-            </h5>
         </div>
     
+        <pre style="font-size: 12px;"><code class="language-javascript">
+let cadena = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis velit assumenda dolorem at autem, fugiat quia dicta sint aperiam facere accusantium nam! Enim, eum. Error, molestias soluta. Delectus, asperiores illum.";
+let expReg = new RegExp("lorem", "g");
+console.log(expReg.test(cadena));
+        </code></pre>
+
         <div class="content-img">
             <img src="assets/01-expresion.png" alt="">
         </div>
@@ -58,12 +61,13 @@
                 <br>Busca la expresión dentro de la cadena con la función test() para saber si existe.
             </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                let cadenaV1 = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis velit assumenda dolorem at autem, fugiat quia dicta sint aperiam facere accusantium nam! Enim, eum. Error, molestias soluta. Delectus, asperiores illum.";
-                <br><br>let expRegV1 = new RegExp("lorem", "i");
-                <br>console.log(expRegV1.test(cadenaV1));
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+let cadenaV1 = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis velit assumenda dolorem at autem, fugiat quia dicta sint aperiam facere accusantium nam! Enim, eum. Error, molestias soluta. Delectus, asperiores illum.";
+let expRegV1 = new RegExp("lorem", "i");
+console.log(expRegV1.test(cadenaV1));
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/01-expresion.png" alt="">
@@ -76,12 +80,13 @@
         <div class="itemInfo">
             <h3 class="itemInfo__title">3.- Devuelve un arreglo con la función exec() con información de la búsqueda</h3>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                let cadenaV2 = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis velit assumenda dolorem at autem, fugiat quia dicta sint aperiam facere accusantium nam! Enim, eum. Error, molestias soluta. Delectus, asperiores illum.";
-                <br><br>let expRegV2 = new RegExp("lorem", "g");
-                <br>console.log(expRegV2.exec(cadenaV2));   
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+let cadenaV2 = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis velit assumenda dolorem at autem, fugiat quia dicta sint aperiam facere accusantium nam! Enim, eum. Error, molestias soluta. Delectus, asperiores illum.";
+let expRegV2 = new RegExp("lorem", "g");
+console.log(expRegV2.exec(cadenaV2));   
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/03-expresion.png" alt="">
@@ -90,5 +95,7 @@
     <!-- ---------- Devuelve un arreglo con la función exec() con información de la búsqueda ---------- -->
 
     <script src="regular_expressions.js"></script>
+    <!-- Comment Code Style -->
+    <script src="https://chrisxavix.github.io/Css/comment-code/prism.js"></script>
 </body>
 </html>

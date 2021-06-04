@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,8 @@
     <!-- Hojas de estilos -->
     <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/normalize.css">
     <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/styles.css">
+    <!-- Comment Code Style -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/Css/comment-code/prism.css">
     <!-- Datos -->
     <meta name="description" content="Conceptos y métodos de los arrays.">
     <link rel="apple-touch-icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png">
@@ -56,11 +58,12 @@
         <div class="itemInfo">
             <h3 class="itemInfo__title">1.- Declaración de un arreglo vacío, opción 1</h3>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                const arrayNew = new Array();
-                <br>console.log(arrayNew);
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+const arrayNew = new Array();
+console.log(arrayNew);
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/arrayvacio.jpg" alt="">
@@ -73,12 +76,13 @@
         <div class="itemInfo">
             <h3 class="itemInfo__title">2.- Declaración de un arreglo vacío, opción 2</h3>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                const arrayNewv1 = [];
-                <br>console.log(arrayNewv1);
-            </h5>
         </div>
     
+        <pre style="font-size: 12px;"><code class="language-javascript">
+const arrayNewv1 = [];
+console.log(arrayNewv1);
+        </code></pre>
+
         <div class="content-img">
             <img src="assets/arrayvacio.jpg" alt="">
         </div>
@@ -90,11 +94,12 @@
         <div class="itemInfo">
             <h3 class="itemInfo__title">3.- Declaración de un arreglo vacío con límite de 3</h3>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                const arrayNewv2 = Array(3)
-                <br>console.log(arrayNewv2);
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+const arrayNewv2 = Array(3)
+console.log(arrayNewv2);
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/03-vacio.jpg" alt="">
@@ -110,12 +115,13 @@
                 Para saber si un array es de tipo array, no se usa el typeof, sino Array.isArray('nombre del array')
             </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                const arrayType = ['Madrid', 'Cuenca', 'Loja', 'Quito']
-                <br>console.log(Array.isArray(arrayType));
-            </h5>
         </div>
     
+        <pre style="font-size: 12px;"><code class="language-javascript">
+const arrayType = ['Madrid', 'Cuenca', 'Loja', 'Quito']
+console.log(Array.isArray(arrayType));
+        </code></pre>
+
         <div class="content-img">
             <img src="assets/04-is-array.jpg" alt="">
         </div>
@@ -127,12 +133,13 @@
         <div class="itemInfo">
             <h3 class="itemInfo__title">5.- Declaración e impresión de un array</h3>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                const arrayDifferent = [1, 2, 9, 12];
-                <br>console.log(arrayDifferent);
-            </h5>
         </div>
     
+        <pre style="font-size: 12px;"><code class="language-javascript">
+const arrayDifferent = [1, 2, 9, 12];
+console.log(arrayDifferent);
+        </code></pre>
+
         <div class="content-img">
             <img src="assets/05-imprimir-array.jpg" alt="">
         </div>
@@ -144,11 +151,12 @@
         <div class="itemInfo">
             <h3 class="itemInfo__title">6.- Declaración e impresión de un array de arrays</h3>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                const arrayDifferentv1 = [1, true, [1, 2, 'tres'], 'Maggot', 10];
-                <br>console.log(arrayDifferentv1);
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+const arrayDifferentv1 = [1, true, [1, 2, 'tres'], 'Maggot', 10];
+console.log(arrayDifferentv1);
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/06-imprimir-array-arrays.jpg" alt="">
@@ -161,11 +169,12 @@
         <div class="itemInfo">
             <h3 class="itemInfo__title">7.- Declaración e impresión de una posición en el array</h3>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                const arrayPosicion = [1, true, [1, 2, 'tres'], 'Maggot', 10]
-                <br>console.log(arrayPosicion[1]);
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+const arrayPosicion = [1, true, [1, 2, 'tres'], 'Maggot', 10]
+console.log(arrayPosicion[1]);
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/07-imprimir-array.jpg" alt="">
@@ -178,11 +187,12 @@
         <div class="itemInfo">
             <h3 class="itemInfo__title">8.- Declaración e impresión de una posición dentro de un array del array</h3>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                const arrayPosicionv1 = [1, true, [1, 2, 'tres'], 'Maggot', 10]
-                <br>console.log(arrayPosicionv1[2][1]);
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+const arrayPosicionv1 = [1, true, [1, 2, 'tres'], 'Maggot', 10]
+console.log(arrayPosicionv1[2][1]);
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/08-array-of-arrays.jpg" alt="">
@@ -195,11 +205,12 @@
         <div class="itemInfo">
             <h3 class="itemInfo__title">9.- Declarar un array con límite y lo llena de un valor</h3>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                const arrayLimit = Array(3).fill(false);
-                <br>console.log(arrayLimit);
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+const arrayLimit = Array(3).fill(false);
+console.log(arrayLimit);
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/09-limite-llenar.jpg" alt="">
@@ -212,13 +223,14 @@
         <div class="itemInfo">
             <h3 class="itemInfo__title">10.- La función forEach recorre el array por cada elemento</h3>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                const coloresForEach = ['rojo', 'verde', 'amarillo'];
-                <br>coloresForEach.forEach(element => {
-                    <br>console.log(element);
-                <br>});
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+const coloresForEach = ['rojo', 'verde', 'amarillo'];
+coloresForEach.forEach(element => {
+    console.log(element);
+});
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/10-recorrer-elementos.jpg" alt="">
@@ -231,13 +243,14 @@
         <div class="itemInfo">
             <h3 class="itemInfo__title">11.- A cada valor con el recorrido forEach se le multiplica por 3</h3>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                const valoresForEach = [2, 4, 9];
-                <br>valoresForEach.forEach(element => {
-                    <br>console.log(element * 3);
-                <br>});
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+const valoresForEach = [2, 4, 9];
+valoresForEach.forEach(element => {
+    console.log(element * 3);
+});
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/11-recorrer-operacion.jpg" alt="">
@@ -264,13 +277,14 @@
                 <br>El array original se modifica
             </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                const coloresPush = ['rojo', 'verde', 'amarillo'];
-                <br>console.log(coloresPush, 'original');
-                <br>coloresPush.push('verde');
-                <br>console.log(coloresPush, 'modificado ');
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+const coloresPush = ['rojo', 'verde', 'amarillo'];
+console.log(coloresPush, 'original');
+coloresPush.push('verde');
+console.log(coloresPush, 'modificado ');
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/12-push.jpg" alt="">
@@ -287,14 +301,15 @@
                 <br>El array original se modifica
             </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                const coloresPop = ['rojo', 'verde', 'amarillo']
-                <br>console.log(coloresPop, 'original');
-                <br>const resultPop = coloresPop.pop('verde');
-                <br>console.log(resultPop, 'valor eliminado');
-                <br>console.log(coloresPop, 'modificado');
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+const coloresPop = ['rojo', 'verde', 'amarillo']
+console.log(coloresPop, 'original');
+const resultPop = coloresPop.pop('verde');
+console.log(resultPop, 'valor eliminado');
+console.log(coloresPop, 'modificado');
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/13-pop.jpg" alt="">
@@ -311,14 +326,15 @@
                 Elimina el primer elemento del array y devuelve el elemento eliminado
                 <br>El array original se modifica
             </h4>
-            <h5 class="itemInfo__example">
-                const arrayShift = ['Madrid', 'Cuenca', 'Loja', 'Quito'];
-                <br>console.log(arrayShift, 'original');
-                <br>const resultShift = arrayShift.shift();
-                <br>console.log(resultShift, 'valor eliminado');
-                <br>console.log(arrayShift, 'modificado');
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+const arrayShift = ['Madrid', 'Cuenca', 'Loja', 'Quito'];
+console.log(arrayShift, 'original');
+const resultShift = arrayShift.shift();
+console.log(resultShift, 'valor eliminado');
+console.log(arrayShift, 'modificado');
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/14-shift.jpg" alt="">
@@ -335,13 +351,14 @@
                 <br>El array original no se modifica
             </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                const arraySlice = ['Madrid', 'Cuenca', 'Loja', 'Quito'];
-                <br>console.log(arraySlice, 'original');
-                <br>const resultSlice = arraySlice.slice(0, 2)
-                <br>console.log(resultSlice, 'copia');
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+const arraySlice = ['Madrid', 'Cuenca', 'Loja', 'Quito'];
+console.log(arraySlice, 'original');
+const resultSlice = arraySlice.slice(0, 2)
+console.log(resultSlice, 'copia');
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/15-slice.jpg" alt="">
@@ -358,14 +375,15 @@
                 <br>Mofifica el array original
             </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                const arrayUnshift = ['Madrid', 'Cuenca', 'Loja', 'Quito'];
-                <br>console.log(arrayUnshift, 'original');
-                <br>const resultUnshift = arrayUnshift.unshift('Barcelona', 'Cordova');
-                <br>console.log(resultUnshift, 'valor de longitud');
-                <br>console.log(arrayUnshift, 'moficado');
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+const arrayUnshift = ['Madrid', 'Cuenca', 'Loja', 'Quito'];
+console.log(arrayUnshift, 'original');
+const resultUnshift = arrayUnshift.unshift('Barcelona', 'Cordova');
+console.log(resultUnshift, 'valor de longitud');
+console.log(arrayUnshift, 'moficado');
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/16-unshift.jpg" alt="">
@@ -388,13 +406,14 @@
                     Mofifica el array original
                 </h4>
                 <h4 class="itemInfo__subtitle">Usando:</h4>
-                <h5 class="itemInfo__example">
-                    const arraySplicev1 = ['Madrid', 'Cuenca', 'Zamora', 'Loja', 'Quito', 'Puyo'];
-                    <br>console.log(arraySplicev1, 'original');
-                    <br>arraySplicev1.splice(2);
-                    <br>console.log(arraySplicev1, 'modificado');
-                </h5>
             </div>
+
+            <pre style="font-size: 12px;"><code class="language-javascript">
+const arraySplicev1 = ['Madrid', 'Cuenca', 'Zamora', 'Loja', 'Quito', 'Puyo'];
+console.log(arraySplicev1, 'original');
+arraySplicev1.splice(2);
+console.log(arraySplicev1, 'modificado');
+            </code></pre>
         
             <div class="content-img">
                 <img src="assets/17-1-splice.jpg" alt="">
@@ -408,13 +427,14 @@
                     Mofifica el array original
                 </h4>
                 <h4 class="itemInfo__subtitle">Usando:</h4>
-                <h5 class="itemInfo__example">
-                    const arraySplicev2 = ['Madrid', 'Cuenca', 'Zamora', 'Loja', 'Quito', 'Puyo'];
-                    <br>console.log(arraySplicev2, 'original');
-                    <br>arraySplicev2.splice(-2);
-                    <br>console.log(arraySplicev2, 'modificado');
-                </h5>
             </div>
+
+            <pre style="font-size: 12px;"><code class="language-javascript">
+const arraySplicev2 = ['Madrid', 'Cuenca', 'Zamora', 'Loja', 'Quito', 'Puyo'];
+console.log(arraySplicev2, 'original');
+arraySplicev2.splice(-2);
+console.log(arraySplicev2, 'modificado');
+            </code></pre>
         
             <div class="content-img">
                 <img src="assets/17-2-splice.jpg" alt="">
@@ -428,13 +448,14 @@
                     Mofifica el array original
                 </h4>
                 <h4 class="itemInfo__subtitle">Usando:</h4>
-                <h5 class="itemInfo__example">
-                    const arraySplicev3 = ['Madrid', 'Cuenca', 'Zamora', 'Loja', 'Quito', 'Puyo'];
-                    <br>console.log(arraySplicev3, 'original');
-                    <br>arraySplicev3.splice(1, 2);
-                    <br>console.log(arraySplicev3, 'modificado');
-                </h5>
             </div>
+
+            <pre style="font-size: 12px;"><code class="language-javascript">
+const arraySplicev3 = ['Madrid', 'Cuenca', 'Zamora', 'Loja', 'Quito', 'Puyo'];
+console.log(arraySplicev3, 'original');
+arraySplicev3.splice(1, 2);
+console.log(arraySplicev3, 'modificado');
+            </code></pre>
         
             <div class="content-img">
                 <img src="assets/17-3-splice.jpg" alt="">
@@ -448,13 +469,14 @@
                     Mofifica el array original
                 </h4>
                 <h4 class="itemInfo__subtitle">Usando:</h4>
-                <h5 class="itemInfo__example">
-                    const arraySplicev4 = ['Madrid', 'Cuenca', 'Zamora', 'Loja', 'Quito', 'Puyo'];
-                    <br>console.log(arraySplicev4, 'original');
-                    <br>arraySplicev4.splice(2, 0, 'Guayaquil');
-                    <br>console.log(arraySplicev4, 'modificado');
-                </h5>
             </div>
+
+            <pre style="font-size: 12px;"><code class="language-javascript">
+const arraySplicev4 = ['Madrid', 'Cuenca', 'Zamora', 'Loja', 'Quito', 'Puyo'];
+console.log(arraySplicev4, 'original');
+arraySplicev4.splice(2, 0, 'Guayaquil');
+console.log(arraySplicev4, 'modificado');
+            </code></pre>
         
             <div class="content-img">
                 <img src="assets/17-4-splice.jpg" alt="">
@@ -468,13 +490,14 @@
                     Mofifica el array original
                 </h4>
                 <h4 class="itemInfo__subtitle">Usando:</h4>
-                <h5 class="itemInfo__example">
-                    const arraySplicev5 = ['Madrid', 'Cuenca', 'Zamora', 'Loja', 'Quito', 'Puyo'];
-                    <br>console.log(arraySplicev5, 'original');
-                    <br>arraySplicev5.splice(2, 1, 'Guayaquil');
-                    <br>console.log(arraySplicev5, 'modificado');
-                </h5>
             </div>
+
+            <pre style="font-size: 12px;"><code class="language-javascript">
+const arraySplicev5 = ['Madrid', 'Cuenca', 'Zamora', 'Loja', 'Quito', 'Puyo'];
+console.log(arraySplicev5, 'original');
+arraySplicev5.splice(2, 1, 'Guayaquil');
+console.log(arraySplicev5, 'modificado');
+            </code></pre>
         
             <div class="content-img">
                 <img src="assets/17-5-splice.jpg" alt="">
@@ -492,12 +515,13 @@
                     Busca y devuelve el índice, si encuentra devuelve el índice de posición, caso contrario devuelve -1
                 </h4>
                 <h4 class="itemInfo__subtitle">Usando:</h4>
-                <h5 class="itemInfo__example">
-                    const arrayIndexOf = ['Madrid', 'Cuenca', 'Loja', 'Quito'];
-                    <br>const resultIndexOf = arrayIndexOf.indexOf('Loja');
-                    <br>console.log(resultIndexOf);
-                </h5>
             </div>
+
+            <pre style="font-size: 12px;"><code class="language-javascript">
+const arrayIndexOf = ['Madrid', 'Cuenca', 'Loja', 'Quito'];
+const resultIndexOf = arrayIndexOf.indexOf('Loja');
+console.log(resultIndexOf);
+            </code></pre>
         
             <div class="content-img">
                 <img src="assets/18-indexof.png" alt="">
@@ -511,15 +535,16 @@
                     Si encuentra el valor imprime que encontró, caso contrario no encontró
                 </h4>
                 <h4 class="itemInfo__subtitle">Usando:</h4>
-                <h5 class="itemInfo__example">
-                    const arrayIndexOf1 = ['Madrid', 'Cuenca', 'Loja', 'Quito'];
-                    <br>if (arrayIndexOf1.indexOf('Lojas') > -1) {
-                    <br>    console.log('Encontró');
-                    <br>} else {
-                    <br>    console.log('No encontró');
-                    <br>}
-                </h5>
             </div>
+
+            <pre style="font-size: 12px;"><code class="language-javascript">
+const arrayIndexOf1 = ['Madrid', 'Cuenca', 'Loja', 'Quito'];
+if (arrayIndexOf1.indexOf('Lojas') > -1) {
+    console.log('Encontró');
+} else {
+    console.log('No encontró');
+}
+            </code></pre>
         
             <div class="content-img">
                 <img src="assets/18-1-indexof.png" alt="">
@@ -536,12 +561,13 @@
                 Busca y devuelve true o false si encuentra el valor en el array
             </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                const arrayIncludes = ['Madrid', 'Cuenca', 'Loja', 'Quito'];
-                <br>const resultIncludes = arrayIncludes.includes('Cuenca');
-                <br>console.log(resultIncludes);
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+const arrayIncludes = ['Madrid', 'Cuenca', 'Loja', 'Quito'];
+const resultIncludes = arrayIncludes.includes('Cuenca');
+console.log(resultIncludes);
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/19-includes.png" alt="">
@@ -558,14 +584,15 @@
                 <br>Si encuentra de acuerdo a un item del array retorna el array nuevo con los valores buscados, y si no encuentra devuelve vacío
             </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                const arrayFilter = ['Madrid', 'Cuenca', 'Loja', 'Quito'];
-                <br>const resultFilter = arrayFilter.filter(city => {
-                <br>    return city === 'Cuenca' || city === 'Loja';
-                <br>});
-                <br>console.log(resultFilter);
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+const arrayFilter = ['Madrid', 'Cuenca', 'Loja', 'Quito'];
+const resultFilter = arrayFilter.filter(city => {
+    return city === 'Cuenca' || city === 'Loja';
+});
+console.log(resultFilter);
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/20-filter.png" alt="">
@@ -581,15 +608,16 @@
                 Devuelve el elemento que cumpla una condición dada, cuando lo encuentra deja de recorrer el array, mientras que con filter recorre todo el array así haya encontrado el elemento
             </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                const arrayFind = ['Madrid', 'Cuenca', 'Loja', 'Quito'];
-                <br>const resultFind = arrayFind.find((ele, index) => {
-                <br>    console.log(index, 'index');
-                <br>    return ele === 'Loja';
-                <br>});
-                <br>console.log(resultFind);
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+const arrayFind = ['Madrid', 'Cuenca', 'Loja', 'Quito'];
+const resultFind = arrayFind.find((ele, index) => {
+    console.log(index, 'index');
+    return ele === 'Loja';
+});
+console.log(resultFind);
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/21-find.png" alt="">
@@ -607,14 +635,15 @@
                     <br>No mofifica el array original
                 </h4>
                 <h4 class="itemInfo__subtitle">Usando:</h4>
-                <h5 class="itemInfo__example">
-                    const arrayMap = [3, 4, 5];
-                    <br>const resultMap = arrayMap.map(current => {
-                    <br>    return current + 5;
-                    <br>});
-                    <br>console.log(resultMap);
-                </h5>
             </div>
+
+            <pre style="font-size: 12px;"><code class="language-javascript">
+const arrayMap = [3, 4, 5];
+const resultMap = arrayMap.map(current => {
+    return current + 5;
+});
+console.log(resultMap);
+            </code></pre>
         
             <div class="content-img">
                 <img src="assets/22-map.png" alt="">
@@ -625,19 +654,20 @@
             <div class="itemInfo">
                 <h3 class="itemInfo__title">22.1.- Devuelve un array con nombres de cada objeto dentro de un array</h3>
                 <h4 class="itemInfo__subtitle">Usando:</h4>
-                <h5 class="itemInfo__example">
-                    const arrayMapObject = [
-                    <br>    { name: 'Chris', age: 12, lastname: 'Test01' },
-                    <br>    { name: 'Dani', age: 12, lastname: 'Test02' },
-                    <br>    { name: 'Xavi', age: 12, lastname: 'Test03' },
-                    <br>    { name: 'Lucas', age: 12, lastname: 'Test04' }
-                    <br>];
-                    <br>const resultMapObject = arrayMapObject.map(elemn => {
-                    <br>    return elemn.name;
-                    <br>});
-                    <br>console.log(resultMapObject);
-                </h5>
             </div>
+
+            <pre style="font-size: 12px;"><code class="language-javascript">
+const arrayMapObject = [
+    { name: 'Chris', age: 12, lastname: 'Test01' },
+    { name: 'Dani', age: 12, lastname: 'Test02' },
+    { name: 'Xavi', age: 12, lastname: 'Test03' },
+    { name: 'Lucas', age: 12, lastname: 'Test04' }
+];
+const resultMapObject = arrayMapObject.map(elemn => {
+    return elemn.name;
+});
+console.log(resultMapObject);
+            </code></pre>
         
             <div class="content-img">
                 <img src="assets/22-1-map.png" alt="">
@@ -646,8 +676,9 @@
     </section>
     <!-- ---------- 22.- Método map ---------- -->
 
-
-
     <script src="arrays.js"></script>
+    <script src="messages.js"></script>
+    <!-- Comment Code Style -->
+    <script src="https://chrisxavix.github.io/Css/comment-code/prism.js"></script>
 </body>
 </html>

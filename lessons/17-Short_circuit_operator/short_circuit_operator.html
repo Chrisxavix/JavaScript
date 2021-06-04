@@ -9,6 +9,8 @@
     <!-- Hojas de estilos -->
     <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/normalize.css">
     <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/styles.css">
+    <!-- Comment Code Style -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/Css/comment-code/prism.css">
     <!-- Datos -->
     <meta name="description" content="Validar valores predeterminados.">
     <link rel="apple-touch-icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png">
@@ -24,7 +26,7 @@
     <meta name="twitter:card" content="summary">
     <link rel="canonical" href="https://chrisxavix.github.io/JavaScript/lessons/17-Short_circuit_operator/short_circuit_operator.html">
 </head>
-<body style="height: 100vh">
+<body style="height: 100%;">
     <h1 class="itemTitle">Short Circuit Operator</h1>
 
     <!-- ---------- Cortocircuito en (name = name || "Desconocido";) ---------- -->
@@ -35,15 +37,16 @@
                 En caso de que el llamado de la función no esté con parámetros defnidos mandar (Desconocido).
             </h4>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                function saludarV1(name) {
-                <br>   name = name || "Desconocido";
-                <br>    console.log('Hola', name);
-                <br>}
-                <br>saludarV1('Dani');
-                <br>saludarV1();
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+function saludarV1(name) {
+   name = name || "Desconocido";
+    console.log('Hola', name);
+}
+saludarV1('Dani');
+saludarV1();
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/01-circuit.png" alt="">
@@ -56,14 +59,15 @@
         <div class="itemInfo">
             <h3 class="itemInfo__title">2.- Opción 2 de validación usual</h3>
             <h4 class="itemInfo__subtitle">Usando:</h4>
-            <h5 class="itemInfo__example">
-                function saludarV2(name = 'Desconocido') {
-                <br>   console.log('Hola', name);
-                <br>}
-                <br>saludarV2('Chris');
-                <br>saludarV2();
-            </h5>
         </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+function saludarV2(name = 'Desconocido') {
+   console.log('Hola', name);
+}
+saludarV2('Chris');
+saludarV2();
+        </code></pre>
     
         <div class="content-img">
             <img src="assets/02-circuit.png" alt="">
@@ -72,5 +76,7 @@
     <!-- ---------- Opción 2 de validación usual ---------- -->
 
     <script src="short_circuit_operator.js"></script>
+    <!-- Comment Code Style -->
+    <script src="https://chrisxavix.github.io/Css/comment-code/prism.js"></script>
 </body>
 </html>

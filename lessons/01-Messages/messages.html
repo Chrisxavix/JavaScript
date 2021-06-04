@@ -8,6 +8,8 @@
     <!-- Hojas de estilos -->
     <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/normalize.css">
     <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/styles.css">
+    <!-- Comment Code Style -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/Css/comment-code/prism.css">
     <!-- Datos -->
     <meta name="description" content="Maneras de visualizar el contenido que se desea.">
     <link rel="apple-touch-icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png">
@@ -32,13 +34,14 @@
             Abrir la consola del navegador con F12.
         </h4>
         <h4 class="itemInfo__subtitle">Usando:</h4>
-        <h5 class="itemInfo__example">
-            console.clear();
-            <br>console.log('Esto es un registro de lo que pasa');
-            <br>console.error('Esto es un error');
-            <br>console.warn('Esto es un aviso');
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-javascript">
+console.clear();
+console.log('Esto es un registro de lo que pasa');
+console.error('Esto es un error');
+console.warn('Esto es un aviso');
+    </code></pre>
 
     <div class="content-img">
         <img src="assets/01-tipos-consola.png" alt="">
@@ -49,10 +52,11 @@
     <div class="itemInfo">
         <h3 class="itemInfo__title">2) alert(''): imprime un mensaje con el modal del navegador</h3>
         <h4 class="itemInfo__subtitle">Usando:</h4>
-        <h5 class="itemInfo__example">
-            alert('hola');
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-javascript">
+alert('hola');
+    </code></pre>
 
     <div class="content-img">
         <img src="assets/alert.jpg" alt="">
@@ -67,10 +71,14 @@
         </h4>
         <h4 class="itemInfo__subtitle">Usando:</h4>
         <h5 class="itemInfo__example">
-            let aviso = prompt('Ingrese un dato');
-            <br>console.log(aviso);
+            
         </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-javascript">
+let aviso = prompt('Ingrese un dato');
+console.log(aviso);
+    </code></pre>
 
     <div class="content-img">
         <img src="assets/prompt.jpg" alt="">
@@ -85,10 +93,11 @@
     <div class="itemInfo">
         <h3 class="itemInfo__title">4) document: imprime en el template página</h3>
         <h4 class="itemInfo__subtitle">Usando:</h4>
-        <h5 class="itemInfo__example">
-            document.write("Hola");
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-javascript">
+document.write("Hola");
+    </code></pre>
 
     <div class="content-img">
         <img src="assets/document.jpg" alt="">
@@ -102,11 +111,12 @@
             Declarar una variable para recoger el valor ingresado
         </h4>
         <h4 class="itemInfo__subtitle">Usando:</h4>
-        <h5 class="itemInfo__example">
-            let confir = confirm('hola');
-            <br>console.log(confir);
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-javascript">
+let confir = confirm('hola');
+console.log(confir);
+    </code></pre>
 
     <div class="content-img">
         <img src="assets/confirm.jpg" alt="">
@@ -119,5 +129,7 @@
 
 
     <script src="messages.js"></script>
+    <!-- Comment Code Style -->
+    <script src="https://chrisxavix.github.io/Css/comment-code/prism.js"></script>
 </body>
 </html>
