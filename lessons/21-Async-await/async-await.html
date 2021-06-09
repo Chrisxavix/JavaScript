@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Await</title>
+    <link rel="shortcut icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png" type="image/x-icon">
+    <!-- Hojas de estilos -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/normalize.css">
+    <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/styles.css">
+    <!-- Comment Code Style -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/Css/comment-code/prism.css">
+    <!-- Datos -->
+    <meta name="description" content="Espera las ejecucuciones antes de continuar con el proceso.">
+    <link rel="apple-touch-icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png">
+    <meta name="theme-color" content="rgb(103, 104, 59)">
+    <!-- Para Twitter:name="twitter:title" y Facebook:property="og:title" -->
+    <meta property="og:title" name="twitter:title" content="Async Await">
+    <meta property="og:image" name="twitter:image"
+    content="https://chrisxavix.github.io/JavaScript/assets/meta-home-cover-js.jpg">
+    <!-- Url del sitio -->
+    <meta property="og:url" name="twitter:url" content="https://chrisxavix.github.io/JavaScript/lessons/21-Async-await/async-await.html">
+    <meta property="og:description" name="twitter:description" content="Espera las ejecucuciones antes de continuar con el proceso.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <link rel="canonical" href="https://chrisxavix.github.io/JavaScript/lessons/21-Async-await/async-await.html">
+</head>
+<body>
+    <h1 class="itemTitle">Async Await</h1>
+
+    <!-- ---------- Async Await ---------- -->
+    <section id="ancla1">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">Async Await</h3>
+            <h4 class="itemInfo__subtitle">
+                Async - Await: espera a que algo se cumpla para poder seguir con el proceso de ejecución.
+                <br>
+                Las funciones asíncronas pueden trabajar en conjunto con las promesas.
+            </h4>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+        </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+function cuadradoPromiseV2(value) {
+    if (typeof value !== 'number') {
+        return Promise.reject(`Error, ${value} no es un número`);
+    }
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve({
+                value,
+                result: value * value
+            });
+        }, Math.random() * 1000)
+    })
+}
+
+async function funcAsincrona() {
+    try {
+        console.log('Inicio Async function');
+        let obj = await cuadradoPromiseV2(0);
+        console.log(`async function: ${obj.value}, ${obj.result}`)
+
+        obj = await cuadradoPromiseV2(1);
+        console.log(`async function: ${obj.value}, ${obj.result}`)
+
+        obj = await cuadradoPromiseV2('2');
+        console.log(`async function: ${obj.value}, ${obj.result}`)
+
+        obj = await cuadradoPromiseV2(3);
+        console.log(`async function: ${obj.value}, ${obj.result}`)
+    } catch (err) {
+        console.error(err);
+    }
+}
+funcAsincrona();
+        </code></pre>
+    
+        <div class="content-img">
+            <img src="assets/async.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Async Await ---------- -->
+
+    <script src="async-await.js"></script>
+    <!-- Comment Code Style -->
+    <script src="https://chrisxavix.github.io/Css/comment-code/prism.js"></script>
+</body>
+</html>
