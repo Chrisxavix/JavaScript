@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+    <link rel="shortcut icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png" type="image/x-icon">
+    <!-- Hojas de estilos -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/normalize.css">
+    <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/styles.css">
+    <!-- Comment Code Style -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/Css/comment-code/prism.css">
+    <!-- Datos -->
+    <meta name="description" content="Promesas para las ejecuciones anidadas.">
+    <link rel="apple-touch-icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png">
+    <meta name="theme-color" content="rgb(103, 104, 59)">
+    <!-- Para Twitter:name="twitter:title" y Facebook:property="og:title" -->
+    <meta property="og:title" name="twitter:title" content="Promises">
+    <meta property="og:image" name="twitter:image"
+    content="https://chrisxavix.github.io/JavaScript/assets/meta-home-cover-js.jpg">
+    <!-- Url del sitio -->
+    <meta property="og:url" name="twitter:url" content="https://chrisxavix.github.io/JavaScript/lessons/20-Promise/promise.html">
+    <meta property="og:description" name="twitter:description" content="Promesas para las ejecuciones anidadas.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <link rel="canonical" href="https://chrisxavix.github.io/JavaScript/lessons/20-Promise/promise.html">
+</head>
+<body>
+    <h1 class="itemTitle">Promises</h1>
+
+    <!-- ---------- Promises ---------- -->
+    <section id="ancla1">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">Promises</h3>
+            <h4 class="itemInfo__subtitle">
+                Si se realiza el proceso de la promesa sin errores se ejecuta el resolve, sino se cumple se ejecuta el reject.
+                <br>
+                El resolve es la parte positiva de return.
+                <br>
+                El reject es la parte negativa del return.
+            </h4>
+            <h4 class="itemInfo__subtitle">Usando:</h4>
+        </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+console.log('--------- 1 ---------');
+function cuadradoPromiseV1(value) {
+    if (typeof value !== 'number') {
+        return Promise.reject(`Error, ${value} no es un número`);
+    }
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve({
+                value,
+                result: value * value
+            });
+        }, Math.random() * 1000)
+    })
+}
+cuadradoPromiseV1(0)
+    .then(obj => {
+        console.log('Inicia Promise');
+        console.log(`Promise: ${obj.value}, ${obj.result}`);
+        return cuadradoPromiseV1(1);
+    })
+    .then(obj => {
+        console.log(`Promise: ${obj.value}, ${obj.result}`);
+        return cuadradoPromiseV1(2);
+    })
+    .then(obj => {
+        console.log(`Promise: ${obj.value}, ${obj.result}`);
+        return cuadradoPromiseV1('3');
+    })
+    .then(obj => {
+        console.log(`Promise: ${obj.value}, ${obj.result}`);
+        return cuadradoPromiseV1(4);
+    })
+    .then(obj => {
+        console.log(`Promise: ${obj.value}, ${obj.result}`);
+        return cuadradoPromiseV1(5);
+    })
+    .then(obj => {
+        console.log(`Promise: ${obj.value}, ${obj.result}`);
+        console.log('Fin de la promesa');
+    })
+    .catch(error => console.error(error));
+        </code></pre>
+    
+        <div class="content-img">
+            <img src="assets/promise.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Promises ---------- -->
+    
+    <script src="promise.js"></script>
+    <!-- Comment Code Style -->
+    <script src="https://chrisxavix.github.io/Css/comment-code/prism.js"></script>
+</body>
+</html>
