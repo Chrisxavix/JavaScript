@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modules</title>
+    <link rel="shortcut icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png" type="image/x-icon">
+    <!-- Hojas de estilos -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/normalize.css">
+    <link rel="stylesheet" href="https://chrisxavix.github.io/JavaScript/styles/styles.css">
+    <!-- Comment Code Style -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/Css/comment-code/prism.css">
+    <!-- Datos -->
+    <meta name="description" content="Importar y exportar archivos para la comunicación.">
+    <link rel="apple-touch-icon" href="https://chrisxavix.github.io/JavaScript/assets/js-v1.png">
+    <meta name="theme-color" content="rgb(103, 104, 59)">
+    <!-- Para Twitter:name="twitter:title" y Facebook:property="og:title" -->
+    <meta property="og:title" name="twitter:title" content="Modules">
+    <meta property="og:image" name="twitter:image"
+    content="https://chrisxavix.github.io/JavaScript/assets/meta-home-cover-js.jpg">
+    <!-- Url del sitio -->
+    <meta property="og:url" name="twitter:url" content="https://chrisxavix.github.io/JavaScript/lessons/22-Modules/modules.html">
+    <meta property="og:description" name="twitter:description" content="Importar y exportar archivos para la comunicación.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <link rel="canonical" href="https://chrisxavix.github.io/JavaScript/lessons/22-Modules/modules.html">
+</head>
+<body>
+    <h1 class="itemTitle">Modules</h1>
+
+    <!-- ---------- Importar constantes ---------- -->
+    <section id="ancla1">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">1) Exportar e importar constantes</h3>
+            <h4 class="itemInfo__subtitle">Exportar en el archivo constantes.js:</h4>
+        </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+/* PI y usuario son declarados como exports que serán llamados con import en el archivo módulo, por cada variable */
+export const PI = Math.PI;
+export let usuario = 'Chris'; 
+        </code></pre>
+
+        <div class="itemInfo">
+            <h4 class="itemInfo__subtitle">Importando desde el archivo modules.js:</h4>
+        </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+console.log('--------- 1 ---------');
+import { PI, usuario } from "./constantes.js";
+console.log(PI);
+console.log(usuario);
+        </code></pre>
+    
+        <div class="content-img">
+            <img src="assets/ex-imp1.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Importar constantes ---------- -->
+
+    <!-- ---------- Importar funciones ---------- -->
+    <section id="ancla1">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">2) Exportar e importar funciones</h3>
+            <h4 class="itemInfo__subtitle">Exportar en el archivo aritmetica.js:</h4>
+        </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+/* Funciones Aritméticas */
+export function sumar(a, b) {
+    return a + b;
+}
+
+export function restar(a, b) {
+    return a - b;
+}
+        </code></pre>
+
+        <div class="itemInfo">
+            <h4 class="itemInfo__subtitle">Importando desde el archivo modules.js:</h4>
+        </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+/* Importar funciones */
+console.log('--------- 2 ---------');
+import { sumar, restar } from "./aritmetica.js";
+console.log('La suma es:', sumar(3, 4));
+console.log('La resta es:', restar(10, 5));
+        </code></pre>
+    
+        <div class="content-img">
+            <img src="assets/ex-imp2.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Importar funciones ---------- -->
+
+    <!-- ---------- Llamar como fue creado el objeto ---------- -->
+    <section id="ancla1">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">3) Llamar como fue creado el objeto</h3>
+            <h4 class="itemInfo__subtitle">Exportar en el archivo aritmeticaV2.js:</h4>
+        </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+/* Dos funciones declaradas que serán exportados a nivel general */
+function sumar(a, b) {
+    return a + b;
+}
+
+function restar(a, b) {
+    return a - b;
+}
+
+export const operaciones = {
+    sumar,
+    restar,
+}            
+        </code></pre>
+
+        <div class="itemInfo">
+            <h4 class="itemInfo__subtitle">Importando desde el archivo modules.js:</h4>
+        </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+/* Llamar como fue creado el objeto */
+console.log('--------- 3 ---------');
+import { operaciones } from "./aritmeticaV2.js";
+console.log('La suma es:', operaciones.sumar(4, 8));
+        </code></pre>
+    
+        <div class="content-img">
+            <img src="assets/ex-imp3.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Llamar como fue creado el objeto ---------- -->
+
+    <!-- ---------- Llamado de la clase saludar ---------- -->
+    <section id="ancla1">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">4) Llamado de la clase saludar</h3>
+            <h4 class="itemInfo__subtitle">Exportar en el archivo hi.js:</h4>
+        </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+/* Exportar la función */
+export class Saludar {
+    constructor() {
+        console.log("Hoooola");
+    }
+}           
+        </code></pre>
+
+        <div class="itemInfo">
+            <h4 class="itemInfo__subtitle">Importando desde el archivo modules.js:</h4>
+        </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+/* Llamado de la clase saludar */
+console.log('--------- 4 ---------');
+import { Saludar } from "./hi.js";
+let saludo = new Saludar();
+saludo;
+        </code></pre>
+    
+        <div class="content-img">
+            <img src="assets/ex-imp4.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Llamado de la clase saludar ---------- -->
+
+    <!-- ---------- Darle un alias ---------- -->
+    <section id="ancla1">
+        <div class="itemInfo">
+            <h3 class="itemInfo__title">5) Darle un alias</h3>
+        </div>
+
+        <pre style="font-size: 12px;"><code class="language-javascript">
+/* Darle un alias (Saludar ahora se llama sal) */
+console.log('--------- 5 ---------');
+import  {Saludar as sal } from "./hi.js";
+let saludoV2 = new sal();
+saludoV2;          
+        </code></pre>
+    
+        <div class="content-img">
+            <img src="assets/ex-imp4.png" alt="">
+        </div>
+    </section>
+    <!-- ---------- Darle un alias ---------- -->
+
+    <!-- Llama a modulos de la carpera (22-Modules), además, se agrega type="module" para que las importaciones no marquen error. Usar un servidor (Live Server), no desde (file) -->
+    <script src="modules.js" type="module"></script>
+
+    <!-- Comment Code Style -->
+    <script src="https://chrisxavix.github.io/Css/comment-code/prism.js"></script>
+</body>
+</html>
